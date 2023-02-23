@@ -1,2 +1,2 @@
-# Documenos publicados vinculados al proyecto Doctorado
-Publicación de documentos vinculados al proyecto Doctorado. Hosted directly from GitHub repository.
+# Proyecto Doctorado: espacio para publicación de documetnos
+En este espacio se ubicarán los documentos a compartir en el contexto del proyecto Doctorado.
