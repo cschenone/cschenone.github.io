@@ -1,2 +1,2 @@
-# Websites for projects
-Websites for projects. Hosted directly from GitHub repository.
+# Documenos publicados vinculados al proyecto Doctorado
+Publicación de documentos vinculados al proyecto Doctorado. Hosted directly from GitHub repository.
