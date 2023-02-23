@@ -1,2 +1,4 @@
-# Websites for projects
-Websites for projects. Hosted directly from GitHub repository.
+# Proyecto Doctorado: espacio para publicación de documentos
+En este espacio se ubicarán los siguientes documentos a compartir en el contexto del proyecto Doctorado:
+
+* Próximos pasos
