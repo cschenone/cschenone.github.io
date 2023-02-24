@@ -11,7 +11,7 @@
 
 <meta name="author" content="Carlos Schenone" />
 
-<meta name="date" content="2023-02-23" />
+<meta name="date" content="2023-02-24" />
 
 <title>Próximos Pasos</title>
 
@@ -329,21 +329,31 @@ display: none;
 
 <h1 class="title toc-ignore">Próximos Pasos</h1>
 <h4 class="author">Carlos Schenone</h4>
-<h4 class="date">2023-02-23</h4>
+<h4 class="date">2023-02-24</h4>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#objetivo-definir-la-metodología-para-recuperar-trabajos-palabras-clave-y-aplicar-criterios-de-ponderación-de-trabajos" id="toc-objetivo-definir-la-metodología-para-recuperar-trabajos-palabras-clave-y-aplicar-criterios-de-ponderación-de-trabajos"><span class="toc-section-number">1</span> Objetivo: Definir la metodología
-para recuperar trabajos (palabras clave) y aplicar criterios de
-ponderación de trabajos</a>
+<li><a href="#objetivo-definir-la-metodología-para-recuperar-trabajos" id="toc-objetivo-definir-la-metodología-para-recuperar-trabajos"><span class="toc-section-number">1</span> Objetivo: Definir la metodología
+para recuperar trabajos</a>
 <ul>
-<li><a href="#avances-en-el-objetivo-1" id="toc-avances-en-el-objetivo-1"><span class="toc-section-number">1.1</span> Avances (En el Objetivo 1)</a>
+<li><a href="#avances" id="toc-avances"><span class="toc-section-number">1.1</span> Avances</a>
 <ul>
-<li><a href="#indices-de-interés" id="toc-indices-de-interés"><span class="toc-section-number">1.1.1</span> Indices de interés</a></li>
+<li><a href="#indices-de-interés" id="toc-indices-de-interés"><span class="toc-section-number">1.1.1</span> Indices de interés</a>
+<ul>
+<li><a href="#para-revista" id="toc-para-revista"><span class="toc-section-number">1.1.1.1</span> Para revista</a></li>
+<li><a href="#para-un-autor" id="toc-para-un-autor"><span class="toc-section-number">1.1.1.2</span> Para un autor</a></li>
+</ul></li>
 <li><a href="#atributos-encontrados-en-los-objetos-devueltos-por-openalexr-api" id="toc-atributos-encontrados-en-los-objetos-devueltos-por-openalexr-api"><span class="toc-section-number">1.1.2</span> Atributos encontrados en los
-objetos devueltos por openalexR (API)</a></li>
+objetos devueltos por openalexR (API)</a>
+<ul>
+<li><a href="#atributos-del-trabajo" id="toc-atributos-del-trabajo"><span class="toc-section-number">1.1.2.1</span> atributos del trabajo</a></li>
+<li><a href="#atributos-del-autor-the-authorship-object" id="toc-atributos-del-autor-the-authorship-object"><span class="toc-section-number">1.1.2.2</span> atributos del autor (The
+Authorship object)</a></li>
+<li><a href="#atributos-del-origen-the-location-object" id="toc-atributos-del-origen-the-location-object"><span class="toc-section-number">1.1.2.3</span> atributos del origen (The
+Location object)</a></li>
+</ul></li>
 </ul></li>
 </ul></li>
 <li><a href="#objetivo-continuar-la-generación-de-n-gramas-en-el-archivo-script_de_trabajo_n-gramas_red_semantica" id="toc-objetivo-continuar-la-generación-de-n-gramas-en-el-archivo-script_de_trabajo_n-gramas_red_semantica"><span class="toc-section-number">2</span> Objetivo: Continuar la generación de
@@ -422,6 +432,13 @@ el origen de los datos.</a></li>
 bibliometrix, o solo alguno de ellos para realizar el analisis de los
 datos bibliometricos.</a></li>
 <li><a href="#formateo-del-documento" id="toc-formateo-del-documento"><span class="toc-section-number">6.9</span> Formateo del documento</a></li>
+<li><a href="#analizar-la-posiblidad-de-apliar-la-lista-de-trabajos-atributo-related_works" id="toc-analizar-la-posiblidad-de-apliar-la-lista-de-trabajos-atributo-related_works"><span class="toc-section-number">6.10</span> Analizar la posiblidad de apliar
+la lista de trabajos (atributo related_works)</a></li>
+<li><a href="#analizar-la-posibilidad-de-acceder-al-texto-completo-del-trabajo-atributo-is_oa-true" id="toc-analizar-la-posibilidad-de-acceder-al-texto-completo-del-trabajo-atributo-is_oa-true"><span class="toc-section-number">6.11</span> Analizar la posibilidad de
+acceder al texto completo del trabajo (atributo is_oa = TRUE)</a></li>
+<li><a href="#analizar-para-presentar-información-complementaria-del-trabajo-recuperado-presentar-la-lista-de-conceptos-y-su-puntaje." id="toc-analizar-para-presentar-información-complementaria-del-trabajo-recuperado-presentar-la-lista-de-conceptos-y-su-puntaje."><span class="toc-section-number">6.12</span> Analizar para presentar
+información complementaria del trabajo recuperado (presentar la lista de
+conceptos y su puntaje).</a></li>
 </ul></li>
 <li><a href="#para-el-marco-teorico" id="toc-para-el-marco-teorico"><span class="toc-section-number">7</span>
 PARA EL MARCO TEORICO</a>
@@ -448,30 +465,46 @@ bibliometrix</a></li>
 preguntas en general</a></li>
 <li><a href="#para-plantear-las-preguntas-disparadoras" id="toc-para-plantear-las-preguntas-disparadoras"><span class="toc-section-number">7.5</span> Para plantear las preguntas
 disparadoras</a></li>
-<li><a href="#nota1-interesante-para-ampliar-la-lista-de-trabajos" id="toc-nota1-interesante-para-ampliar-la-lista-de-trabajos"><span class="toc-section-number">7.6</span> NOTA1: Interesante para ampliar la
-lista de trabajos:</a></li>
-<li><a href="#nota2-interesante-para-acceder-al-documento-completo" id="toc-nota2-interesante-para-acceder-al-documento-completo"><span class="toc-section-number">7.7</span> NOTA2: Interesante para acceder al
-documento completo:</a></li>
-<li><a href="#nota3-interesante-para-presentar-información-complementaria-del-trabajo-recuperado." id="toc-nota3-interesante-para-presentar-información-complementaria-del-trabajo-recuperado."><span class="toc-section-number">7.8</span> NOTA3: Interesante para presentar
-información complementaria del trabajo recuperado.</a></li>
+<li><a href="#objetivo-describir-la-estructura-del-trabajo-potencial" id="toc-objetivo-describir-la-estructura-del-trabajo-potencial"><span class="toc-section-number">7.6</span> Objetivo: Describir la Estructura
+del Trabajo (Potencial)</a>
+<ul>
+<li><a href="#correspondientes-a-la-distribución-geográfica-de-los-autores" id="toc-correspondientes-a-la-distribución-geográfica-de-los-autores"><span class="toc-section-number">7.6.1</span> 1. Correspondientes a la
+distribución geográfica de los autores</a></li>
+<li><a href="#principales-fuentes-de-publicación" id="toc-principales-fuentes-de-publicación"><span class="toc-section-number">7.6.2</span> 2. Principales fuentes de
+publicación</a></li>
+<li><a href="#principales-palabras-clave" id="toc-principales-palabras-clave"><span class="toc-section-number">7.6.3</span> 3. Principales palabras
+clave</a></li>
+<li><a href="#artículos-altamente-citados" id="toc-artículos-altamente-citados"><span class="toc-section-number">7.6.4</span> 4. Artículos altamente
+citados</a></li>
+<li><a href="#grado-de-concentración-de-las-variables-seleccionadas" id="toc-grado-de-concentración-de-las-variables-seleccionadas"><span class="toc-section-number">7.6.5</span> 5. Grado de concentración de las
+variables seleccionadas</a></li>
+<li><a href="#citas-origen-y-gráficos-de-autores" id="toc-citas-origen-y-gráficos-de-autores"><span class="toc-section-number">7.6.6</span> 6. Citas, origen y gráficos de
+autores</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </div>
 
-<div id="objetivo-definir-la-metodología-para-recuperar-trabajos-palabras-clave-y-aplicar-criterios-de-ponderación-de-trabajos" class="section level1" number="1">
+<div id="objetivo-definir-la-metodología-para-recuperar-trabajos" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Objetivo: Definir la
-metodología para recuperar trabajos (palabras clave) y aplicar criterios
-de ponderación de trabajos</h1>
-<p>Se está trabajando sobre el documento: “functions.R” con los
+metodología para recuperar trabajos</h1>
+<p>Nota: Se está trabajando sobre el documento: “functions.R” con los
 siguientes objetivos:</p>
-<p>(OK) 1) Mejorar la eficiencia de recuperación de trabajos, buscando
-en titulo, abstract y full-text, para lo cual se propone: (OK) a)
-separar las búsquedas de cada elemento (titulo, abstract y full text)
-(OK) b) separar las búsquedas de las distintas palabras clave (OK) c)
-definir criterios lógicos “y” u “o” para las palabras clave (OK) d) unir
-los resultados en un solo conjunto de datos (tibble) de acuerdo a los
-criterios lógicos definidos</p>
-<ol style="list-style-type: decimal">
+<p>Marco general de la metodología: Fase 1) Definir criterios de
+inclusión a) Palabras clave (incorporando una forma para definir
+criterios de inclusión “OR” y exclusión “AND” de palabras y/o frases) b)
+Citas (cantidad mínima de citas del trabajo) c) Intervalo de fechas de
+publicación (fecha inicial y fecha final)</p>
+<p>Fase 2) Aplicar criterios de ponderación de trabajos (a los trabajos
+recuperados)</p>
+<p>Objetivos secundarios: (OK) 1) Mejorar la eficiencia de recuperación
+de trabajos, buscando en titulo, abstract y full-text, para lo cual se
+propone: (OK) a) separar las búsquedas de cada elemento (titulo,
+abstract y full text) (OK) b) separar las búsquedas de las distintas
+palabras clave (OK) c) definir criterios lógicos “y” u “o” para las
+palabras clave (OK) d) unir los resultados en un solo conjunto de datos
+(tibble) de acuerdo a los criterios lógicos definidos</p>
+<ol start="2" style="list-style-type: decimal">
 <li>Definir los criterios de importancia (o interés) de los trabajos
 recuperados Nota: buscar en el curso “diseccionando papers” los
 criterios de calidad de un paper y ademas, buscar en recomendaciones
@@ -485,7 +518,7 @@ trabajos</li>
 <li>indice de la institución</li>
 <li>ponderación de openalex</li>
 </ol>
-<ol start="2" style="list-style-type: decimal">
+<ol start="3" style="list-style-type: decimal">
 <li>aplicar los criterios definidos al conjunto de trabajos recuperados
 para ordenarlos de acuerdo a la importancia</li>
 </ol>
@@ -493,9 +526,8 @@ para ordenarlos de acuerdo a la importancia</li>
 el cual se entiende valioso, dado que resuelve gran parte de los
 objetivos. Se debe continuar en la linea 188 del documento
 “functions.R”</p>
-<div id="avances-en-el-objetivo-1" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Avances (En el
-Objetivo 1)</h2>
+<div id="avances" class="section level2" number="1.1">
+<h2><span class="header-section-number">1.1</span> Avances</h2>
 <div id="indices-de-interés" class="section level3" number="1.1.1">
 <h3><span class="header-section-number">1.1.1</span> Indices de
 interés</h3>
@@ -983,6 +1015,43 @@ reporte de bibliometrix, descargado desde bibliometrix.org. El documento
 está ubicado en la carpeta “doctorado/articulo/bibliometrix_Report”</p>
 <p>Revisar los formatos disponibles en markdown. <a href="https://github.com/ricval/Documentacion/blob/master/Guias/GitHub/mastering-markdown.md" class="uri">https://github.com/ricval/Documentacion/blob/master/Guias/GitHub/mastering-markdown.md</a></p>
 </div>
+<div id="analizar-la-posiblidad-de-apliar-la-lista-de-trabajos-atributo-related_works" class="section level2" number="6.10">
+<h2><span class="header-section-number">6.10</span> Analizar la
+posiblidad de apliar la lista de trabajos (atributo related_works)</h2>
+<p>Revisar el atributo “related_works”, incorporar estos trabajos al
+listado y unirlos a la lista de trabajos recuperados. related_woks
+(list): OpenAlex IDs for works related to this work. Related works are
+computed algorithmically; the algorithm finds recent papers with the
+most concepts in common with the current paper.</p>
+</div>
+<div id="analizar-la-posibilidad-de-acceder-al-texto-completo-del-trabajo-atributo-is_oa-true" class="section level2" number="6.11">
+<h2><span class="header-section-number">6.11</span> Analizar la
+posibilidad de acceder al texto completo del trabajo (atributo is_oa =
+TRUE)</h2>
+<p>Revisar el atributo “best_oa_location” para obtener los datos que
+permitan acceder al documento (en caso que esté disponible). Una opción
+a explorar para los trabajos que no dispongan de esta información es
+utilizar la técnica de scrapping. best_oa_location (Object): A Location
+object with the best available open access location for this work. We
+score open locations to determine which is best using these factors: *
+Must have is_oa: true * type: “publisher” is better than “repository”. *
+version: “publishedVersion” is better than “acceptedVersion”, which is
+better than “submittedVersion”. * pdf_url: A location with a direct PDF
+link is better than one without. * repository rankings: Some major
+repositories like PubMed Central and arXiv are ranked above others.</p>
+</div>
+<div id="analizar-para-presentar-información-complementaria-del-trabajo-recuperado-presentar-la-lista-de-conceptos-y-su-puntaje." class="section level2" number="6.12">
+<h2><span class="header-section-number">6.12</span> Analizar para
+presentar información complementaria del trabajo recuperado (presentar
+la lista de conceptos y su puntaje).</h2>
+<p>concepts (Object): List of dehydrated Concept objects. concepts$score
+(Float): The strength of the connection between the work and this
+concept (higher is stronger). This number is produced by AWS Sagemaker,
+in the last layer of the machine learning model that assigns concepts.
+Concepts with a score of at least 0.3 are assigned to the work. However,
+ancestors of an assigned concept are also added to the work, even if the
+ancestor scores are below 0.3.</p>
+</div>
 </div>
 <div id="para-el-marco-teorico" class="section level1" number="7">
 <h1><span class="header-section-number">7</span> PARA EL MARCO
@@ -1008,8 +1077,7 @@ redes semánticas de los articulos (full-text)</h3>
 <h3><span class="header-section-number">7.1.4</span> 4) filtras los
 artículos donde la frecuencia de las palabras clave sea mayor a un
 umbral.</h3>
-<p>Articulo de referencia: <a href="https://rpubs.com/jboscomendoza/redes_semanticas_r" class="uri">https://rpubs.com/jboscomendoza/redes_semanticas_r</a>
-Git-hub:</p>
+<p>Articulo de referencia: <a href="https://rpubs.com/jboscomendoza/redes_semanticas_r" class="uri">https://rpubs.com/jboscomendoza/redes_semanticas_r</a></p>
 <p>En este artículo revisamos como crear una red semántica usando R, en
 particular las funciones de los paquetes tidytext, igraph y ggraph. En
 el proceso también nos dimos cuenta que separar y unir texto de
@@ -1091,40 +1159,75 @@ in this domain. We conclude by providing implications for future
 research and applications of blockchains in supply chains, logistics and
 transport.</p>
 </div>
-<div id="nota1-interesante-para-ampliar-la-lista-de-trabajos" class="section level2" number="7.6">
-<h2><span class="header-section-number">7.6</span> NOTA1: Interesante
-para ampliar la lista de trabajos:</h2>
-<p>Revisar el atributo “related_works”, incorporar estos trabajos al
-listado y unirlos a la lista de trabajos recuperados. related_woks
-(list): OpenAlex IDs for works related to this work. Related works are
-computed algorithmically; the algorithm finds recent papers with the
-most concepts in common with the current paper.</p>
+<div id="objetivo-describir-la-estructura-del-trabajo-potencial" class="section level2" number="7.6">
+<h2><span class="header-section-number">7.6</span> Objetivo: Describir
+la Estructura del Trabajo (Potencial)</h2>
+<p>Origen: Consideraciones obtenidas de la Seccion DATOS y RESULTADOS
+del articulo sobre analisis bibliometrico de bitcoin</p>
+<ul>
+<li>Áreas de investigación y palabras clave</li>
+</ul>
+<p>Principales áreas de investigación asignadas en los trabajos en el
+ejemplo (Areas de investigación, # Registros, % del total)</p>
+<p>Número de trabajos publicados por año, con “palabra clave” como
+tópico. Origen: Web of Science Core Collection (Año, # artículos, Ratio
+de crecimiento anual)</p>
+<div id="correspondientes-a-la-distribución-geográfica-de-los-autores" class="section level3" number="7.6.1">
+<h3><span class="header-section-number">7.6.1</span> 1. Correspondientes
+a la distribución geográfica de los autores</h3>
+<p>10 principales países con mayor cantidad de citas por autor (País,
+artículos, frecuencia, publicaciones de un sólo país, publicaciones de
+múltiples países, Ratio MCP)</p>
+<p>10 países con mayor cantidad de citas (Páis, Total de citas, Promedio
+de citas por artículos)</p>
 </div>
-<div id="nota2-interesante-para-acceder-al-documento-completo" class="section level2" number="7.7">
-<h2><span class="header-section-number">7.7</span> NOTA2: Interesante
-para acceder al documento completo:</h2>
-<p>Revisar el atributo “best_oa_location” para obtener los datos que
-permitan acceder al documento (en caso que esté disponible). Una opción
-a explorar para los trabajos que no dispongan de esta información es
-utilizar la técnica de scrapping. best_oa_location (Object): A Location
-object with the best available open access location for this work. We
-score open locations to determine which is best using these factors: *
-Must have is_oa: true * type: “publisher” is better than “repository”. *
-version: “publishedVersion” is better than “acceptedVersion”, which is
-better than “submittedVersion”. * pdf_url: A location with a direct PDF
-link is better than one without. * repository rankings: Some major
-repositories like PubMed Central and arXiv are ranked above others.</p>
+<div id="principales-fuentes-de-publicación" class="section level3" number="7.6.2">
+<h3><span class="header-section-number">7.6.2</span> 2. Principales
+fuentes de publicación</h3>
+<p>10 principales fuentes (Fuente, # articulos, tipo)</p>
 </div>
-<div id="nota3-interesante-para-presentar-información-complementaria-del-trabajo-recuperado." class="section level2" number="7.8">
-<h2><span class="header-section-number">7.8</span> NOTA3: Interesante
-para presentar información complementaria del trabajo recuperado.</h2>
-<p>concepts (Object): List of dehydrated Concept objects. concepts$score
-(Float): The strength of the connection between the work and this
-concept (higher is stronger). This number is produced by AWS Sagemaker,
-in the last layer of the machine learning model that assigns concepts.
-Concepts with a score of at least 0.3 are assigned to the work. However,
-ancestors of an assigned concept are also added to the work, even if the
-ancestor scores are below 0.3.</p>
+<div id="principales-palabras-clave" class="section level3" number="7.6.3">
+<h3><span class="header-section-number">7.6.3</span> 3. Principales
+palabras clave</h3>
+<p>Palabras clave (Palabras clave de autor, # artículos, palabras clave
+plus (ID), # articulos)</p>
+</div>
+<div id="artículos-altamente-citados" class="section level3" number="7.6.4">
+<h3><span class="header-section-number">7.6.4</span> 4. Artículos
+altamente citados</h3>
+<p>Artículos altamente citados, en orden descendente por número de
+citaciones (Autor (año), Título, Fuente, # Citas)</p>
+<p>Autores más productivos (Autores, Institución, # artículos)</p>
+</div>
+<div id="grado-de-concentración-de-las-variables-seleccionadas" class="section level3" number="7.6.5">
+<h3><span class="header-section-number">7.6.5</span> 5. Grado de
+concentración de las variables seleccionadas</h3>
+<p>Indice de concentración entrópica (H) de las variables seleccionadas
+(Variable, H)</p>
+<p>Distribución observada del número de autores que han escrito un
+número dado de articulos y valores ajustados según la de la ley de Lotka
+(# artículos, # autores, frencuencia observada, frecuencia ajustada)</p>
+</div>
+<div id="citas-origen-y-gráficos-de-autores" class="section level3" number="7.6.6">
+<h3><span class="header-section-number">7.6.6</span> 6. Citas, origen y
+gráficos de autores</h3>
+<p>Nube de palabras encontradas en títulos y resumen generados con
+VOSviewer (url al vosviewer) (Para la interpretación de las referencias
+al color en el texto, el lector se debe dirigir a la versión web del
+artículo)</p>
+<p>Nube de palabras encontradas en títulos y resumen (cuenta binaria)
+generados con VOSviewer (url al vosviewer) (Para la interpretación de
+las referencias al color en el texto, el lector se debe dirigir a la
+versión web del artículo)</p>
+<p>Nube de palabras de las revistas donde fueron publicados los
+artículos de referencia generados con VOSviewer (url al vosviewer) (Para
+la interpretación de las referencias al color en el texto, el lector se
+debe dirigir a la versión web del artículo)</p>
+<p>Nube de palabras de los autores de las revistas donde fueron
+publicados los artículos generados con VOSviewer (url al vosviewer)
+(Para la interpretación de las referencias al color en el texto, el
+lector se debe dirigir a la versión web del artículo)</p>
+</div>
 </div>
 </div>
 
