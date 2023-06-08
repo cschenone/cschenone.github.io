@@ -13,7 +13,7 @@
 
 <meta name="date" content="2023-06-08" />
 
-<title>Comentarios de interes en el desarrollo del trabajo de investigación sobre análisis híbrido: Análisis bibliométrico y Análisis de contenido de trabajos de investigación</title>
+<title>Metodología mixta de abordaje de un corpus</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -333,9 +333,8 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Comentarios de interes en el desarrollo del
-trabajo de investigación sobre análisis híbrido: Análisis bibliométrico
-y Análisis de contenido de trabajos de investigación</h1>
+<h1 class="title toc-ignore">Metodología mixta de abordaje de un
+corpus</h1>
 <h4 class="author">Carlos Schenone</h4>
 <h4 class="date">2023-06-08</h4>
 
@@ -343,1577 +342,658 @@ y Análisis de contenido de trabajos de investigación</h1>
 
 <div id="TOC">
 <ul>
-<li><a href="#introducción" id="toc-introducción"><span class="toc-section-number">1</span> Introducción</a></li>
-<li><a href="#objetivo-presentar-el-plan-de-acción-y-mostrar-su-avance" id="toc-objetivo-presentar-el-plan-de-acción-y-mostrar-su-avance"><span class="toc-section-number">2</span> Objetivo: Presentar el Plan de
-Acción y mostrar su avance</a>
+<li><a href="#metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos" id="toc-metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos"><span class="toc-section-number">1</span> Metodología híbrida para al análisis
+de un corpus de artículos académicos</a></li>
+<li><a href="#planteo-general-de-la-metodología." id="toc-planteo-general-de-la-metodología."><span class="toc-section-number">2</span> Planteo general de la
+metodología.</a>
 <ul>
-<li><a href="#ok-1-mejorar-la-eficiencia-de-recuperación-de-trabajos" id="toc-ok-1-mejorar-la-eficiencia-de-recuperación-de-trabajos"><span class="toc-section-number">2.1</span> (OK) (1) Mejorar la eficiencia de
-recuperación de trabajos</a></li>
-<li><a href="#en-proceso-2-incorporar-trabajos-aplicando-la-técnica-de-snowballing" id="toc-en-proceso-2-incorporar-trabajos-aplicando-la-técnica-de-snowballing"><span class="toc-section-number">2.2</span> (En proceso) (2) Incorporar
-trabajos aplicando la técnica de Snowballing</a></li>
-<li><a href="#no-iniciado-discusión-es-pertinente-incorporar-trabajos-de-bases-de-datos-sin-suscripción" id="toc-no-iniciado-discusión-es-pertinente-incorporar-trabajos-de-bases-de-datos-sin-suscripción"><span class="toc-section-number">2.3</span> (No iniciado) Discusión: ¿Es
-pertinente incorporar trabajos de bases de datos sin suscripción?</a>
+<li><a href="#paso-1.-diseño-del-estudio" id="toc-paso-1.-diseño-del-estudio"><span class="toc-section-number">2.1</span> Paso 1. Diseño del estudio</a>
 <ul>
-<li><a href="#scopus" id="toc-scopus"><span class="toc-section-number">2.3.1</span> Scopus</a></li>
-<li><a href="#ieee-explore" id="toc-ieee-explore"><span class="toc-section-number">2.3.2</span> IEEE Explore</a></li>
-<li><a href="#dimensions" id="toc-dimensions"><span class="toc-section-number">2.3.3</span> Dimensions</a></li>
+<li><a href="#descripción" id="toc-descripción"><span class="toc-section-number">2.1.1</span> Descripción</a></li>
+<li><a href="#actividades" id="toc-actividades"><span class="toc-section-number">2.1.2</span> Actividades</a></li>
+<li><a href="#formulación-de-preguntas-de-investigación" id="toc-formulación-de-preguntas-de-investigación"><span class="toc-section-number">2.1.3</span> 1.1. Formulación de preguntas de
+investigación</a></li>
 </ul></li>
-<li><a href="#no-iniciado-analizar-el-uso-del-scrapping-para-recuperar-datos-de-base-de-datos-indexadas-con-suscripción" id="toc-no-iniciado-analizar-el-uso-del-scrapping-para-recuperar-datos-de-base-de-datos-indexadas-con-suscripción"><span class="toc-section-number">2.4</span> (No iniciado) Analizar el uso del
-Scrapping para recuperar datos de base de datos indexadas con
-suscripción</a></li>
-<li><a href="#en-proceso-3-definir-los-criterios-de-importancia-o-interés-de-los-trabajos-recuperados" id="toc-en-proceso-3-definir-los-criterios-de-importancia-o-interés-de-los-trabajos-recuperados"><span class="toc-section-number">2.5</span> (En Proceso) (3) Definir los
-criterios de importancia (o interés) de los trabajos recuperados</a>
+<li><a href="#paso-2.-recopilación-de-datos" id="toc-paso-2.-recopilación-de-datos"><span class="toc-section-number">2.2</span> Paso 2. Recopilación de datos</a>
 <ul>
-<li><a href="#no-iniciado-discusión-el-conjunto-de-datos-obtenidos-con-el-paquete-openalexr-requiere-un-ajuste-en-el-atributo-keywords-para-utilizar-la-capacidad-de-análisis-y-visualización-de-bibliometrix." id="toc-no-iniciado-discusión-el-conjunto-de-datos-obtenidos-con-el-paquete-openalexr-requiere-un-ajuste-en-el-atributo-keywords-para-utilizar-la-capacidad-de-análisis-y-visualización-de-bibliometrix."><span class="toc-section-number">2.5.1</span> (No iniciado) Discusión: El
-conjunto de datos obtenidos con el paquete OpenAlexR requiere un ajuste
-en el atributo “keywords” para utilizar la capacidad de análisis y
-visualización de bibliometrix.</a></li>
+<li><a href="#descripción-1" id="toc-descripción-1"><span class="toc-section-number">2.2.1</span> Descripción</a></li>
+<li><a href="#actividades-1" id="toc-actividades-1"><span class="toc-section-number">2.2.2</span> Actividades</a></li>
+<li><a href="#selección-de-fuentes-de-datos" id="toc-selección-de-fuentes-de-datos"><span class="toc-section-number">2.2.3</span> 2.1. Selección de fuentes de
+datos</a></li>
 </ul></li>
-<li><a href="#no-iniciado-4-aplicar-los-criterios-de-importancia-al-conjunto-de-trabajos-recuperados" id="toc-no-iniciado-4-aplicar-los-criterios-de-importancia-al-conjunto-de-trabajos-recuperados"><span class="toc-section-number">2.6</span> (No iniciado) (4) Aplicar los
-criterios de importancia al conjunto de trabajos recuperados</a></li>
-<li><a href="#no-iniciado-5-evaluación-de-los-resultados" id="toc-no-iniciado-5-evaluación-de-los-resultados"><span class="toc-section-number">2.7</span> (No iniciado) (5) Evaluación de
-los resultados</a></li>
-<li><a href="#no-iniciado-6-aplicar-medidas-correctivas" id="toc-no-iniciado-6-aplicar-medidas-correctivas"><span class="toc-section-number">2.8</span> (No iniciado) (6) Aplicar medidas
-correctivas</a></li>
-<li><a href="#no-iniciado-7-iniciar-una-nueva-iteración" id="toc-no-iniciado-7-iniciar-una-nueva-iteración"><span class="toc-section-number">2.9</span> (No iniciado) (7) Iniciar una
-nueva iteración</a></li>
+<li><a href="#paso-3.-análisis-de-datos" id="toc-paso-3.-análisis-de-datos"><span class="toc-section-number">2.3</span> Paso 3. Análisis de datos</a>
+<ul>
+<li><a href="#descripción-2" id="toc-descripción-2"><span class="toc-section-number">2.3.1</span> Descripción</a></li>
+<li><a href="#actividades-2" id="toc-actividades-2"><span class="toc-section-number">2.3.2</span> Actividades</a></li>
+<li><a href="#preparación-y-limpieza-de-datos" id="toc-preparación-y-limpieza-de-datos"><span class="toc-section-number">2.3.3</span> 3.1. Preparación y limpieza de
+datos</a></li>
 </ul></li>
-<li><a href="#objetivo-discusiones-que-aportan-a-la-estructura-del-trabajo" id="toc-objetivo-discusiones-que-aportan-a-la-estructura-del-trabajo"><span class="toc-section-number">3</span> Objetivo: Discusiones que aportan a
-la estructura del trabajo</a>
+<li><a href="#paso-4.-visualización-de-datos" id="toc-paso-4.-visualización-de-datos"><span class="toc-section-number">2.4</span> Paso 4. Visualización de datos</a>
 <ul>
-<li><a href="#cómo-plantear-la-pregunta-disparadora" id="toc-cómo-plantear-la-pregunta-disparadora"><span class="toc-section-number">3.1</span> ¿Cómo plantear la pregunta
-disparadora?</a></li>
-<li><a href="#cómo-plantear-el-hilo-conductor-del-trabajo" id="toc-cómo-plantear-el-hilo-conductor-del-trabajo"><span class="toc-section-number">3.2</span> ¿Cómo plantear el hilo conductor
-del trabajo?</a></li>
-<li><a href="#cómo-validar-el-uso-de-openalex" id="toc-cómo-validar-el-uso-de-openalex"><span class="toc-section-number">3.3</span> ¿Cómo validar el uso de
-OpenAlex?</a>
-<ul>
-<li><a href="#alternativa-1-obtener-la-cantidad-de-trabajos-indexados-en-las-distinas-bases-de-datos-y-exponerlas" id="toc-alternativa-1-obtener-la-cantidad-de-trabajos-indexados-en-las-distinas-bases-de-datos-y-exponerlas"><span class="toc-section-number">3.3.1</span> Alternativa 1: Obtener la
-cantidad de trabajos indexados en las distinas bases de datos y
-exponerlas</a>
-<ul>
-<li><a href="#openalex" id="toc-openalex"><span class="toc-section-number">3.3.1.1</span> OpenAlex</a></li>
-<li><a href="#scopus-dimensions" id="toc-scopus-dimensions"><span class="toc-section-number">3.3.1.2</span> Scopus, Dimensions</a></li>
+<li><a href="#descripción-3" id="toc-descripción-3"><span class="toc-section-number">2.4.1</span> Descripción</a></li>
+<li><a href="#actividades-3" id="toc-actividades-3"><span class="toc-section-number">2.4.2</span> Actividades</a></li>
+<li><a href="#selección-de-métodos-de-visualización" id="toc-selección-de-métodos-de-visualización"><span class="toc-section-number">2.4.3</span> 4.1. Selección de métodos de
+visualización</a></li>
 </ul></li>
-<li><a href="#alternativa-2-incorporar-referencias-a-openalex" id="toc-alternativa-2-incorporar-referencias-a-openalex"><span class="toc-section-number">3.3.2</span> Alternativa 2: Incorporar
-referencias a OpenAlex</a></li>
-<li><a href="#alternativa-3-donde-buscar-si-hay-un-trabajo-donde-se-plantee-la-comparación-entre-openalex-y-las-otras" id="toc-alternativa-3-donde-buscar-si-hay-un-trabajo-donde-se-plantee-la-comparación-entre-openalex-y-las-otras"><span class="toc-section-number">3.3.3</span> Alternativa 3: ¿Donde buscar si
-hay un trabajo donde se plantee la comparación entre OpenAlex y las
-otras?</a></li>
+<li><a href="#paso-5.-interpretación-y-presentación-de-resultados" id="toc-paso-5.-interpretación-y-presentación-de-resultados"><span class="toc-section-number">2.5</span> Paso 5. Interpretación y
+presentación de resultados</a>
+<ul>
+<li><a href="#descripción-4" id="toc-descripción-4"><span class="toc-section-number">2.5.1</span> Descripción</a></li>
+<li><a href="#actividades-4" id="toc-actividades-4"><span class="toc-section-number">2.5.2</span> Actividades</a></li>
+<li><a href="#interpretación-de-los-hallazgos" id="toc-interpretación-de-los-hallazgos"><span class="toc-section-number">2.5.3</span> 5.1. Interpretación de los
+hallazgos</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#objetivo-definir-la-metodología-para-construir-el-corpus" id="toc-objetivo-definir-la-metodología-para-construir-el-corpus"><span class="toc-section-number">4</span> Objetivo: Definir la metodología
-para construir el corpus</a>
+<li><a href="#nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico" id="toc-nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico"><span class="toc-section-number">3</span> Nivel 1: Estudio general mediante
+técnicas de análisis bibliométrico</a>
 <ul>
-<li><a href="#análisis-bibliométrico" id="toc-análisis-bibliométrico"><span class="toc-section-number">4.0.1</span> “Análisis
-Bibliométrico”</a></li>
-<li><a href="#revisión-sistemática" id="toc-revisión-sistemática"><span class="toc-section-number">4.0.2</span> “Revisión sistemática”</a></li>
-<li><a href="#análisis-híbrido-análisis-bibliométrico-plus-revisión-sistemática" id="toc-análisis-híbrido-análisis-bibliométrico-plus-revisión-sistemática"><span class="toc-section-number">4.0.3</span> “Análisis Híbrido”: Análisis
-Bibliométrico plus Revisión Sistemática</a></li>
+<li><a href="#descripción-5" id="toc-descripción-5"><span class="toc-section-number">3.0.1</span> Descripción</a></li>
+<li><a href="#etapa-1-selección-y-preparación-del-corpus" id="toc-etapa-1-selección-y-preparación-del-corpus"><span class="toc-section-number">3.1</span> Etapa 1: Selección y preparación
+del corpus</a>
+<ul>
+<li><a href="#descripción-6" id="toc-descripción-6"><span class="toc-section-number">3.1.1</span> Descripción</a></li>
+<li><a href="#actividades-5" id="toc-actividades-5"><span class="toc-section-number">3.1.2</span> Actividades</a></li>
+<li><a href="#identificación-de-bases-de-datos-académicas-relevantes" id="toc-identificación-de-bases-de-datos-académicas-relevantes"><span class="toc-section-number">3.1.3</span> 1.1. Identificación de bases de
+datos académicas relevantes</a></li>
 </ul></li>
-<li><a href="#objetivo-definir-los-criterios-para-extraer-los-trabajos-de-interes-de-lalas-base-de-datos-indexadas" id="toc-objetivo-definir-los-criterios-para-extraer-los-trabajos-de-interes-de-lalas-base-de-datos-indexadas"><span class="toc-section-number">5</span> Objetivo: Definir los criterios para
-extraer los trabajos de interes de la/las base de datos
-indexadas</a></li>
-<li><a href="#objetivo-definir-la-estructura-del-artículo" id="toc-objetivo-definir-la-estructura-del-artículo"><span class="toc-section-number">6</span> Objetivo: Definir la estructura del
-artículo</a>
+<li><a href="#etapa-2-recopilación-y-limpieza-de-datos" id="toc-etapa-2-recopilación-y-limpieza-de-datos"><span class="toc-section-number">3.2</span> Etapa 2: Recopilación y limpieza
+de datos</a>
 <ul>
-<li><a href="#estructura-sugerida-por-preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma" id="toc-estructura-sugerida-por-preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma"><span class="toc-section-number">6.1</span> Estructura sugerida por Preferred
-Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)</a>
-<ul>
-<li><a href="#title" id="toc-title"><span class="toc-section-number">6.1.1</span> 1. Title</a></li>
-<li><a href="#abstract" id="toc-abstract"><span class="toc-section-number">6.1.2</span> 2. Abstract</a></li>
-<li><a href="#introduction" id="toc-introduction"><span class="toc-section-number">6.1.3</span> 3. Introduction</a></li>
-<li><a href="#methods" id="toc-methods"><span class="toc-section-number">6.1.4</span> 4. Methods</a></li>
-<li><a href="#results" id="toc-results"><span class="toc-section-number">6.1.5</span> 5. Results</a></li>
-<li><a href="#discussion" id="toc-discussion"><span class="toc-section-number">6.1.6</span> 6. Discussion</a></li>
-<li><a href="#other-information" id="toc-other-information"><span class="toc-section-number">6.1.7</span> 7. Other information</a></li>
+<li><a href="#descripción-7" id="toc-descripción-7"><span class="toc-section-number">3.2.1</span> Descripción</a></li>
+<li><a href="#actividades-6" id="toc-actividades-6"><span class="toc-section-number">3.2.2</span> Actividades</a></li>
+<li><a href="#extracción-de-datos-bibliográficos" id="toc-extracción-de-datos-bibliográficos"><span class="toc-section-number">3.2.3</span> 2.1. Extracción de datos
+bibliográficos</a></li>
 </ul></li>
-<li><a href="#estructura-sugerida-para-science-mapping" id="toc-estructura-sugerida-para-science-mapping"><span class="toc-section-number">6.2</span> Estructura sugerida para Science
-Mapping</a>
+<li><a href="#etapa-3-análisis-de-datos-bibliométricos" id="toc-etapa-3-análisis-de-datos-bibliométricos"><span class="toc-section-number">3.3</span> Etapa 3: Análisis de datos
+bibliométricos</a>
 <ul>
-<li><a href="#study-design." id="toc-study-design."><span class="toc-section-number">6.2.1</span> 1. Study design.</a></li>
-<li><a href="#data-collection." id="toc-data-collection."><span class="toc-section-number">6.2.2</span> 2. Data collection.</a></li>
-<li><a href="#data-analysis." id="toc-data-analysis."><span class="toc-section-number">6.2.3</span> 3. Data analysis.</a></li>
-<li><a href="#data-visualization." id="toc-data-visualization."><span class="toc-section-number">6.2.4</span> 4. Data visualization.</a></li>
-<li><a href="#interpretation." id="toc-interpretation."><span class="toc-section-number">6.2.5</span> 5. Interpretation.</a></li>
+<li><a href="#descripción-8" id="toc-descripción-8"><span class="toc-section-number">3.3.1</span> Descripción</a></li>
+<li><a href="#actividades-7" id="toc-actividades-7"><span class="toc-section-number">3.3.2</span> Actividades</a></li>
+<li><a href="#análisis-de-coautoría-y-colaboración" id="toc-análisis-de-coautoría-y-colaboración"><span class="toc-section-number">3.3.3</span> 3.1. Análisis de coautoría y
+colaboración</a></li>
 </ul></li>
-<li><a href="#estructura-sugerida-para-el-análisis-de-los-datos-utilizando-la-metodología-de-análisis-bibliométrico" id="toc-estructura-sugerida-para-el-análisis-de-los-datos-utilizando-la-metodología-de-análisis-bibliométrico"><span class="toc-section-number">6.3</span> Estructura sugerida para el
-análisis de los datos utilizando la metodología de Análisis
-Bibliométrico</a>
+<li><a href="#etapa-4.-visualización-de-datos." id="toc-etapa-4.-visualización-de-datos."><span class="toc-section-number">3.4</span> Etapa 4. Visualización de
+datos.</a>
 <ul>
-<li><a href="#áreas-de-investigación-y-palabras-clave" id="toc-áreas-de-investigación-y-palabras-clave"><span class="toc-section-number">6.3.1</span> 0. Áreas de investigación y
-palabras clave</a></li>
-<li><a href="#distribución-geográfica-de-los-autores" id="toc-distribución-geográfica-de-los-autores"><span class="toc-section-number">6.3.2</span> 1. Distribución geográfica de
-los autores</a></li>
-<li><a href="#principales-fuentes-de-publicación" id="toc-principales-fuentes-de-publicación"><span class="toc-section-number">6.3.3</span> 2. Principales fuentes de
-publicación</a></li>
-<li><a href="#principales-palabras-clave" id="toc-principales-palabras-clave"><span class="toc-section-number">6.3.4</span> 3. Principales palabras
-clave</a></li>
-<li><a href="#artículos-altamente-citados" id="toc-artículos-altamente-citados"><span class="toc-section-number">6.3.5</span> 4. Artículos altamente
-citados</a></li>
-<li><a href="#grado-de-concentración-de-las-variables-seleccionadas" id="toc-grado-de-concentración-de-las-variables-seleccionadas"><span class="toc-section-number">6.3.6</span> 5. Grado de concentración de las
-variables seleccionadas</a></li>
-<li><a href="#citas-origen-y-gráficos-de-autores" id="toc-citas-origen-y-gráficos-de-autores"><span class="toc-section-number">6.3.7</span> 6. Citas, origen y gráficos de
-autores</a></li>
+<li><a href="#descripcion" id="toc-descripcion"><span class="toc-section-number">3.4.1</span> Descripcion</a></li>
+<li><a href="#actividades-8" id="toc-actividades-8"><span class="toc-section-number">3.4.2</span> Actividades</a></li>
+<li><a href="#selección-de-métodos-de-visualización-1" id="toc-selección-de-métodos-de-visualización-1"><span class="toc-section-number">3.4.3</span> 4.1. Selección de métodos de
+visualización</a></li>
 </ul></li>
+<li><a href="#etapa-5-interpretación-y-presentación-de-resultados." id="toc-etapa-5-interpretación-y-presentación-de-resultados."><span class="toc-section-number">3.5</span> Etapa 5: Interpretación y
+presentación de resultados.</a>
+<ul>
+<li><a href="#descripción-9" id="toc-descripción-9"><span class="toc-section-number">3.5.1</span> Descripción</a></li>
+<li><a href="#actividades-9" id="toc-actividades-9"><span class="toc-section-number">3.5.2</span> Actividades</a></li>
+<li><a href="#interpretación-de-los-hallazgos-1" id="toc-interpretación-de-los-hallazgos-1"><span class="toc-section-number">3.5.3</span> 5.1. Interpretación de los
+hallazgos</a></li>
 </ul></li>
-<li><a href="#objetivo-definir-el-flujo-para-obtener-un-corpus-de-artículos-categorizado-según-el-objeto-del-estudio" id="toc-objetivo-definir-el-flujo-para-obtener-un-corpus-de-artículos-categorizado-según-el-objeto-del-estudio"><span class="toc-section-number">7</span> Objetivo: Definir el Flujo para
-obtener un corpus de artículos categorizado según el objeto del
-estudio</a>
+<li><a href="#etapa-6-priorización-del-corpus" id="toc-etapa-6-priorización-del-corpus"><span class="toc-section-number">3.6</span> Etapa 6: Priorización del
+corpus</a>
 <ul>
-<li><a href="#fase-1-definir-los-criterios-de-inclusión-e-exclusión" id="toc-fase-1-definir-los-criterios-de-inclusión-e-exclusión"><span class="toc-section-number">7.1</span> Fase 1) Definir los criterios de
-inclusión e exclusión</a>
-<ul>
-<li><a href="#fase-1.1-definir-los-criterios-de-inclusión" id="toc-fase-1.1-definir-los-criterios-de-inclusión"><span class="toc-section-number">7.1.1</span> Fase 1.1) Definir los criterios
-de inclusión</a></li>
-<li><a href="#fase-1.2-definir-los-criterios-de-exclusión" id="toc-fase-1.2-definir-los-criterios-de-exclusión"><span class="toc-section-number">7.1.2</span> Fase 1.2) Definir los criterios
-de exclusión</a></li>
-<li><a href="#fase-1.3-definir-las-metodologías-para-construir-el-conjunto-de-datos" id="toc-fase-1.3-definir-las-metodologías-para-construir-el-conjunto-de-datos"><span class="toc-section-number">7.1.3</span> Fase 1.3) Definir las
-metodologías para construir el conjunto de datos</a></li>
-<li><a href="#fase-1.4-definir-las-bd-indexadas-sobre-las-cuales-se-aplicarán-los-criterios-de-inclusión" id="toc-fase-1.4-definir-las-bd-indexadas-sobre-las-cuales-se-aplicarán-los-criterios-de-inclusión"><span class="toc-section-number">7.1.4</span> Fase 1.4) Definir las BD
-Indexadas sobre las cuales se aplicarán los criterios de
-inclusión</a></li>
-<li><a href="#fase-1.5-definir-los-criterios-de-ponderación-de-los-trabajos" id="toc-fase-1.5-definir-los-criterios-de-ponderación-de-los-trabajos"><span class="toc-section-number">7.1.5</span> Fase 1.5) Definir los criterios
-de ponderación de los trabajos</a>
-<ul>
-<li><a href="#métodos-bibliométricos-primera-revisión" id="toc-métodos-bibliométricos-primera-revisión"><span class="toc-section-number">7.1.5.1</span> Métodos bibliométricos:
-primera revisión</a></li>
-<li><a href="#métodos-bibliométricos-segunda-revisión" id="toc-métodos-bibliométricos-segunda-revisión"><span class="toc-section-number">7.1.5.2</span> Métodos bibliométricos:
-segunda revisión</a>
-<ul>
-<li><a href="#puntuación-de-institución-a-la-que-pertenece-el-autor-principal-o-también-la-que-se-obtiene-del-atributo-location" id="toc-puntuación-de-institución-a-la-que-pertenece-el-autor-principal-o-también-la-que-se-obtiene-del-atributo-location"><span class="toc-section-number">7.1.5.2.1</span> Puntuación de Institución (a
-la que pertenece el autor principal o, también la que se obtiene del
-atributo “Location”)</a></li>
-<li><a href="#indices-complementarios-al-factor-de-impacto-de-la-revista-journal-impact-factor" id="toc-indices-complementarios-al-factor-de-impacto-de-la-revista-journal-impact-factor"><span class="toc-section-number">7.1.5.2.2</span> Indices complementarios al
-“factor de impacto de la revista” (Journal impact factor)</a></li>
-<li><a href="#conteo-de-palabras-clave-en-título-y-abstract" id="toc-conteo-de-palabras-clave-en-título-y-abstract"><span class="toc-section-number">7.1.5.2.3</span> Conteo de “Palabras clave”
-en título y abstract</a></li>
-<li><a href="#puntuar-el-matching-entre-palabras-clave-y-el-atributo-concepts" id="toc-puntuar-el-matching-entre-palabras-clave-y-el-atributo-concepts"><span class="toc-section-number">7.1.5.2.4</span> Puntuar el matching entre
-“Palabras Clave” y el atributo “Concepts”</a></li>
-<li><a href="#puntuar-el-matching-entre-ellos-temas-de-interés-y-los-temas-más-importantes-abordados-en-un-trabajo" id="toc-puntuar-el-matching-entre-ellos-temas-de-interés-y-los-temas-más-importantes-abordados-en-un-trabajo"><span class="toc-section-number">7.1.5.2.5</span> Puntuar el matching entre
-el/los temas de interés y los temas más importantes abordados en un
-trabajo</a></li>
-<li><a href="#propuesta-para-el-abordaje-de-la-puntuación-requerida-en-los-métodos-bibliométricos-segunda-revisión" id="toc-propuesta-para-el-abordaje-de-la-puntuación-requerida-en-los-métodos-bibliométricos-segunda-revisión"><span class="toc-section-number">7.1.5.2.6</span> Propuesta para el abordaje
-de la puntuación requerida en los “métodos bibliométricos: segunda
-revisión”</a></li>
+<li><a href="#descripción-10" id="toc-descripción-10"><span class="toc-section-number">3.6.1</span> Descripción</a></li>
+<li><a href="#actividades-10" id="toc-actividades-10"><span class="toc-section-number">3.6.2</span> Actividades</a></li>
+<li><a href="#análisis-temático-del-corpus" id="toc-análisis-temático-del-corpus"><span class="toc-section-number">3.6.3</span> 6.1. Análisis temático del
+corpus</a></li>
+<li><a href="#priorización-del-corpus" id="toc-priorización-del-corpus"><span class="toc-section-number">3.6.4</span> 6.2. Priorización del
+corpus</a></li>
 </ul></li>
 </ul></li>
-</ul></li>
-<li><a href="#fase-2-recuperar-el-conjunto-de-datos-aplicando-la-metodología-definida" id="toc-fase-2-recuperar-el-conjunto-de-datos-aplicando-la-metodología-definida"><span class="toc-section-number">7.2</span> Fase 2) Recuperar el conjunto de
-datos aplicando la metodología definida</a></li>
-<li><a href="#fase-3-ponderar-los-elementos-del-conjunto-de-datos" id="toc-fase-3-ponderar-los-elementos-del-conjunto-de-datos"><span class="toc-section-number">7.3</span> Fase 3) Ponderar los elementos del
-conjunto de datos</a></li>
-</ul></li>
-<li><a href="#objetivo-analizar-las-facilidades-para-publicar-información-desde-rstudio" id="toc-objetivo-analizar-las-facilidades-para-publicar-información-desde-rstudio"><span class="toc-section-number">8</span> Objetivo: Analizar las facilidades
-para publicar información desde RStudio</a>
+<li><a href="#nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma" id="toc-nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma"><span class="toc-section-number">4</span> Nivel 2: Estudio detallado mediante
+revisión sistemática basada en PRISMA</a>
 <ul>
-<li><a href="#conclusiones-se-encontraron-cuatro-alternativas-para-publicar-información-desde-r" id="toc-conclusiones-se-encontraron-cuatro-alternativas-para-publicar-información-desde-r"><span class="toc-section-number">8.1</span> Conclusiones: Se encontraron
-cuatro alternativas para publicar información desde R</a></li>
-<li><a href="#interesante-formateo-del-documento" id="toc-interesante-formateo-del-documento"><span class="toc-section-number">8.2</span> Interesante: Formateo del
-documento</a>
+<li><a href="#descripción-11" id="toc-descripción-11"><span class="toc-section-number">4.0.1</span> Descripción</a></li>
+<li><a href="#etapa-7-aplicación-de-la-metodología-de-revisión-prisma" id="toc-etapa-7-aplicación-de-la-metodología-de-revisión-prisma"><span class="toc-section-number">4.1</span> Etapa 7: Aplicación de la
+metodología de revisión PRISMA</a>
 <ul>
-<li><a href="#bibliometrix-paquete-de-r" id="toc-bibliometrix-paquete-de-r"><span class="toc-section-number">8.2.1</span> Bibliometrix (paquete de
-R)</a></li>
-<li><a href="#r-markdown" id="toc-r-markdown"><span class="toc-section-number">8.2.2</span> R Markdown</a></li>
+<li><a href="#descripción-12" id="toc-descripción-12"><span class="toc-section-number">4.1.1</span> Descripción</a></li>
+<li><a href="#actividades-11" id="toc-actividades-11"><span class="toc-section-number">4.1.2</span> Actividades</a></li>
+<li><a href="#diseño-del-protocolo-de-revisión" id="toc-diseño-del-protocolo-de-revisión"><span class="toc-section-number">4.1.3</span> 7.1. Diseño del protocolo de
+revisión</a></li>
 </ul></li>
-<li><a href="#interesante-shinydashboard-makes-it-easy-to-use-shiny-to-create-dashboards" id="toc-interesante-shinydashboard-makes-it-easy-to-use-shiny-to-create-dashboards"><span class="toc-section-number">8.3</span> Interesante: Shinydashboard makes
-it easy to use Shiny to create dashboards</a></li>
-<li><a href="#interesante-información-complementaria-para-análisis-de-datos" id="toc-interesante-información-complementaria-para-análisis-de-datos"><span class="toc-section-number">8.4</span> Interesante: Información
-complementaria para análisis de datos</a>
+</ul></li>
+<li><a href="#aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos" id="toc-aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos"><span class="toc-section-number">5</span> Aportes a la revisión de la
+metodología híbrida desde otras fuentes de datos</a>
 <ul>
-<li><a href="#temas-abordados-en-el-git" id="toc-temas-abordados-en-el-git"><span class="toc-section-number">8.4.1</span> Temas abordados en el
-Git</a></li>
-</ul></li>
-<li><a href="#interesante-aporte-a-la-discusión-sobre-los-ítems-incorporados-en-la-sección-analisis-de-datos-del-trabajo" id="toc-interesante-aporte-a-la-discusión-sobre-los-ítems-incorporados-en-la-sección-analisis-de-datos-del-trabajo"><span class="toc-section-number">8.5</span> Interesante: Aporte a la discusión
-sobre los ítems incorporados en la sección “Analisis de datos” del
-trabajo</a></li>
-</ul></li>
-<li><a href="#objetivo-analizar-las-facilidades-implementadas-en-openalex-api-para-recuperar-datos-de-la-base-de-datos-openalex" id="toc-objetivo-analizar-las-facilidades-implementadas-en-openalex-api-para-recuperar-datos-de-la-base-de-datos-openalex"><span class="toc-section-number">9</span> Objetivo: Analizar las facilidades
-implementadas en OpenAlex API para recuperar datos de la base de datos
-OpenAlex</a>
+<li><a href="#posible-estructura-del-trabajo" id="toc-posible-estructura-del-trabajo"><span class="toc-section-number">5.1</span> Posible estructura del trabajo</a>
 <ul>
-<li><a href="#overview-openalex" id="toc-overview-openalex"><span class="toc-section-number">9.1</span> Overview OpenAlex</a></li>
-<li><a href="#cuáles-son-las-facilidades-de-openalex-api" id="toc-cuáles-son-las-facilidades-de-openalex-api"><span class="toc-section-number">9.2</span> ¿Cuáles son las facilidades de
-OpenAlex API?</a></li>
+<li><a href="#caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production" id="toc-caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production"><span class="toc-section-number">5.1.1</span> Caso 1: A bibliometric analysis
+of bitcoin scientific production</a></li>
+<li><a href="#caso-2-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" id="toc-caso-2-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis"><span class="toc-section-number">5.1.2</span> Caso 2: WHERE DO WE STAND IN
+CRYPTOCURRENCIES ECONOMIC RESEARCH: A SURVEY BASED ON HYBRID
+ANALYSIS</a></li>
+<li><a href="#caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" id="toc-caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering"><span class="toc-section-number">5.1.3</span> Caso 3: Guidelines for
+Snowballing in Systematic Literature Studies and a Replication in
+Software Engineering</a></li>
 </ul></li>
-<li><a href="#objetivo-presentar-las-facilidades-de-búsqueda-de-openalex-api" id="toc-objetivo-presentar-las-facilidades-de-búsqueda-de-openalex-api"><span class="toc-section-number">10</span> Objetivo: Presentar las facilidades
-de búsqueda de OpenAlex API</a>
+<li><a href="#justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex" id="toc-justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex"><span class="toc-section-number">5.2</span> Justificación de base de datos (en
+nuestro caso optamos por OpenAlex)</a>
 <ul>
-<li><a href="#conviene-utilizar-el-paquete-openalaexr-para-consultar-la-base-de-datos-openalex" id="toc-conviene-utilizar-el-paquete-openalaexr-para-consultar-la-base-de-datos-openalex"><span class="toc-section-number">10.1</span> ¿Conviene utilizar el paquete
-openalaexR para consultar la base de datos OpenAlex?</a></li>
-<li><a href="#cómo-incorporo-operadores-lógicos-en-las-consultas-a-openalex-by-openalex-api" id="toc-cómo-incorporo-operadores-lógicos-en-las-consultas-a-openalex-by-openalex-api"><span class="toc-section-number">10.2</span> ¿Cómo incorporo operadores
-lógicos en las consultas a OpenAlex by OpenAlex API?</a>
-<ul>
-<li><a href="#ejemplo" id="toc-ejemplo"><span class="toc-section-number">10.2.1</span> Ejemplo:</a></li>
+<li><a href="#documento-lineamientos-para-análisis-bibliométrico.-v01" id="toc-documento-lineamientos-para-análisis-bibliométrico.-v01"><span class="toc-section-number">5.2.1</span> Documento: Lineamientos para
+Análisis Bibliométrico. v01</a></li>
+<li><a href="#link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit" id="toc-link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit"><span class="toc-section-number">5.2.2</span> Link:
+https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></li>
+<li><a href="#caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews" id="toc-caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews"><span class="toc-section-number">5.2.3</span> Caso 4: A Comparison of Citation
+Sources for Reference and Citation-Based Search in Systematic Literature
+Reviews</a></li>
+<li><a href="#caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels" id="toc-caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels"><span class="toc-section-number">5.2.4</span> Caso 5: Comparative Analysis of
+the Bibliographic Data Sources Dimensions and Scopus: An Approach at the
+Country and Institutional Levels</a></li>
 </ul></li>
-<li><a href="#discusión-sobre-facilidad-search-en-openaalex-api-busca-en-title-abstract-y-fulltext-vs-filter-específico-para-alguno-de-los-atributos" id="toc-discusión-sobre-facilidad-search-en-openaalex-api-busca-en-title-abstract-y-fulltext-vs-filter-específico-para-alguno-de-los-atributos"><span class="toc-section-number">10.3</span> Discusión sobre facilidad
-“Search” en OpenaAlex API (busca en title, abstract y fulltext) vs
-Filter (específico para alguno de los atributos)</a>
+<li><a href="#justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix" id="toc-justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix"><span class="toc-section-number">5.3</span> Justificación de uso de
+herramienta de análisis bibliométrico (en nuestro caso Bibliometrix)</a>
 <ul>
-<li><a href="#example" id="toc-example"><span class="toc-section-number">10.3.1</span> Example:</a></li>
+<li><a href="#documento-lineamientos-para-análisis-bibliométrico.-v01-1" id="toc-documento-lineamientos-para-análisis-bibliométrico.-v01-1"><span class="toc-section-number">5.3.1</span> Documento: Lineamientos para
+Análisis Bibliométrico. v01</a></li>
+<li><a href="#link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit-1" id="toc-link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit-1"><span class="toc-section-number">5.3.2</span> Link:
+https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></li>
+<li><a href="#caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis." id="toc-caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis."><span class="toc-section-number">5.3.3</span> Caso 6: Bibliometrix : An R-tool
+for comprehensive science mapping analysis.</a></li>
 </ul></li>
-<li><a href="#search-at-specific-field-title-abstract-andor-fulltext" id="toc-search-at-specific-field-title-abstract-andor-fulltext"><span class="toc-section-number">10.4</span> Search at specific field (title,
-abstract and/or fulltext)</a></li>
-<li><a href="#fulltext-search-is-powered-by-an-index-of-word-sequences-called-n-grams." id="toc-fulltext-search-is-powered-by-an-index-of-word-sequences-called-n-grams."><span class="toc-section-number">10.5</span> Fulltext search is powered by an
-index of word sequences called “n-grams”.</a></li>
-<li><a href="#qué-facilidades-brinda-la-búsqueda-por-n-gramas" id="toc-qué-facilidades-brinda-la-búsqueda-por-n-gramas"><span class="toc-section-number">10.6</span> ¿Qué facilidades brinda la
-búsqueda por “n-gramas”?</a></li>
-<li><a href="#capacidades-de-la-búsqueda-fulltext-en-openalex" id="toc-capacidades-de-la-búsqueda-fulltext-en-openalex"><span class="toc-section-number">10.7</span> Capacidades de la búsqueda
-“Fulltext” en OpenAlex</a></li>
-<li><a href="#analizar-la-posibilidad-de-acceder-al-texto-completo-del-trabajo" id="toc-analizar-la-posibilidad-de-acceder-al-texto-completo-del-trabajo"><span class="toc-section-number">10.8</span> Analizar la posibilidad de
-acceder al texto completo del trabajo</a>
-<ul>
-<li><a href="#analizar-las-facilidades-que-brinda-el-atributo-best_oa_location.-aplica-a-todos-los-artículos-o-solamente-a-los-del-tipo-open-access" id="toc-analizar-las-facilidades-que-brinda-el-atributo-best_oa_location.-aplica-a-todos-los-artículos-o-solamente-a-los-del-tipo-open-access"><span class="toc-section-number">10.8.1</span> Analizar las facilidades que
-brinda el atributo best_oa_location. ¿Aplica a todos los artículos o
-solamente a los del tipo open access?</a></li>
-</ul></li>
-<li><a href="#análisis-de-la-facilidad-fulltext-search-vs-atributo-n-grams-para-resolver-los-problemas-que-involucren-análisis-semántico-de-texto." id="toc-análisis-de-la-facilidad-fulltext-search-vs-atributo-n-grams-para-resolver-los-problemas-que-involucren-análisis-semántico-de-texto."><span class="toc-section-number">10.9</span> Análisis de la facilidad fulltext
-search vs atributo n-grams para resolver los problemas que involucren
-análisis semántico de texto.</a></li>
-</ul></li>
-<li><a href="#objetivo-general-definir-las-buenas-prácticas" id="toc-objetivo-general-definir-las-buenas-prácticas"><span class="toc-section-number">11</span> Objetivo general: Definir las
-buenas prácticas</a>
-<ul>
-<li><a href="#es-pertienente-utilizar-el-paquete-bibliometrix-para-acompañar-el-analisis-de-los-resultados" id="toc-es-pertienente-utilizar-el-paquete-bibliometrix-para-acompañar-el-analisis-de-los-resultados"><span class="toc-section-number">11.1</span> ¿Es pertienente utilizar el
-paquete bibliometrix para acompañar el analisis de los
-resultados?</a></li>
-<li><a href="#cómo-empezar-y-qué-tener-en-cuenta-cuando-escribes-tu-función-en-r" id="toc-cómo-empezar-y-qué-tener-en-cuenta-cuando-escribes-tu-función-en-r"><span class="toc-section-number">11.2</span> ¿ Cómo empezar y qué tener en
-cuenta cuando escribes tu función en R?</a></li>
-<li><a href="#plantear-una-sección-al-comienzo-destinada-a-la-definición-de-las-variables-de-entorno-de-r" id="toc-plantear-una-sección-al-comienzo-destinada-a-la-definición-de-las-variables-de-entorno-de-r"><span class="toc-section-number">11.3</span> Plantear una sección al comienzo
-destinada a la definición de las variables de entorno de R</a>
-<ul>
-<li><a href="#configurar-el-directorio-de-trabajo" id="toc-configurar-el-directorio-de-trabajo"><span class="toc-section-number">11.3.1</span> Configurar el directorio de
-trabajo</a></li>
-</ul></li>
-<li><a href="#propuesta-para-el-desarrollo-de-scripts-en-r-para-facilitar-las-comprobaciones" id="toc-propuesta-para-el-desarrollo-de-scripts-en-r-para-facilitar-las-comprobaciones"><span class="toc-section-number">11.4</span> Propuesta para el desarrollo de
-scripts en R para facilitar las comprobaciones</a></li>
-<li><a href="#propuesta-para-el-armado-de-una-notebook-para-analizar-las-capacidades-de-los-filtros-de-openalex-api" id="toc-propuesta-para-el-armado-de-una-notebook-para-analizar-las-capacidades-de-los-filtros-de-openalex-api"><span class="toc-section-number">11.5</span> Propuesta para el armado de una
-Notebook para analizar las capacidades de los filtros de OpenAlex
-API</a></li>
-<li><a href="#dónde-puedo-obtener-respuestas-a-preguntas-frecuentes-sobre-bibliometrix" id="toc-dónde-puedo-obtener-respuestas-a-preguntas-frecuentes-sobre-bibliometrix"><span class="toc-section-number">11.6</span> ¿Dónde puedo obtener respuestas a
-preguntas frecuentes sobre bibliometrix?</a></li>
 </ul></li>
 </ul>
 </div>
 
-<div id="introducción" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Introducción</h1>
-<p>Al avanzar en las etapas preliminares de un estudio cuyo objetivo era
-recuperar las investigaciones más destacadas sobre el uso de técnicas de
-inteligencia artificial aplicadas al campo de la hidrología nos
-encontramos con la posibilidad de realizar un aporte basado en la
-propuesta de una metodología que combine las técnicas basadas en
-revisión sistemática y análisis bibliométrico, a partir de la
-explotación de las capacidades de análisis de texto ofrecidas por los
-lenguajes de programación como R y las facilidades de consulta brindadas
-por las bases de datos indexadas abiertas como OpenAlex.</p>
-<p>En el documento se presentan los objetivos que fueron surgiendo en el
-camino y los principales hallazgos.</p>
+<div id="metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos" class="section level1" number="1">
+<h1><span class="header-section-number">1</span> Metodología híbrida
+para al análisis de un corpus de artículos académicos</h1>
+<p>A continuación se presenta una metodología para abordar un estudio
+mixto de un corpus, con el objetivo de conocer el estado del arte de un
+tema de investigación, aplicando en primer término técnicas de análisis
+bibliométrico y posteriormente se profundiza el análisis del corpus
+resultante aplicando criterios de la revisión sistemática, con el
+objetivo de aportar un conjunto de elementos que ayuden a realizar el
+análisis de la estructura y el desarrollo de un campo científico
+utilizando métodos cuantitativos y datos bibliográficos.</p>
 </div>
-<div id="objetivo-presentar-el-plan-de-acción-y-mostrar-su-avance" class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Objetivo: Presentar el
-Plan de Acción y mostrar su avance</h1>
-<div id="ok-1-mejorar-la-eficiencia-de-recuperación-de-trabajos" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> (OK) (1) Mejorar la
-eficiencia de recuperación de trabajos</h2>
-<p>Considerando que las claves buscan en el titulo, abstract y full-text
-del trabajo. Para el cumplimiento de la etapa se proponen los siguientes
-pasos: (OK) a) separar las búsquedas de cada elemento (titulo, abstract
-y full text) (OK) b) separar las búsquedas de las distintas palabras
-clave (OK) c) definir criterios lógicos “y” u “o” para las palabras
-clave (OK) d) unir los resultados en un solo conjunto de datos (tibble)
-de acuerdo a los criterios lógicos definidos</p>
+<div id="planteo-general-de-la-metodología." class="section level1" number="2">
+<h1><span class="header-section-number">2</span> Planteo general de la
+metodología.</h1>
+<div id="paso-1.-diseño-del-estudio" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Paso 1. Diseño del
+estudio</h2>
+<div id="descripción" class="section level3" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Descripción</h3>
+<p>En esta etapa, los académicos definen las preguntas de investigación
+y seleccionan los métodos bibliométricos apropiados que pueden responder
+a esas preguntas. Se mencionan tres tipos generales de preguntas de
+investigación que se pueden abordar mediante la bibliometría: ### *
+identificar la base de conocimientos de un tema o campo de investigación
+y su estructura intelectual, ### * examinar el frente de investigación o
+estructura conceptual de un tema o campo de investigación, y ### *
+producir una estructura de red social de una comunidad científica
+específica.</p>
+<p>También se menciona la importancia de decidir el marco de tiempo del
+estudio, ya sea como un momento específico o dividido en períodos de
+tiempo, para capturar el desarrollo del campo a lo largo del tiempo.</p>
 </div>
-<div id="en-proceso-2-incorporar-trabajos-aplicando-la-técnica-de-snowballing" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> (En proceso) (2)
-Incorporar trabajos aplicando la técnica de Snowballing</h2>
-<p>(OK) a) aplicar la técnica de Snowballing al conjunto de trabajos
-inicial (OK) b) aplicar los criterios de inclusión y exclusión a los
-documentos recuperados</p>
+<div id="actividades" class="section level3" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Actividades</h3>
 </div>
-<div id="no-iniciado-discusión-es-pertinente-incorporar-trabajos-de-bases-de-datos-sin-suscripción" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> (No iniciado)
-Discusión: ¿Es pertinente incorporar trabajos de bases de datos sin
-suscripción?</h2>
-<p>La pertinencia se considera de acuerdo a la necesidad de validar el
-uso de la base de datos OpenAlex contrastando los artículos recuperados
-en OpenAlex versus los artículos recuperados en las otras base de datos
-utilizando los mismos criterios de búsqueda. La expectativa es que
-OpenAlex cubra o supere la totalidad de trabajos recuperados. En
-principio se analizan las facilidades brindadas en las versiones sin
-suscripción para las bases de datos Scopus, Dimensions y IEEE
-Explore:</p>
-<div id="scopus" class="section level3" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Scopus</h3>
-<p>author search open access orcid</p>
-<p>Nota: la facilidad de recuperar trabajos aplicando filtros de
-búsqueda solamente está disponible en la versión con suscripcin, lo cual
-impone una restricción bloqueante.</p>
-</div>
-<div id="ieee-explore" class="section level3" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> IEEE Explore</h3>
-<p>Campo de búsqueda (en Full data, Title and abstract or DOI,
-incorporando criterios AND y OR) La exportación se limita a 2000
-registros en la versión gratuita, pero en la página aparecen hasta 100.
-Contiene titulo y abstract.</p>
-<p>Filtros disponibles:</p>
-<ul>
-<li>publication year</li>
-<li>researcher (author)</li>
-<li>research categories (fields fo research o sustainable development
-goal)</li>
-<li>publication type</li>
-<li>souce title</li>
-<li>journal list</li>
-<li>open access</li>
-</ul>
-<p>A continuación presentamos la información recuperada para un artículo
-modelo:</p>
-<p>Scientometric Analysis of Artificial Intelligence (AI) for Geohazard
-Research Sheng Jiang, Junwei Ma, Zhiyang Liu, Haixiang Guo 2022, Sensors
-- Article Geohazard prevention and mitigation are highly complex and
-remain challenges for researchers and practitioners. Artificial
-intelligence…more Citations 7 Altmetric 1 View PDF</p>
-<p>Conclusión: la base de datos aparece como un candidato para analizar
-con scrapping</p>
-</div>
-<div id="dimensions" class="section level3" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> Dimensions</h3>
-<p>Campo de búsqueda (en Full data, Title and abstract or DOI,
-incorporando criterios AND y OR) La exportación se limita a 500
-registros en la versión gratuita. Contiene titulo y abstract.</p>
-<p>Filtros disponibles: * advanced search: permite agregar palabras
-clave en la forma de AND y OR</p>
-<p>Otros filtros disponibles: * publication year * researcher (author) *
-affiliation * Publitacion title (journal) * Publisher (organization) *
-Publication topics (presentes en los artículo, por ejemplo: learning
-(artificial intelligence, feature extraction, neural nets, deep learning
-(artificial intelligence), image classification. * publication type (por
-ejemplo Journals, no se observa la categoría artículos) * open access or
-all results</p>
-<p>A continuación presentamos la información recuperada para un artículo
-modelo:</p>
-<p>Dual Water Choices: The Assessment of the Influential Factors on
-Water Sources Choices Using Unsupervised Machine Learning Market Basket
-Analysis Tiyasha Tiyasha; Suraj Kumar Bhagat; Firaol Fituma; Tran Minh
-Tung; Shamsuddin Shahid; Zaher Mundher Yaseen IEEE Access Year: 2021 |
-Volume: 9 | Journal Article | Publisher: IEEE Cited by: Papers (5)</p>
-<p>Abstract, HTML</p>
-<p>Conclusión: la base de datos aparece como un candidato para analizar
-con scrapping</p>
-<p>…</p>
+<div id="formulación-de-preguntas-de-investigación" class="section level3" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> 1.1. Formulación de
+preguntas de investigación</h3>
+<p>: Identificación y definición de las preguntas específicas que se
+abordarán en el estudio bibliométrico. ### 1.2. Selección de métodos :
+Elección de los métodos apropiados para responder a las preguntas de
+investigación planteadas. ### 1.3. Determinación del marco de tiempo :
+Decisión de utilizar un momento específico o dividir el período de
+estudio en intervalos de tiempo.</p>
 </div>
 </div>
-<div id="no-iniciado-analizar-el-uso-del-scrapping-para-recuperar-datos-de-base-de-datos-indexadas-con-suscripción" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> (No iniciado)
-Analizar el uso del Scrapping para recuperar datos de base de datos
-indexadas con suscripción</h2>
-<p>Se presenta como primer alternativa el uso de Scrapping para extraer
-los datos obtenidos de una búsqueda sin suscripción, la cual
-generalmente ofrece el autor y título de los trabajos que cumplen con el
-criterio. En este punto es importante destacar las facilidades de
-búsqueda ofrecidas por la versión libre de las base de datos con
-suscripción.</p>
-<p>Fuente de información: <a href="https://www.cienciadedatos.net/documentos/38_text_minig_con_r_ejemplo_practico_twitter" class="uri">https://www.cienciadedatos.net/documentos/38_text_minig_con_r_ejemplo_practico_twitter</a>
-Clave de búsqueda: paquete Rselenium Descripción: Por suerte existe el
-paquete Rselenium que permite, entre otras muchas cosas, avanzar en la
-barra de navegación de una web de forma automática.</p>
+<div id="paso-2.-recopilación-de-datos" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Paso 2. Recopilación
+de datos</h2>
+<div id="descripción-1" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Descripción</h3>
+<p>En esta etapa, los académicos seleccionan la base de datos que
+contiene los datos bibliométricos, filtran el conjunto de documentos
+principales y exportan los datos de la base de datos seleccionada. Se
+menciona que esta etapa puede implicar la construcción de una base de
+datos propia.</p>
 </div>
-<div id="en-proceso-3-definir-los-criterios-de-importancia-o-interés-de-los-trabajos-recuperados" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> (En Proceso) (3)
-Definir los criterios de importancia (o interés) de los trabajos
-recuperados</h2>
-<p>Nota: buscar en el curso “diseccionando papers” los criterios de
-calidad de un paper y ademas, buscar en recomendaciones para revisión
-bibliográfica, cuales son los criterios para identificar trabajos. En
-una exploración temprana se evualarán los siguientes: a) cantidad de
-citas b) indice del autor (indice H) c) indice de la revista (CiteScore,
-¿indice H?) d) indice de la institución e) presencia de claves de
-búsqueda en el trabajo (título, abstract, fulltext). Se puede abordar a
-través de la técnica “Content analysis”, presentando la frecuencia de
-las palabras clave en el trabajo. Content Analysis: Is a research
-technique for making inferences by systematically and objectively
-identifying specified characteristics within texts. Link al ar´ticulo
-donde se encuentra la definición del content analysis: P. J. Stone,et
-al. The General Inquirer: A Computer Approach to Content Analysis.
-Cambridge, Mass: M.I.T, 1966, pp.5. Link al artículo donde se aborda el
-tema: <a href="https://sci-hub.ru/10.1109/ETTLIS.2018.8485186" class="uri">https://sci-hub.ru/10.1109/ETTLIS.2018.8485186</a> f) índice
-de co-cita (criterio bibliométrico, se puede obtener utilizando el
-paquete R bibliometrix) g) trabajos relacionados (criterios propio de
-OpenAlex, basado en el atributo related-works),</p>
-<div id="no-iniciado-discusión-el-conjunto-de-datos-obtenidos-con-el-paquete-openalexr-requiere-un-ajuste-en-el-atributo-keywords-para-utilizar-la-capacidad-de-análisis-y-visualización-de-bibliometrix." class="section level3" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> (No iniciado)
-Discusión: El conjunto de datos obtenidos con el paquete OpenAlexR
-requiere un ajuste en el atributo “keywords” para utilizar la capacidad
-de análisis y visualización de bibliometrix.</h3>
-<p>Se detectaron diferencias al utilizar bibliometrix con el conjunto de
-datos proveniente de OpenAlex en relación a los resultados si se utiliza
-un paquete de datos utilizado en Scopus o WoS, u otra como Dimensions.
-Se debería ajustar la pabras clave del autor viene vacías debido a que
-la base de datos OpenAlex no lo considera, por lo cual se propone copiar
-el atributo “concepts” en el campo “keywords” y analizar el
-resultado.</p>
-<p>Luego de probar el análisis de los datos obtenidos de OpenAlex,
-transformados con la función “oa2bibliometrix(query)” no ofrecían los
-resultados esperados (por ejemplo, varios campos parecían no tener datos
-o estar corridas las columnas.</p>
-<p>Se propone hacer la prueba de exportar el resultado de una consulta
-realizada con openalexR y levantarla con biblioshiny (en el trabajo <a href="https://arxiv.org/ftp/arxiv/papers/2205/2205.13471.pdf" class="uri">https://arxiv.org/ftp/arxiv/papers/2205/2205.13471.pdf</a>,
-parece que también descargan el resultado de la búsqueda y luego lo
-analizan)</p>
+<div id="actividades-1" class="section level3" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Actividades</h3>
+</div>
+<div id="selección-de-fuentes-de-datos" class="section level3" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> 2.1. Selección de
+fuentes de datos</h3>
+<p>: Identificación y elección de las bases de datos bibliográficas o
+repositorios pertinentes para extraer la información necesaria. ### 2.2.
+Definición de criterios de búsqueda : Establecimiento de los criterios
+que se utilizarán para realizar búsquedas y recopilar los datos
+bibliométricos. ### 2.3. Extracción de datos : Recopilación y extracción
+de los datos bibliográficos relevantes según los criterios de búsqueda
+establecidos.</p>
 </div>
 </div>
-<div id="no-iniciado-4-aplicar-los-criterios-de-importancia-al-conjunto-de-trabajos-recuperados" class="section level2" number="2.6">
-<h2><span class="header-section-number">2.6</span> (No iniciado) (4)
-Aplicar los criterios de importancia al conjunto de trabajos
-recuperados</h2>
-<p>El objetivo de la etapa es ordenar el cuerpo de trabajos de acuerdo a
-la importancia. Hallazgos: Se avanzó analizando los aportes del paquete
-bibliometrix, cuyas facilidades permiten resolver gran parte de los
-objetivos. Se debe continuar en la linea 188 del documento
-“functions.R”</p>
+<div id="paso-3.-análisis-de-datos" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Paso 3. Análisis de
+datos</h2>
+<div id="descripción-2" class="section level3" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> Descripción</h3>
+<p>En esta etapa, se utilizan una o más herramientas de software
+bibliométrico o estadístico para analizar los datos recopilados. También
+se menciona que los académicos pueden escribir su propio código
+informático para satisfacer sus requisitos de análisis.</p>
 </div>
-<div id="no-iniciado-5-evaluación-de-los-resultados" class="section level2" number="2.7">
-<h2><span class="header-section-number">2.7</span> (No iniciado) (5)
-Evaluación de los resultados</h2>
-<p>Evaluar los resultados y proponer medidas correctivas sobre las
-desviaciones.</p>
+<div id="actividades-2" class="section level3" number="2.3.2">
+<h3><span class="header-section-number">2.3.2</span> Actividades</h3>
 </div>
-<div id="no-iniciado-6-aplicar-medidas-correctivas" class="section level2" number="2.8">
-<h2><span class="header-section-number">2.8</span> (No iniciado) (6)
-Aplicar medidas correctivas</h2>
-<p>Realizar los ajustes necesarios sobre la metodología considerando los
-hallazgos de la evaluación de resultados.</p>
-</div>
-<div id="no-iniciado-7-iniciar-una-nueva-iteración" class="section level2" number="2.9">
-<h2><span class="header-section-number">2.9</span> (No iniciado) (7)
-Iniciar una nueva iteración</h2>
-<p>Realizar los ajustes necesarios sobre la metodología considerando los
-resultados obtenidos.</p>
-</div>
-</div>
-<div id="objetivo-discusiones-que-aportan-a-la-estructura-del-trabajo" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Objetivo: Discusiones
-que aportan a la estructura del trabajo</h1>
-<div id="cómo-plantear-la-pregunta-disparadora" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> ¿Cómo plantear la
-pregunta disparadora?</h2>
-<p>A continuación proponemos el siguiente artículo apra ayudar en la
-discusión: <a href="https://eprints.whiterose.ac.uk/152016/8/WRRO%20Pournader%20et%20al%202019.pdf" class="uri">https://eprints.whiterose.ac.uk/152016/8/WRRO%20Pournader%20et%20al%202019.pdf</a></p>
-<p>Blockchains and other advanced technologies such as the Internet of
-Things (IoT) and artificial intelligence are predicted to rapidly
-transform supply chains, transport and logistics by 2023 (Maguire et
-al. 2018; Xu, Xu, and Li 2018; Gunasekaran et al. 2018). While there are
-a number of use cases already existing in the industry that reveal the
-hidden transformative powers of blockchain technology such as increased
-supply chain transparency, freight tracking, carrier onboarding and
-Mobility as a Service (Carter and Koh 2018; Babich and Hilary 2018;
-Casey and Wong 2017), this paper aims to contribute to these attempts by
-reviewing the latest academic debates, industry use cases and possible
-future trends that might emerge in this domain. <a href="http://mc.manuscriptcentral.com/tprs" class="uri">http://mc.manuscriptcentral.com/tprs</a> Email: <a href="mailto:TPRS-peerreview@journals.tandf.co.uk" class="email">TPRS-peerreview@journals.tandf.co.uk</a></p>
-<p>To achieve this objective, we have made an attempt to answer the
-following research questions:</p>
-<ul>
-<li><ol style="list-style-type: lower-roman">
-<li>What is the latest progress made by the scientific literature to
-examine the adoption and implementation of blockchain technology in
-supply chains, logistics and transport operations?</li>
-</ol></li>
-<li><ol start="2" style="list-style-type: lower-roman">
-<li>What are some of the key knowledge areas in supply chain, logistics
-and transport studies that blockchains can contribute to?</li>
-</ol></li>
-<li><ol start="3" style="list-style-type: lower-roman">
-<li>What are some of the key research questions to be addressed in each
-knowledge area?</li>
-</ol></li>
-<li><ol start="4" style="list-style-type: lower-roman">
-<li>Which future applications and research streams can be envisaged for
-blockchains in supply chains and logistics aside from the current use
-cases?</li>
-</ol></li>
-</ul>
-</div>
-<div id="cómo-plantear-el-hilo-conductor-del-trabajo" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> ¿Cómo plantear el
-hilo conductor del trabajo?</h2>
-<p>Artículo de referencia para ayudar a organizar el trabajo: <a href="https://eprints.whiterose.ac.uk/152016/8/WRRO%20Pournader%20et%20al%202019.pdf" class="uri">https://eprints.whiterose.ac.uk/152016/8/WRRO%20Pournader%20et%20al%202019.pdf</a></p>
-<p>The present paper is organised as follows: + First, we provide an
-overview of blockchain technology and its main features. + Next, we
-discuss the method we used to identify relevant academic publications
-that discuss the application of blockchains in supply chains, transport
-or logistics. We use ++ an inductive approach to reveal the main
-research streams (Tranfield, Denyer, and Smart 2003; Seuring and Gold
-2012; Webster and Watson 2002), take ++ an iterative approach to
-categorise the main research clusters arising from our analyses, and
-elaborate on them by accessing additional relevant resources and use
-cases. +++ To identify the main clusters in our identified pool of
-articles, we conduct co-citation network analysis and, using the
-clusters of articles appearing from the co-citation analysis, +++ we
-discuss the main themes in each cluster and their relevance to the
-literature and future research in this domain. + We conclude by
-providing implications for future research and applications of
-blockchains in supply chains, logistics and transport.</p>
-</div>
-<div id="cómo-validar-el-uso-de-openalex" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> ¿Cómo validar el uso
-de OpenAlex?</h2>
-<div id="alternativa-1-obtener-la-cantidad-de-trabajos-indexados-en-las-distinas-bases-de-datos-y-exponerlas" class="section level3" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> Alternativa 1:
-Obtener la cantidad de trabajos indexados en las distinas bases de datos
-y exponerlas</h3>
-<div id="openalex" class="section level4" number="3.3.1.1">
-<h4><span class="header-section-number">3.3.1.1</span> OpenAlex</h4>
-<p>Get all of the works in OpenAlex: <a href="https://api.openalex.org/works" class="uri">https://api.openalex.org/works</a></p>
-<p>Which returns a response like this:</p>
-<p>{ “meta”: { “count”: 245684392, “db_response_time_ms”: 929, “page”:
-1, “per_page”: 25 },</p>
-</div>
-<div id="scopus-dimensions" class="section level4" number="3.3.1.2">
-<h4><span class="header-section-number">3.3.1.2</span> Scopus,
-Dimensions</h4>
-<p>…</p>
+<div id="preparación-y-limpieza-de-datos" class="section level3" number="2.3.3">
+<h3><span class="header-section-number">2.3.3</span> 3.1. Preparación y
+limpieza de datos</h3>
+<p>: Procesamiento de los datos recopilados, eliminando cualquier
+información no relevante o duplicada, y preparándolos para su análisis.
+### 3.2. Cálculo de métricas bibliométricas : Aplicación de fórmulas y
+métodos para calcular métricas bibliométricas como citas, índices de
+impacto, cocitaciones, entre otros. ### 3.3. Análisis de redes :
+Utilización de técnicas de análisis de redes para identificar y
+visualizar las relaciones entre los documentos, autores o instituciones.
+### 3.4. Análisis de coocurrencia de términos : Identificación de la
+frecuencia y patrones de coocurrencia de términos clave en los
+documentos analizados.</p>
 </div>
 </div>
-<div id="alternativa-2-incorporar-referencias-a-openalex" class="section level3" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Alternativa 2:
-Incorporar referencias a OpenAlex</h3>
-<p>Revista Nature: NEWS, 24 January 2022, Massive open index of
-scholarly papers launches. OpenAlex catalogues hundreds of millions of
-scientific documents and charts connections between them. doi: <a href="https://doi.org/10.1038/d41586-022-00138-y" class="uri">https://doi.org/10.1038/d41586-022-00138-y</a></p>
+<div id="paso-4.-visualización-de-datos" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Paso 4. Visualización
+de datos</h2>
+<div id="descripción-3" class="section level3" number="2.4.1">
+<h3><span class="header-section-number">2.4.1</span> Descripción</h3>
+<p>En esta etapa, los académicos deben decidir qué método de
+visualización se utilizará para presentar los resultados del análisis de
+datos. También se menciona la necesidad de utilizar el software de mapeo
+adecuado para la visualización.</p>
 </div>
-<div id="alternativa-3-donde-buscar-si-hay-un-trabajo-donde-se-plantee-la-comparación-entre-openalex-y-las-otras" class="section level3" number="3.3.3">
-<h3><span class="header-section-number">3.3.3</span> Alternativa 3:
-¿Donde buscar si hay un trabajo donde se plantee la comparación entre
-OpenAlex y las otras?</h3>
-<p>En el siguiente trabajo se plantea la comparativa con otras bases de
-datos bibliográficas: Source: Visser, M., van Eck, N. J., &amp; Waltman,
-L. (2021). Large-scale comparison of bibliographic data sources: Scopus,
-Web of Science, Dimensions, Crossref, and Microsoft Academic.
-Quantitative Science Studies,2(1), 20-41.</p>
+<div id="actividades-3" class="section level3" number="2.4.2">
+<h3><span class="header-section-number">2.4.2</span> Actividades</h3>
+</div>
+<div id="selección-de-métodos-de-visualización" class="section level3" number="2.4.3">
+<h3><span class="header-section-number">2.4.3</span> 4.1. Selección de
+métodos de visualización</h3>
+<p>: Elección de las técnicas y herramientas de visualización adecuadas
+para representar los resultados del análisis bibliométrico. ### 4.2.
+Creación de gráficos y mapas : Generación de gráficos, mapas y otros
+elementos visuales para mostrar patrones, tendencias y relaciones
+identificadas en los datos bibliométricos.</p>
+</div>
+</div>
+<div id="paso-5.-interpretación-y-presentación-de-resultados" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Paso 5.
+Interpretación y presentación de resultados</h2>
+<div id="descripción-4" class="section level3" number="2.5.1">
+<h3><span class="header-section-number">2.5.1</span> Descripción</h3>
+<p>En esta última etapa, se interpreta y describen los hallazgos. Se
+destaca que, aunque los métodos bibliométricos pueden revelar la
+estructura de un campo de manera diferente a las revisiones
+tradicionales de literatura, no reemplazan la lectura exhaustiva en el
+campo. Se reconoce que los académicos con un conocimiento profundo del
+campo tienen una ventaja distintiva en esta etapa.</p>
+</div>
+<div id="actividades-4" class="section level3" number="2.5.2">
+<h3><span class="header-section-number">2.5.2</span> Actividades</h3>
+</div>
+<div id="interpretación-de-los-hallazgos" class="section level3" number="2.5.3">
+<h3><span class="header-section-number">2.5.3</span> 5.1. Interpretación
+de los hallazgos</h3>
+<p>: Análisis y comprensión de los resultados obtenidos a través de los
+métodos bibliométricos utilizados. ### 5.2. Descripción de resultados :
+Documentación y presentación de los resultados y conclusiones del
+estudio bibliométrico, resaltando los aspectos más relevantes.</p>
+<p>A continuación se presentan los dos niveles de estudio, a través de
+los cuales se analizará el estudio del tema de interés, abordado de lo
+general a lo particular.</p>
 </div>
 </div>
 </div>
-<div id="objetivo-definir-la-metodología-para-construir-el-corpus" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Objetivo: Definir la
-metodología para construir el corpus</h1>
-<p>Con el objetivo de definir los pasos metodológicos a ejecutar para
-recuperar los trabajos de interés de la/las bases de datos se
-considerarán las metodologías más relevantes.</p>
-<div id="análisis-bibliométrico" class="section level3" number="4.0.1">
-<h3><span class="header-section-number">4.0.1</span> “Análisis
-Bibliométrico”</h3>
-<ol style="list-style-type: lower-alpha">
-<li>A bibliometric analysis of bitcoin scientific production. Ignasi
-Merediz-Solà, Aurelio F. Bariviera. Link en IDEAS: <a href="https://ideas.info.unlp.edu.ar/aplicaciones-de-inteligencia-de-datos/Contents/Material/View/Access/adbdd6e7-dd8d-11ea-899b-b26a7e7cf880" class="uri">https://ideas.info.unlp.edu.ar/aplicaciones-de-inteligencia-de-datos/Contents/Material/View/Access/adbdd6e7-dd8d-11ea-899b-b26a7e7cf880</a></li>
-<li>Bibliometrix: An R-tool for comprehensive science mapping analysis,
-Massimo Aria, Corrado Cuccurullo, <a href="https://doi.org/10.1016/j.joi.2017.08.007" class="uri">https://doi.org/10.1016/j.joi.2017.08.007</a>. (<a href="https://www.sciencedirect.com/science/article/pii/S1751157717300500" class="uri">https://www.sciencedirect.com/science/article/pii/S1751157717300500</a>)</li>
-</ol>
+<div id="nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico" class="section level1" number="3">
+<h1><span class="header-section-number">3</span> Nivel 1: Estudio
+general mediante técnicas de análisis bibliométrico</h1>
+<div id="descripción-5" class="section level3" number="3.0.1">
+<h3><span class="header-section-number">3.0.1</span> Descripción</h3>
+<p>Realizar un estudio general del estado del arte del tema de
+investigación mediante el análisis bibliométrico de un corpus
+bibliográfico relevante y priorizado. ### Entrada: Bases de datos
+académicas relevantes y criterios de búsqueda (palabras clave, rango de
+fechas, filtros de búsqueda). ### Salida: Corpus bibliográfico relevante
+según los criterios establecidos.</p>
 </div>
-<div id="revisión-sistemática" class="section level3" number="4.0.2">
-<h3><span class="header-section-number">4.0.2</span> “Revisión
-sistemática”</h3>
-<ol style="list-style-type: lower-alpha">
-<li>PRISMA: <a href="https://prisma-statement.org/" class="uri">https://prisma-statement.org/</a></li>
-</ol>
+<div id="etapa-1-selección-y-preparación-del-corpus" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> Etapa 1: Selección y
+preparación del corpus</h2>
+<div id="descripción-6" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> Descripción</h3>
+<p>Identificar las bases de datos académicas relevantes y definir los
+criterios de búsqueda para la construcción del corpus. ### Herramientas
+recomendadas Por ejemplo, Web of Science, Scopus, PubMed. ### Referencia
+Van Eck, N. J., &amp; Waltman, L. (2011). Text mining and visualization
+using VOSviewer. Scientometrics, 87(3), 467-476.</p>
 </div>
-<div id="análisis-híbrido-análisis-bibliométrico-plus-revisión-sistemática" class="section level3" number="4.0.3">
-<h3><span class="header-section-number">4.0.3</span> “Análisis Híbrido”:
-Análisis Bibliométrico plus Revisión Sistemática</h3>
-<ol style="list-style-type: lower-alpha">
-<li>WHERE DO WE STAND IN CRYPTOCURRENCIES ECONOMIC RESEARCH? A SURVEY
-BASED ON HYBRID ANALYSIS. Aurelio F. Bariviera and Ignasi Merediz-Solà.
-Link en IDEAS: <a href="https://ideas.info.unlp.edu.ar/aplicaciones-de-inteligencia-de-datos/Contents/Material/View/Access/cd8e67b9-f601-11eb-b3a7-b26a7e7cf880" class="uri">https://ideas.info.unlp.edu.ar/aplicaciones-de-inteligencia-de-datos/Contents/Material/View/Access/cd8e67b9-f601-11eb-b3a7-b26a7e7cf880</a></li>
-</ol>
+<div id="actividades-5" class="section level3" number="3.1.2">
+<h3><span class="header-section-number">3.1.2</span> Actividades</h3>
 </div>
-</div>
-<div id="objetivo-definir-los-criterios-para-extraer-los-trabajos-de-interes-de-lalas-base-de-datos-indexadas" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Objetivo: Definir los
-criterios para extraer los trabajos de interes de la/las base de datos
-indexadas</h1>
-<p>A continuación se presentan las propuestas para lograr el corpus</p>
-<ul>
-<li><ol style="list-style-type: decimal">
-<li>Aplicar criterios de inclusión de la/las bd definidas (tipo de
-trabajo, palabras clave, cantidad de citas, fechas de publicación, entre
-otros)</li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li>Ampliar el corpus con técnicas complementarias:</li>
-</ol></li>
-</ul>
-<p>++ 2.1) “Snowballing” a) Jalali, S. and Wohlin, C. 2012. Systematic
-literature studies: Database searches vs. backward snowballing. In
-Proceedings 6th International Symposium on Empirical Software
-Engineering and Measurement, 29-38. b) Guidelines for Snowballing in
-Systematic Literature Studies and a Replication in Software Engineering
-(<a href="https://sci-hub.se/10.1145/2601248.2601268" class="uri">https://sci-hub.se/10.1145/2601248.2601268</a>)</p>
-<p>++ 2.2) Trabajos “relacionados” Tomando la definición de OpenAlex,
-“Related works” are computed algorithmically; the algorithm finds recent
-papers with the most concepts in common with the current paper. Revisar
-el atributo “related_works”, incorporar estos trabajos al listado y
-unirlos a la lista de trabajos recuperados. related_woks (list):
-OpenAlex IDs for works related to this work. Related works are computed
-algorithmically; the algorithm finds recent papers with the most
-concepts in common with the current paper.</p>
-</div>
-<div id="objetivo-definir-la-estructura-del-artículo" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> Objetivo: Definir la
-estructura del artículo</h1>
-<p>Al momento de definir la estructura del artículo se considerarán las
-buenas prácticas tomadas de las principales metodologías.</p>
-<div id="estructura-sugerida-por-preferred-reporting-items-for-systematic-reviews-and-meta-analyses-prisma" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Estructura sugerida
-por Preferred Reporting Items for Systematic Reviews and Meta-Analyses
-(PRISMA)</h2>
-<p>“PRISMA is an evidence-based minimum set of items for reporting in
-systematic reviews and meta-analyses. PRISMA primarily focuses on the
-reporting of reviews evaluating the effects of interventions, but can
-also be used as a basis for reporting systematic reviews with objectives
-other than evaluating interventions (e.g. evaluating aetiology,
-prevalence, diagnosis or prognosis).” Link a la página: <a href="http://prisma-statement.org/" class="uri">http://prisma-statement.org/</a></p>
-<p>Recurso en línea para validar la adopción de las buenas prácticas
-sugeridas por la metodología PRISMA: <a href="http://prisma-statement.org/documents/PRISMA_2020_checklist.pdf" class="uri">http://prisma-statement.org/documents/PRISMA_2020_checklist.pdf</a>
-Recurso en línea: <a href="https://prisma.shinyapps.io/checklist/" class="uri">https://prisma.shinyapps.io/checklist/</a></p>
-<p>De la revisión del checklist propuesto por PRISMA se extrajeron las
-siguientes secciones:</p>
-<div id="title" class="section level3" number="6.1.1">
-<h3><span class="header-section-number">6.1.1</span> 1. Title</h3>
-<ul>
-<li>Title: Identify the report as a systematic review.</li>
-</ul>
-</div>
-<div id="abstract" class="section level3" number="6.1.2">
-<h3><span class="header-section-number">6.1.2</span> 2. Abstract</h3>
-<ul>
-<li>Abstract: See the PRISMA 2020 for Abstracts checklist</li>
-</ul>
-</div>
-<div id="introduction" class="section level3" number="6.1.3">
-<h3><span class="header-section-number">6.1.3</span> 3.
-Introduction</h3>
-<ul>
-<li>Rationale: Describe the rationale for the review in the context of
-existing knowledge.</li>
-<li>Objectives: Provide an explicit statement of the objective(s) or
-question(s) the review addresses.</li>
-</ul>
-</div>
-<div id="methods" class="section level3" number="6.1.4">
-<h3><span class="header-section-number">6.1.4</span> 4. Methods</h3>
-<ul>
-<li>Eligibility criteria: Specify the inclusion and exclusion criteria
-for the review and how studies were grouped for the syntheses.</li>
-<li>Information sources: Specify all databases, registers, websites,
-organisations, reference lists and other sources searched or consulted
-to identify studies. Specify the date when each source was last searched
-or consulted.</li>
-<li>Search strategy: Present the full search strategies for all
-databases, registers and websites, including any filters and limits
-used.</li>
-<li>Selection process: Specify the methods used to decide whether a
-study met the inclusion criteria of the review, including how many
-reviewers screened each record and each report retrieved, whether they
-worked independently, and if applicable, details of automation tools
-used in the process.</li>
-<li>Data collection process: Specify the methods used to collect data
-from reports, including how many reviewers collected data from each
-report, whether they worked independently, any processes for obtaining
-or confirming data from study investigators, and if applicable, details
-of automation tools used in the process.</li>
-<li>Data items: ++ List and define all outcomes for which data were
-sought. Specify whether all results that were compatible with each
-outcome domain in each study were sought (e.g. for all measures, time
-points, analyses), and if not, the methods used to decide which results
-to collect. ++ List and define all other variables for which data were
-sought (e.g. participant and intervention characteristics, funding
-sources). Describe any assumptions made about any missing or unclear
-information.</li>
-<li>Study risk of bias assessment: Specify the methods used to assess
-risk of bias in the included studies, including details of the tool(s)
-used, how many reviewers assessed each study and whether they worked
-independently, and if applicable, details of automation tools used in
-the process.</li>
-<li>Effect measures: Specify for each outcome the effect measure(s)
-(e.g. risk ratio, mean difference) used in the synthesis or presentation
-of results.</li>
-<li>Synthesis methods: ++ Describe the processes used to decide which
-studies were eligible for each synthesis (e.g. tabulating the study
-intervention characteristics and comparing against the planned groups
-for each synthesis (item METHODS. Eligibility criteria)). ++ Describe
-any methods required to prepare the data for presentation or synthesis,
-such as handling of missing summary statistics, or data conversions. ++
-Describe any methods used to tabulate or visually display results of
-individual studies and syntheses. ++ Describe any methods used to
-synthesize results and provide a rationale for the choice(s). If
-meta-analysis was performed, describe the model(s), method(s) to
-identify the presence and extent of statistical heterogeneity, and
-software package(s) used. ++ Describe any methods used to explore
-possible causes of heterogeneity among study results (e.g. subgroup
-analysis, meta-regression). ++ Describe any sensitivity analyses
-conducted to assess robustness of the synthesized results.</li>
-<li>Reporting bias assessment: Describe any methods used to assess risk
-of bias due to missing results in a synthesis (arising from reporting
-biases).</li>
-<li>Certainty assessment: Describe any methods used to assess certainty
-(or confidence) in the body of evidence for an outcome.</li>
-</ul>
-</div>
-<div id="results" class="section level3" number="6.1.5">
-<h3><span class="header-section-number">6.1.5</span> 5. Results</h3>
-<ul>
-<li>Study selection: ++ Describe the results of the search and selection
-process, from the number of records identified in the search to the
-number of studies included in the review, ideally using a flow diagram.
-++ Cite studies that might appear to meet the inclusion criteria, but
-which were excluded, and explain why they were excluded.</li>
-<li>Study characteristics: Cite each included study and present its
-characteristics.</li>
-<li>Risk of bias in studies: Present assessments of risk of bias for
-each included study.</li>
-<li>Results of individual studies: For all outcomes, present, for each
-study: ++ (a) summary statistics for each group (where appropriate) and
-++ (b) an effect estimate and its precision (e.g. confidence/credible
-interval), ideally using structured tables or plots.</li>
-<li>Results of syntheses: ++ For each synthesis, briefly summarise the
-characteristics and risk of bias among contributing studies. ++ Present
-results of all statistical syntheses conducted. If meta-analysis was
-done, present for each the summary estimate and its precision
-(e.g. confidence/credible interval) and measures of statistical
-heterogeneity. If comparing groups, describe the direction of the
-effect. ++ Present results of all investigations of possible causes of
-heterogeneity among study results. ++ Present results of all sensitivity
-analyses conducted to assess the robustness of the synthesized
-results.</li>
-<li>Reporting biases: Present assessments of risk of bias due to missing
-results (arising from reporting biases) for each synthesis
-assessed.</li>
-<li>Certainty of evidence: Present assessments of certainty (or
-confidence) in the body of evidence for each outcome assessed.</li>
-</ul>
-</div>
-<div id="discussion" class="section level3" number="6.1.6">
-<h3><span class="header-section-number">6.1.6</span> 6. Discussion</h3>
-<ul>
-<li>Discussion: ++ Provide a general interpretation of the results in
-the context of other evidence. ++ Discuss any limitations of the
-evidence included in the review. ++ Discuss any limitations of the
-review processes used. ++ Discuss implications of the results for
-practice, policy, and future research.</li>
-</ul>
-</div>
-<div id="other-information" class="section level3" number="6.1.7">
-<h3><span class="header-section-number">6.1.7</span> 7. Other
-information</h3>
-<ul>
-<li>Registration and protocol: ++ Provide registration information for
-the review, including register name and registration number, or state
-that the review was not registered. ++ Indicate where the review
-protocol can be accessed, or state that a protocol was not prepared. ++
-Describe and explain any amendments to information provided at
-registration or in the protocol.</li>
-<li>Support: Describe sources of financial or non-financial support for
-the review, and the role of the funders or sponsors in the review.</li>
-<li>Competing interests: Declare any competing interests of review
-authors.</li>
-<li>Availability of data, code and other materials: Report which of the
-following are publicly available and where they can be found: template
-data collection forms; data extracted from included studies; data used
-for all analyses; analytic code; any other materials used in the
-review.</li>
-</ul>
-<p>Link a la referencia: <a href="https://prisma.shinyapps.io/checklist/" class="uri">https://prisma.shinyapps.io/checklist/</a></p>
+<div id="identificación-de-bases-de-datos-académicas-relevantes" class="section level3" number="3.1.3">
+<h3><span class="header-section-number">3.1.3</span> 1.1. Identificación
+de bases de datos académicas relevantes</h3>
+<p>: Seleccionar las bases de datos bibliográficas que contengan
+artículos académicos relevantes para el tema de investigación. ### 1.2.
+Definición de criterios de búsqueda : Establecer los criterios de
+búsqueda, incluyendo palabras clave, rango de fechas de publicación y
+restricciones de búsqueda en el título, resumen y texto completo de los
+artículos.</p>
 </div>
 </div>
-<div id="estructura-sugerida-para-science-mapping" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Estructura sugerida
-para Science Mapping</h2>
-<p>Recommended workflow for science mapping: The general science mapping
-workflow was described by Börner, Chen, and Boyack (2003). Cobo,
-Lopez-Herrera, Herrera-Viedma, and Herrera (2011a) compared science
-mapping software tools using a similar workflow.</p>
-<p>A standard workflow consists of five stages (Zupic &amp; Čater,
-2015)</p>
-<div id="study-design." class="section level3" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> 1. Study
-design.</h3>
+<div id="etapa-2-recopilación-y-limpieza-de-datos" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Etapa 2: Recopilación
+y limpieza de datos</h2>
+<div id="descripción-7" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Descripción</h3>
+<p>Extraer los datos bibliográficos necesarios y eliminar duplicados y
+datos irrelevantes del corpus. ### Herramientas recomendadas Por
+ejemplo, Zotero, EndNote. ### Referencia Zhang, J., &amp; Li, X. (2019).
+Comparative study of reference management software: EndNote, Zotero, and
+Mendeley. Journal of Library Administration, 59(3), 319-332.</p>
 </div>
-<div id="data-collection." class="section level3" number="6.2.2">
-<h3><span class="header-section-number">6.2.2</span> 2. Data
-collection.</h3>
+<div id="actividades-6" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Actividades</h3>
 </div>
-<div id="data-analysis." class="section level3" number="6.2.3">
-<h3><span class="header-section-number">6.2.3</span> 3. Data
+<div id="extracción-de-datos-bibliográficos" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> 2.1. Extracción de
+datos bibliográficos</h3>
+<p>: Recopilar los metadatos de los artículos académicos que cumplen con
+los criterios de búsqueda. ### 2.2. Eliminación de duplicados y datos
+irrelevantes : Limpiar el corpus eliminando duplicados y aquellos
+artículos que no sean relevantes para el estudio.</p>
+</div>
+</div>
+<div id="etapa-3-análisis-de-datos-bibliométricos" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Etapa 3: Análisis de
+datos bibliométricos</h2>
+<div id="descripción-8" class="section level3" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Descripción</h3>
+<p>Realizar análisis de coautoría, colaboración y citas para obtener
+información sobre la estructura y las relaciones en el corpus. ###
+Herramientas recomendadas Por ejemplo, VOSviewer, CiteSpace. ###
+Referencia Chen, C. (2017). Science mapping: A systematic review of the
+literature. Journal of Data and Information Science, 2(2), 1-40.</p>
+</div>
+<div id="actividades-7" class="section level3" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Actividades</h3>
+</div>
+<div id="análisis-de-coautoría-y-colaboración" class="section level3" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> 3.1. Análisis de
+coautoría y colaboración</h3>
+<p>: Identificar patrones de coautoría y colaboración entre autores e
+instituciones. ### 3.2. Análisis de citas : Calcular métricas de citas
+para evaluar la influencia y relevancia de los artículos
+seleccionados.</p>
+</div>
+</div>
+<div id="etapa-4.-visualización-de-datos." class="section level2" number="3.4">
+<h2><span class="header-section-number">3.4</span> Etapa 4.
+Visualización de datos.</h2>
+<div id="descripcion" class="section level3" number="3.4.1">
+<h3><span class="header-section-number">3.4.1</span> Descripcion</h3>
+<p>En esta etapa, los académicos deben decidir qué método de
+visualización se utilizará para presentar los resultados del análisis de
+datos. También se menciona la necesidad de utilizar el software de mapeo
+adecuado para la visualización.</p>
+</div>
+<div id="actividades-8" class="section level3" number="3.4.2">
+<h3><span class="header-section-number">3.4.2</span> Actividades</h3>
+</div>
+<div id="selección-de-métodos-de-visualización-1" class="section level3" number="3.4.3">
+<h3><span class="header-section-number">3.4.3</span> 4.1. Selección de
+métodos de visualización</h3>
+<p>: Elección de las técnicas y herramientas de visualización adecuadas
+para representar los resultados del análisis bibliométrico. ### 4.2.
+Creación de gráficos y mapas : Generación de gráficos, mapas y otros
+elementos visuales para mostrar patrones, tendencias y relaciones
+identificadas en los datos bibliométricos.</p>
+</div>
+</div>
+<div id="etapa-5-interpretación-y-presentación-de-resultados." class="section level2" number="3.5">
+<h2><span class="header-section-number">3.5</span> Etapa 5:
+Interpretación y presentación de resultados.</h2>
+<div id="descripción-9" class="section level3" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Descripción</h3>
+<p>En esta etapa, se interpetan y describen los hallazgos.</p>
+</div>
+<div id="actividades-9" class="section level3" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Actividades</h3>
+</div>
+<div id="interpretación-de-los-hallazgos-1" class="section level3" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> 5.1. Interpretación
+de los hallazgos</h3>
+<p>: Análisis y comprensión de los resultados obtenidos a través de los
+métodos bibliométricos utilizados. ### 5.2. Descripción de resultados :
+Documentación y presentación de los resultados y conclusiones del
+estudio bibliométrico, resaltando los aspectos más relevantes.</p>
+</div>
+</div>
+<div id="etapa-6-priorización-del-corpus" class="section level2" number="3.6">
+<h2><span class="header-section-number">3.6</span> Etapa 6: Priorización
+del corpus</h2>
+<div id="descripción-10" class="section level3" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> Descripción</h3>
+<p>Analizar el corpus obtenido y aplicar criterios para priorizar los
+artículos más cercanos y relevantes al tema de investigación.</p>
+</div>
+<div id="actividades-10" class="section level3" number="3.6.2">
+<h3><span class="header-section-number">3.6.2</span> Actividades</h3>
+</div>
+<div id="análisis-temático-del-corpus" class="section level3" number="3.6.3">
+<h3><span class="header-section-number">3.6.3</span> 6.1. Análisis
+temático del corpus</h3>
+<p>: Identificar los artículos más relevantes y cercanos al tema de
+investigación. #### Herramientas recomendadas : Por ejemplo, Topic
+Modeling (con LDA o LSA), análisis de palabras clave y coocurrencias.
+#### Referencia : Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003).
+Latent Dirichlet allocation. Journal of Machine Learning Research,
+3(Jan), 993-1022.</p>
+</div>
+<div id="priorización-del-corpus" class="section level3" number="3.6.4">
+<h3><span class="header-section-number">3.6.4</span> 6.2. Priorización
+del corpus</h3>
+<p>: Ordenar los artículos según su relevancia y cercanía al tema de
+investigación. #### Herramientas recomendadas : Por ejemplo, algoritmos
+de clasificación o puntuación basados en criterios definidos. ####
+Referencia : Yang, Y., &amp; Pedersen, J. O. (1997). A comparative study
+on feature selection in text categorization. In ICML (Vol. 97,
+pp. 412-420).</p>
+</div>
+</div>
+</div>
+<div id="nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> Nivel 2: Estudio
+detallado mediante revisión sistemática basada en PRISMA</h1>
+<div id="descripción-11" class="section level3" number="4.0.1">
+<h3><span class="header-section-number">4.0.1</span> Descripción</h3>
+<p>Complementar los resultados de la revisión bibliométrica realizando
+una revisión detallada del corpus priorizado obtenido, dado que si bien
+los métodos bibliométricos pueden revelar la estructura de un campo de
+manera diferente a las revisiones tradicionales de literatura, no
+reemplazan el estudio en profundidad de cada elemento recuperado. ###
+Entrada: Corpus priorizado a partir de las técnicas bibliométricas. ###
+Salida: Corpus priorizado según la cercanía con el tema de interés.</p>
+</div>
+<div id="etapa-7-aplicación-de-la-metodología-de-revisión-prisma" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Etapa 7: Aplicación
+de la metodología de revisión PRISMA</h2>
+<div id="descripción-12" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Descripción</h3>
+<p>Diseñar el protocolo de revisión y aplicarlo al corpus priorizado.
+### Herramientas recomendadas Por ejemplo, Rayyan, Covidence. ###
+Referencia Moher, D., Liberati, A., Tetzlaff, J., &amp; Altman, D. G.
+(2009). Preferred reporting items for systematic reviews and
+meta-analyses: The PRISMA statement. PLoS Medicine, 6(7), e1000097.
+Comentario: Secciones:</p>
+</div>
+<div id="actividades-11" class="section level3" number="4.1.2">
+<h3><span class="header-section-number">4.1.2</span> Actividades</h3>
+</div>
+<div id="diseño-del-protocolo-de-revisión" class="section level3" number="4.1.3">
+<h3><span class="header-section-number">4.1.3</span> 7.1. Diseño del
+protocolo de revisión</h3>
+<p>: Establecer los criterios de inclusión y exclusión, así como los
+procedimientos de priorización a aplicar al corpus. ### 7.2. Búsqueda y
+priorización de artículos : Realizar una búsqueda exhaustiva en el
+corpus seleccionado según el protocolo definido.</p>
+</div>
+</div>
+</div>
+<div id="aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Aportes a la revisión
+de la metodología híbrida desde otras fuentes de datos</h1>
+<div id="posible-estructura-del-trabajo" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Posible estructura
+del trabajo</h2>
+<p>A continuación se rescatan las secciones de los artículos donde se
+abordan el análisis bibliométrico, revisión sistemática, a fin de
+comparar y definir la estructura del artículo. ### Documento:
+Lineamientos para Análisis Bibliométrico. v01 ### Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></p>
+<div id="caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production" class="section level3" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Caso 1: A
+bibliometric analysis of bitcoin scientific production</h3>
+<p>1.1. Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a>
+1.2. Comentario: 1.3. Secciones:</p>
+<p>Title Abstract Keywords 1. Introduction 2. Related literature 3. Data
+and results 3.1. Corresponding author’s geographical distribution 3.2.
+Top publication sources 3.3. Main keywords. 3.4. Highly cited papers
+3.5. Degree of concentration of selected variables 3.6. Citation,
+sources and authors graphs 4. Potential research lines 5. Conclusions
+Acknowledgments References</p>
+</div>
+<div id="caso-2-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" class="section level3" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Caso 2: WHERE DO WE
+STAND IN CRYPTOCURRENCIES ECONOMIC RESEARCH: A SURVEY BASED ON HYBRID
+ANALYSIS</h3>
+<p>2.1. Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a>
+2.2. Comentario: En la propuesta de enfoque híbrido, se aborda un primer
+filtro vía Bibliometría (lectura distante, para identificar clusters,
+determinar autores, áreas de interés), y luego se realiza una lectura
+detallada (close reading). La estragia anterior permite identificar los
+artículos de interés a analizar en detalle, para poder comentarlos. 2.3.
+Secciones:</p>
+<p>Title Abstract Keywords 1. Introduction 2. Methodological Design 2.1
+First Step: Distant Reading by Means of Bibliometric Analysis 2.2 Second
+Step: Close Reading of Cryptocurrency Literature 3. Close Reading
+Findings 3.1 Data Sources 3.2 Data Frequency 3.3 Main Research Topics
+3.3.1 Monetary Economics and Overview of Bitcoin Ecosystem 3.3.2
+Informational Efficiency 3.3.3 Price Discovery 3.3.4 Price Volatility
+3.3.5 Assets Correlation and Portfolio Optimization 3.3.6 Safe-Haven
+Characteristics 3.3.7 Bubble Formation 3.3.8 Initial Coin Offering (ICO)
+4. Literature Gaps and Open Research Paths 5. Conclusions
+Acknowledgments Data Availability Statement Notes References</p>
+</div>
+<div id="caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" class="section level3" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Caso 3: Guidelines
+for Snowballing in Systematic Literature Studies and a Replication in
+Software Engineering</h3>
+<p>3.1. Fuente: <a href="https://sci-hub.se/10.1145/2601248.2601268" class="uri">https://sci-hub.se/10.1145/2601248.2601268</a> 3.2.
+Comentario: 3.3. Secciones:</p>
+<p>Title Abstract Categories and Subject Descriptors General Terms
+Keywords 1. INTRODUCTION 2. RELATED WORK 3. SNOWBALLING PROCEDURE 3.1
+Start Set 3.2 Iterations 3.2.1 Backward Snowballing 3.2.2 Forward
+Snowballing 3.2.3 Inclusion and Exclusion Figure 1. Snowballing
+procedure 3.3 Authors 3.4 Data Extraction 4. REPLICATION 4.1
+Introduction 4.2 Start Set 4.3 Iteration 1 4.3.1 Backward Snowballing
+4.3.2 Forward Snowballing 4.3.3 Summary of Status 4.4 Iteration 2 4.4.1
+Backward Snowballing 4.4.2 Forward Snowballing 4.5 Iteration 3 4.6
+Efficiency 4.7 Authors 4.8 Citation Matrix and Timeline 4.9 Reflections
+4.9.1 Ten Lessons Learned from Snowballing 4.9.2 Validity Threats 4.10
+Comparison 5. DISCUSSION SNOWBALLING 6. SUMMARY 7. ACKNOWLEDGMENTS 8.
+REFERENCES</p>
+</div>
+</div>
+<div id="justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Justificación de base
+de datos (en nuestro caso optamos por OpenAlex)</h2>
+<div id="documento-lineamientos-para-análisis-bibliométrico.-v01" class="section level3" number="5.2.1">
+<h3><span class="header-section-number">5.2.1</span> Documento:
+Lineamientos para Análisis Bibliométrico. v01</h3>
+</div>
+<div id="link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit" class="section level3" number="5.2.2">
+<h3><span class="header-section-number">5.2.2</span> Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></h3>
+</div>
+<div id="caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews" class="section level3" number="5.2.3">
+<h3><span class="header-section-number">5.2.3</span> Caso 4: A
+Comparison of Citation Sources for Reference and Citation-Based Search
+in Systematic Literature Reviews</h3>
+<p>4.1. Fuente: <a href="https://www.diva-portal.org/smash/get/diva2:1663616/FULLTEXT01.pdf" class="uri">https://www.diva-portal.org/smash/get/diva2:1663616/FULLTEXT01.pdf</a>
+4.2. Comentario: 4.2. Secciones:</p>
+<p>Title Abstract (Context, Objective, Method, Results, Conclusion,
+Keywords) 1. Introduction 2. Related work 2.1. Search guidelines for
+systematic secondary studies 2.2. Comparison of databases for
+keyword-based search in SE (software engineering) 2.3. Studies comparing
+citation databases outside SE (software engineering) 3. Research method
+3.1. Criteria for assessing the effectiveness and usefulness 3.2.
+Overview of the relevant aspects of the case SLR 4. Results 4.1.
+Effectiveness of GS and Scopus 4.2. Usefulness of GS and Scopus 5.
+Discussion of GS in light of the related work 5.1. Lack of transparency
+in what is indexed 5.2. Quality of metadata 5.3. The quality of
+literature in GS 6. Recommendations when using snowball sampling 7.
+Validity threats 8. Conclusion Acknowledgements References</p>
+</div>
+<div id="caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels" class="section level3" number="5.2.4">
+<h3><span class="header-section-number">5.2.4</span> Caso 5: Comparative
+Analysis of the Bibliographic Data Sources Dimensions and Scopus: An
+Approach at the Country and Institutional Levels</h3>
+<p>5.1. Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a>
+5.2. Comentario: 5.3. Secciones: Title Abstract Keywords INTRODUCTION
+Objectives/Research Questions MATERIAL AND METHODS Matching (between the
+Dimensions and Scopus databases) RESULTS The Results of Matching
+DISCUSSION DATA AVAILABILITY STATEMENT AUTHOR CONTRIBUTIONS
+ACKNOWLEDGMENTS SUPPLEMENTARY MATERIAL REFERENCES Conflict of
+Interest</p>
+</div>
+</div>
+<div id="justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Justificación de uso
+de herramienta de análisis bibliométrico (en nuestro caso
+Bibliometrix)</h2>
+<div id="documento-lineamientos-para-análisis-bibliométrico.-v01-1" class="section level3" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Documento:
+Lineamientos para Análisis Bibliométrico. v01</h3>
+</div>
+<div id="link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit-1" class="section level3" number="5.3.2">
+<h3><span class="header-section-number">5.3.2</span> Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></h3>
+</div>
+<div id="caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis." class="section level3" number="5.3.3">
+<h3><span class="header-section-number">5.3.3</span> Caso 6:
+Bibliometrix : An R-tool for comprehensive science mapping
 analysis.</h3>
-</div>
-<div id="data-visualization." class="section level3" number="6.2.4">
-<h3><span class="header-section-number">6.2.4</span> 4. Data
-visualization.</h3>
-</div>
-<div id="interpretation." class="section level3" number="6.2.5">
-<h3><span class="header-section-number">6.2.5</span> 5.
-Interpretation.</h3>
-<p>Link al artículo “bibliometrix: An R-tool for comprehensive science
-mapping analysis”: <a href="https://www.sciencedirect.com/science/article/abs/pii/S1751157717300500" class="uri">https://www.sciencedirect.com/science/article/abs/pii/S1751157717300500</a></p>
-</div>
-</div>
-<div id="estructura-sugerida-para-el-análisis-de-los-datos-utilizando-la-metodología-de-análisis-bibliométrico" class="section level2" number="6.3">
-<h2><span class="header-section-number">6.3</span> Estructura sugerida
-para el análisis de los datos utilizando la metodología de Análisis
-Bibliométrico</h2>
-<p>A continuación se presentan los principales ítems extraídos de la
-sección “Datos y resultados” del articulo sobre análisis bibliometrico
-de bitcoin utilizando el paquete bibliometrix, los cuales se
-corresponden con los elementos “3. Data analysis” y “4. Data
-visualization” del flujo sugerido para realizar Science Mapping.</p>
-<p>Link a la referencia: Science Mapping Analysis with bibliometrix
-R-package: an example. Massimo Aria and Corrado Cuccurullo. March 29,
-2022. <a href="https://bibliometrix.org/documents/bibliometrix_Report.html" class="uri">https://bibliometrix.org/documents/bibliometrix_Report.html</a></p>
-<div id="áreas-de-investigación-y-palabras-clave" class="section level3" number="6.3.1">
-<h3><span class="header-section-number">6.3.1</span> 0. Áreas de
-investigación y palabras clave</h3>
-<p>Principales áreas de investigación asignadas en los trabajos en el
-ejemplo (Áreas de investigación, # Registros, % del total)</p>
-<p>Número de trabajos publicados por año, con “palabra clave” como
-tópico. Origen: Web of Science Core Collection (Año, # artículos, Ratio
-de crecimiento anual)</p>
-</div>
-<div id="distribución-geográfica-de-los-autores" class="section level3" number="6.3.2">
-<h3><span class="header-section-number">6.3.2</span> 1. Distribución
-geográfica de los autores</h3>
-<p>10 principales países con mayor cantidad de citas por autor (País,
-artículos, frecuencia, publicaciones de un sólo país, publicaciones de
-múltiples países, Ratio MCP)</p>
-<p>10 países con mayor cantidad de citas (País, Total de citas, Promedio
-de citas por artículos)</p>
-</div>
-<div id="principales-fuentes-de-publicación" class="section level3" number="6.3.3">
-<h3><span class="header-section-number">6.3.3</span> 2. Principales
-fuentes de publicación</h3>
-<p>10 principales fuentes (Fuente, # articulos, tipo)</p>
-</div>
-<div id="principales-palabras-clave" class="section level3" number="6.3.4">
-<h3><span class="header-section-number">6.3.4</span> 3. Principales
-palabras clave</h3>
-<p>Palabras clave (Palabras clave de autor, # artículos, palabras clave
-plus (ID), # articulos)</p>
-</div>
-<div id="artículos-altamente-citados" class="section level3" number="6.3.5">
-<h3><span class="header-section-number">6.3.5</span> 4. Artículos
-altamente citados</h3>
-<p>Artículos altamente citados, en orden descendente por número de
-citaciones (Autor (año), Título, Fuente, # Citas)</p>
-<p>Autores más productivos (Autores, Institución, # artículos)</p>
-</div>
-<div id="grado-de-concentración-de-las-variables-seleccionadas" class="section level3" number="6.3.6">
-<h3><span class="header-section-number">6.3.6</span> 5. Grado de
-concentración de las variables seleccionadas</h3>
-<p>Indice de concentración entrópica (H) de las variables seleccionadas
-(Variable, H)</p>
-<p>Distribución observada del número de autores que han escrito un
-número dado de articulos y valores ajustados según la de la ley de Lotka
-(# artículos, # autores, frencuencia observada, frecuencia ajustada)</p>
-</div>
-<div id="citas-origen-y-gráficos-de-autores" class="section level3" number="6.3.7">
-<h3><span class="header-section-number">6.3.7</span> 6. Citas, origen y
-gráficos de autores</h3>
-<p>Nube de palabras encontradas en títulos y resumen generados con
-VOSviewer (url al vosviewer) (Para la interpretación de las referencias
-al color en el texto, el lector se debe dirigir a la versión web del
-artículo)</p>
-<p>Nube de palabras encontradas en títulos y resumen (cuenta binaria)
-generados con VOSviewer (url al vosviewer) (Para la interpretación de
-las referencias al color en el texto, el lector se debe dirigir a la
-versión web del artículo)</p>
-<p>Nube de palabras de las revistas donde fueron publicados los
-artículos de referencia generados con VOSviewer (url al vosviewer) (Para
-la interpretación de las referencias al color en el texto, el lector se
-debe dirigir a la versión web del artículo)</p>
-<p>Nube de palabras de los autores de las revistas donde fueron
-publicados los artículos generados con VOSviewer (url al vosviewer)
-(Para la interpretación de las referencias al color en el texto, el
-lector se debe dirigir a la versión web del artículo)</p>
-</div>
-</div>
-</div>
-<div id="objetivo-definir-el-flujo-para-obtener-un-corpus-de-artículos-categorizado-según-el-objeto-del-estudio" class="section level1" number="7">
-<h1><span class="header-section-number">7</span> Objetivo: Definir el
-Flujo para obtener un corpus de artículos categorizado según el objeto
-del estudio</h1>
-<p>A continuación presentamos las tres fases a través de las cuales se
-propone el logro del objetivo.</p>
-<div id="fase-1-definir-los-criterios-de-inclusión-e-exclusión" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> Fase 1) Definir los
-criterios de inclusión e exclusión</h2>
-<div id="fase-1.1-definir-los-criterios-de-inclusión" class="section level3" number="7.1.1">
-<h3><span class="header-section-number">7.1.1</span> Fase 1.1) Definir
-los criterios de inclusión</h3>
+<p>6.1. Fuente: <a href="https://sci-hub.st/10.1016/j.joi.2017.08.007" class="uri">https://sci-hub.st/10.1016/j.joi.2017.08.007</a> 6.2.
+Comentario: 6.3. Secciones:</p>
+<p>Title Abstract Keywords 1. Introduction 2. Recommended workflow for
+science mapping 2.0. Study design; 2.1. Data collection 2.2. Data
+analysis 2.3. Data visualization; 2.4. Interpretation. 3. Related
+bibliometric software tools 3.1. Software tools for science mapping 3.2.
+R-packages for bibliometric analysis Fig. 1. bibliometrix and the
+recommended science mapping workflow</p>
+<ol start="4" style="list-style-type: decimal">
+<li>bibliometrix and the recommended science mapping workflow .1. Data
+collection. bibliometrix supports the following sub-stage:</li>
+</ol>
 <ol style="list-style-type: lower-alpha">
-<li>“Tipo” de trabajo: Trabajo de investigación o publicación (En
-OpenAlex type: “journal-article”)</li>
-<li>“Palabras Clave” (incorporando una forma para definir criterios de
-inclusión “OR” y exclusión “AND” de palabras y/o frases)</li>
-<li>“Idioma”: Incorporar trabajos en idioma Inglés, Español, Chino y
-Ruso.</li>
-<li>“Citas”: cantidad mínima de citas del trabajo</li>
-<li>“Intervalo de fechas de publicación”: fecha inicial y fecha
-final</li>
+<li>Data loading and conversion to R data frame (Section 4.1). .2. Data
+Analysis, articulated in three sub-stages:</li>
+<li>Descriptive analysis of a bibliographic data frame (Section
+4.2);</li>
+<li>Network creation for bibliographic coupling, co-citation,
+collaboration, and co-occurrence analyses (Section 4.3);</li>
+<li>Normalization (Section 4.4). .3. Data visualization:</li>
+<li>Conceptual structure mapping (Section 4.3e);</li>
+<li>Network mapping (Section 4.5).</li>
 </ol>
+<p>4.1. Data loading and converting to R data frame 4.2. Descriptive
+analysis of a bibliographic data frame</p>
+<p>4.3. Network creation for bibliographic coupling, co-citation,
+collaboration, and co-occurrence analyses a) Bibliographic coupling b)
+Co-citation analysis c) Collaboration analysis d) Co-word analysis</p>
+<p>4.4. Normalization 4.5. Network mapping 5. Conclusions</p>
+<p>Author contributions Acknowledgements References</p>
 </div>
-<div id="fase-1.2-definir-los-criterios-de-exclusión" class="section level3" number="7.1.2">
-<h3><span class="header-section-number">7.1.2</span> Fase 1.2) Definir
-los criterios de exclusión</h3>
-<ol style="list-style-type: lower-alpha">
-<li>“Trabajos duplicados”: mantener en el corpus solamente una versión
-de los trabajos.</li>
-<li>“Tipo” de trabajo: (En OpenAlex, atributo “is_paratext” == true)
-Nota sobre el atributo “is_paratext” (Tipo Boolean). Descripción: True
-if we think this work is paratext. Turns out there is a lot of paratext
-in registries like Crossref. That’s not a bad thing… but we’ve found
-that it’s good to have a way to filter it out. We determine is_paratext
-algorithmically using title heuristics. Conclusión: Si el trabajo
-recuperado es un paratext se lo excluye del corpus (atributo
-“is_paratext”: true)</li>
-<li>…</li>
-</ol>
-</div>
-<div id="fase-1.3-definir-las-metodologías-para-construir-el-conjunto-de-datos" class="section level3" number="7.1.3">
-<h3><span class="header-section-number">7.1.3</span> Fase 1.3) Definir
-las metodologías para construir el conjunto de datos</h3>
-<ol style="list-style-type: lower-alpha">
-<li>Armar el conjunto de datos inicial aplicando los criterios de
-inclusión y exclusión</li>
-<li>Expandir el conjunto de datos inicial aplicando la metodología
-Snowballing (bola de nieve)</li>
-<li>Aplicar los criterios inclusión y exclusión al conjunto de datos
-expandido</li>
-</ol>
-</div>
-<div id="fase-1.4-definir-las-bd-indexadas-sobre-las-cuales-se-aplicarán-los-criterios-de-inclusión" class="section level3" number="7.1.4">
-<h3><span class="header-section-number">7.1.4</span> Fase 1.4) Definir
-las BD Indexadas sobre las cuales se aplicarán los criterios de
-inclusión</h3>
-<ol style="list-style-type: lower-alpha">
-<li>BD OpenAlex: dado que permite obtener los metadatos de los trabajos
-requeridos para aplicar los filtros de inclusión y exclusión y además,
-permiten realizar el análisis semántico necesario para categorizar los
-trabajos de acuerdo a interés del investigador que está llevando
-adelante el estudio.</li>
-<li>…</li>
-</ol>
-</div>
-<div id="fase-1.5-definir-los-criterios-de-ponderación-de-los-trabajos" class="section level3" number="7.1.5">
-<h3><span class="header-section-number">7.1.5</span> Fase 1.5) Definir
-los criterios de ponderación de los trabajos</h3>
-<div id="métodos-bibliométricos-primera-revisión" class="section level4" number="7.1.5.1">
-<h4><span class="header-section-number">7.1.5.1</span> Métodos
-bibliométricos: primera revisión</h4>
-<p>Al respecto puede aportar la bibliometría (bibliometrics), entendida
-como “the use of quantitative methods to analyze publications,
-bibliographic data, and other forms of scientific and scholarly
-communication. It can be used to evaluate the impact of research, track
-trends in scholarly communication, and inform decisions about resource
-allocation, among other things”.</p>
-<p>Here are some of the most commonly used bibliometric methods:</p>
-<ul>
-<li><p>Citation analysis: This involves analyzing the number of times a
-publication has been cited by other publications. It can be used to
-evaluate the impact of a particular author, journal, or research area.
-++ Atributo “cited_by_count”. Tipo: Integer. Descripción: The number of
-citations to this work. These are the times that other works have cited
-this work: Other works ➞ This work. ++ Atributo alternativo:
-counts_by_year (list): Works.cited_by_count for each of the last ten
-years, binned by year. To put it another way: each year, you can see how
-many times this work was cited. Nota: Analizar si es pertinente ponderar
-de acuerdo al año la cantidad de citas por año. Atributo
-“Works.cited_by_count”: El detalle se encuentra en el atributo
-“counts_by_year” (Tipo: List. Descripción: “Works.cited_by_count” for
-each of the last ten years, binned by year. To put it another way: each
-year, you can see how many times this work was cited).</p></li>
-<li><p>Journal impact factor: This is a measure of the average number of
-citations per article published in a particular journal. It is often
-used to evaluate the relative importance of different journals.</p></li>
-<li><p>h-index: This is a measure of an author’s productivity and
-impact, based on the number of papers they have published and the number
-of citations those papers have received. El índice H de Hirsch es un
-indicador que permite evaluar la producción científica de un
-investigador o investigadora. Se calcula ordenando las publicaciones de
-un investigador o investigadora por el número de citas recibidas en
-orden descendente y a continuación numerando e identificando el punto en
-el que el número de orden coincide con el de citas recibidas por una
-publicación. Por ejemplo: índice H = 7 (hay 7 publicaciones que han
-recibido al menos 7 citas cada una)</p></li>
-</ul>
-<p>++ Atributos de un Autor (The Authorship object) The Authorship
-object represents a single author and her institutional affiliations in
-the context of a given work. It is only found as part of a Work
-object.</p>
-<p>Atributo “author” (String): An author of this work, as a dehydrated
-Author object author$id: seguir este atributo, para recuperar los
-atributos del autor (de interés para puntuar importancia del
-trabajo).</p>
-<p>Atributo “cited_by_count” (Integer): The total number Works that cite
-a work this author has created. Alternativo: counts_by_year (List):
-Author.works_count and Author.cited_by_count for each of the last ten
-years, binned by year. To put it another way: each year, you can see how
-many works this author published, and how many times they got cited.</p>
-<p>Atributo “works_count” (Integer): The number of Works this this
-author has created.</p>
-<p>Atributo “institutions$id”: seguir este atributo, para recuperar los
-atributos de la institución que al autor declara en el contexto del
-trabajo (de interés para puntuar importancia del trabajo).</p>
-<ul>
-<li><p>Co-citation analysis: This involves analyzing the frequency with
-which two publications are cited together. It can be used to identify
-relationships between different areas of research.</p></li>
-<li><p>Bibliographic coupling: This involves analyzing the similarity
-between the references cited in different publications. It can be used
-to identify areas of common interest among researchers.</p></li>
-</ul>
-<p>It is important to note that bibliometric methods have limitations
-and should be used in conjunction with other forms of evaluation, such
-as peer review and expert judgment. It is also important to use
-appropriate and validated methods, as misuse of bibliometric data can
-lead to unintended consequences.</p>
-</div>
-<div id="métodos-bibliométricos-segunda-revisión" class="section level4" number="7.1.5.2">
-<h4><span class="header-section-number">7.1.5.2</span> Métodos
-bibliométricos: segunda revisión</h4>
-<div id="puntuación-de-institución-a-la-que-pertenece-el-autor-principal-o-también-la-que-se-obtiene-del-atributo-location" class="section level5" number="7.1.5.2.1">
-<h5><span class="header-section-number">7.1.5.2.1</span> Puntuación de
-Institución (a la que pertenece el autor principal o, también la que se
-obtiene del atributo “Location”)</h5>
-<p>Definir el criterio de acuerdo a los índices utilizados para puntuar
-a una institución, por ejemplo, evaluar si existe un índice H o factor
-de impacto. The Location object describes the location of a given work.
-It’s only found as part of the Work objec.</p>
-</div>
-<div id="indices-complementarios-al-factor-de-impacto-de-la-revista-journal-impact-factor" class="section level5" number="7.1.5.2.2">
-<h5><span class="header-section-number">7.1.5.2.2</span> Indices
-complementarios al “factor de impacto de la revista” (Journal impact
-factor)</h5>
-<ul>
-<li>Cuartil: El cuartil es un indicador o medida de posición de una
-revista en relación con todas las de su área. Si dividimos en 4 partes
-iguales un listado de revistas ordenadas de mayor a menor factor de
-impacto, cada una de estas partes será un cuartil. Las revistas con el
-factor de impacto más alto estarán el primer cuartil, los cuartiles
-medios serán el segundo y el tercero y el cuartil más bajo será el
-cuarto.</li>
-<li>Índice H: El índice H de Hirsch es un indicador que permite evaluar
-la producción científica de un investigador o investigadora. Se calcula
-ordenando las publicaciones de una revista por el número de citas
-recibidas en orden descendente y a continuación numerando e
-identificando el punto en el que el número de orden coincide con el de
-citas recibidas por una publicación.</li>
-</ul>
-</div>
-<div id="conteo-de-palabras-clave-en-título-y-abstract" class="section level5" number="7.1.5.2.3">
-<h5><span class="header-section-number">7.1.5.2.3</span> Conteo de
-“Palabras clave” en título y abstract</h5>
-<p>Nota 1: no se puede incluir en el recuento en el cuerpo del artículo
-(full text) porque no puede garantizar el acceso al texto completo del
-artículo. Solamente se podría acceder en caso que sea del tipo “open
-access” o en caso que esté indexado en OpenAlex (se dispondría del
-atributo ngram) Nota 2: Con el objetivo de contar las palabras o frases
-en un texto se considera de interés analizar el siguiente documento: <a href="http://rafalab.dfci.harvard.edu/dslibro/procesamiento-de-cadenas.html" class="uri">http://rafalab.dfci.harvard.edu/dslibro/procesamiento-de-cadenas.html</a></p>
-</div>
-<div id="puntuar-el-matching-entre-palabras-clave-y-el-atributo-concepts" class="section level5" number="7.1.5.2.4">
-<h5><span class="header-section-number">7.1.5.2.4</span> Puntuar el
-matching entre “Palabras Clave” y el atributo “Concepts”</h5>
-<p>En relación al atributo “Concepts” (Tipo Objeto). Descripción: List
-of dehydrated Concept objects. Each Concept object in the list also has
-one additional property: score (Float). Descripción: The strength of the
-connection between the work and this concept (higher is stronger). This
-number is produced by AWS Sagemaker, in the last layer of the machine
-learning model that assigns concepts. concepts$score (Float).
-Descripcion: The strength of the connection between the work and this
-concept (higher is stronger). This number is produced by AWS Sagemaker,
-in the last layer of the machine learning model that assigns concepts.
-Concepts with a score of at least 0.3 are assigned to the work. However,
-ancestors of an assigned concept are also added to the work, even if the
-ancestor scores are below 0.3.</p>
-<p>Se debería analizar que los conceptos busquen en el mismo lenguaje de
-las palabras clave, para lo cual puede ayudar el atributo
-“international” (Tipo Object. Descripción: This concept’s display name
-in many languages, derived from article titles on each language’s
-wikipedia). O por otro lado, en caso que las “Palabras Clave” estén en
-español, previamente se las deberá traducir el idioma inglés y efectuar
-la búsqueda. Se puede ponderar o filtrar por los conceptos por nivel.
-Atributo: “Level” (Tipo: integer: The level in the concept tree where
-this concept lives. Lower-level concepts are more general, and
-higher-level concepts are more specific).</p>
-<ul>
-<li>Aporte al análisis de los conceptos: tomar como caso de estudio los
-conceptos “Artificial intelligence”, “Machine learning” y “Deep
-learning” id: “<a href="https://openalex.org/W2954640990" class="uri">https://openalex.org/W2954640990</a>”, doi: “<a href="https://doi.org/10.1111/ced.14029" class="uri">https://doi.org/10.1111/ced.14029</a>”, title: “Artificial
-intelligence, machine learning and deep learning: definitions and
-differences”, display_name: “Artificial intelligence, machine learning
-and deep learning: definitions and differences”,</li>
-</ul>
-</div>
-<div id="puntuar-el-matching-entre-ellos-temas-de-interés-y-los-temas-más-importantes-abordados-en-un-trabajo" class="section level5" number="7.1.5.2.5">
-<h5><span class="header-section-number">7.1.5.2.5</span> Puntuar el
-matching entre el/los temas de interés y los temas más importantes
-abordados en un trabajo</h5>
-<p>Se propone explorar la solución del problema utilizando redes
-semánticas para detectar los temas más importantes en un trabajo. Luego
-quedaría detectar los temas de interés, por ejemplo, a través del
-análisis de la pregunta disparadora u objetivo del estudio.</p>
-<p>A continuación se propone un grupo de actividades para cumplir el
-objetivo:</p>
-<ol style="list-style-type: decimal">
-<li>definir las palabras clave de búsqueda</li>
-<li>armar n-gramas a partir de las palabras clave</li>
-<li>obtener las redes semánticas de los artículos (aplicado el análisis
-al Título y Abstract, los cuales están disponibles en todos los
-artículos de la BD, a diferencia de lo que sucede con el acceso al
-contenido fulltext, accesible solamente para los artículos publicados
-como open-access)</li>
-<li>filtrar los artículos donde la frecuencia de las palabras clave sea
-mayor a un umbral.</li>
-</ol>
-<p>Articulo de referencia: <a href="https://rpubs.com/jboscomendoza/redes_semanticas_r" class="uri">https://rpubs.com/jboscomendoza/redes_semanticas_r</a></p>
-<p>En este artículo revisamos como crear una red semántica usando R, en
-particular las funciones de los paquetes tidytext, igraph y ggraph. En
-el proceso también nos dimos cuenta que separar y unir texto de
-distintas maneras son tareas de procesamiento más importantes en minería
-de texto. En varias ocasiones, unimos nuestro texto sólo para separarlo
-una vez más, para así poder unirlo de una manera distinta.</p>
-<p>Las redes semánticas son una herramienta muy útil al realizar minería
-de texto. Como vimos, son relativamente simples de implementar y nos
-permiten darnos una idea de los temas más importantes de nuestros
-textos. Además, son lo suficientemente flexibles como para adaptarse a
-distintas necesidades de análisis.</p>
-</div>
-<div id="propuesta-para-el-abordaje-de-la-puntuación-requerida-en-los-métodos-bibliométricos-segunda-revisión" class="section level5" number="7.1.5.2.6">
-<h5><span class="header-section-number">7.1.5.2.6</span> Propuesta para
-el abordaje de la puntuación requerida en los “métodos bibliométricos:
-segunda revisión”</h5>
-<ul>
-<li>Realizar “análisis semántico” de un texto.</li>
-</ul>
-<p>Resulta de aparente utilidad explorar las capacidades del texto de la
-referencia. Dado que representa interés para obtener un resumen de un
-corpus de documentos (como menciona en los objetivos del artículo). Esta
-capacidad podría complementar el análisis del corpus: a) exploratorio de
-la base de datos: presentando datos generales del contenido de la base
-de datos OpenAlex (incluso se podría brindar estos datos de otras bases
-de datos. (obtenidos de las facilidades de la API (cantidad de
-documentos indexados, cantidad de instituciones, cantidad de autores,
-entre otros) b) exploratorio del corpus: (a través de palabras clave):
-realizando búsqueda en el titulo, abstract y full text, presentando
-información resumen bibliométrica del resultado, con el objetivo de
-refinar el filtro de manera que se obtengan los artículos (o elementos)
-de interés. En caso de usar la herramienta para explorar el estado del
-arte, se buscarán los más representativos del estado del arte. c)
-exploratorio ampliado de corpus de interés: c.1) se realiza un análisis
-bibliométrico ampliado, incorporando aquella información omitida en la
-presentación de resultados para ayudar el análisis anterior
-(bibliometrix y el documento modelo). c.2) Además, se realiza al
-análisis de texto, utilizando distintas herramientas, entre ellas se
-muestra la frecuencia de ngramas (obtenido a partir del filtro anterior,
-ofreciendo la posibilidad de cambiar el filtro) c.3) Se intentará
-realizar un resumen de los documentos. Entre otras, se ofrece c.3.1)
-utilizar análisis exploratorios para verificar errores y detectar
-patrones de nivel general; c.3.2) aplicar métodos básicos de
-estilometría a lo largo del tiempo y entre autores; c.3.3) enfocarse en
-el resumen de resultados para ofrecer descripciones de nivel general de
-los elementos en un corpus. Ver documento: <a href="https://programminghistorian.org/es/lecciones/procesamiento-basico-de-textos-en-r" class="uri">https://programminghistorian.org/es/lecciones/procesamiento-basico-de-textos-en-r</a>
-Nuestro acercamiento involucra únicamente el uso de un tokenizador
-(tokenizer) que realiza un análisis sintáctico del texto con elementos
-como palabras, frases y oraciones.</p>
-<p>En la base de datos indexada OpenAlex, es posible acceder al trabajo
-completo a través del atributo “pdf_url” (Tipo String), cuya decripción
-es “a URL where you can find this location as a PDF”.</p>
-<ul>
-<li>Generar los n-gramas de un texto Fuente: Archivo
-“Script_de_trabajo_n-gramas_Red_semantica” Siguientes pasos: continuar
-en la linea 283</li>
-</ul>
-<p>++ 1) Revisar si la generación de n-gramas funciona (parece que son
-pocas las repeticiones de cada n-grama)</p>
-<p>++ 2) Armar una función para mostrar la línea donde aparece un texto
-dado en un trabajo (puede ser el párrafo) La solución para este análisis
-podría ser utilizar la función de tokenización
-(install.packages(“tokenizers”)), segmentando por oraciones (oraciones
-&lt;- tokenize_sentences(texto)), luego armar una función para buscar un
-texto en el objeto segmentado, y mostrar “n” oraciones pre y “n”
-oraciones post. Quizás también pueda aportar, armar una función similar
-pero el objeto central no serán oraciones sino párrafos (la forma de
-construir párrafos se puede obtener del documento:
-Script_de_trabajo_n-gramas_Red_semantica).</p>
-<p>++ 3) Armar una función para mostrar la cantidad de ocurrencias de
-dos palabras cercanas (puede ser armada a partir de ngramas). Por
-ejemplo, si fijamos una lejanía máxima de 10 palabras (contando
-stopwords), podemos encontrar los 10-gramas y buscar en este tibble si
-existe un ngrama que contenga a ambas palabras.</p>
-<ul>
-<li><p>Crear una función para mostrar las 10 palabras más frecuentes
-(sacando las stopwords) Referencia: “Procesamiento básico de textos en
-R”. <a href="https://programminghistorian.org/es/lecciones/procesamiento-basico-de-textos-en-r" class="uri">https://programminghistorian.org/es/lecciones/procesamiento-basico-de-textos-en-r</a>
-Esto será de utilidad para filtrar los trabajos de interés a partir del
-análisis semántico de los trabajos recuperados con los filtros usando
-openalexR y full-text.search. Se puede utilizar la función tokenizer
-(install.packages(“tokenizers”)) y segmentar por palabras (palabras
-&lt;- tokenize_words(texto)), luego aplicar el filtro de stopwords,
-contar las palabras y ordenar de mayor a menor.</p></li>
-<li><p>Crear una función que limpie el texto Referencia: “Tidy Data”.
-Enlace: <a href="https://www.jstatsoft.org/article/view/v059i10" class="uri">https://www.jstatsoft.org/article/view/v059i10</a> Esto será
-de utilidad para filtrar los trabajos de interés a partir del análisis
-semántico de los trabajos recuperados con los filtros usando openalexR y
-full-text.search.</p></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div id="fase-2-recuperar-el-conjunto-de-datos-aplicando-la-metodología-definida" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> Fase 2) Recuperar el
-conjunto de datos aplicando la metodología definida</h2>
-<p>Actividades: a) … b) …</p>
-</div>
-<div id="fase-3-ponderar-los-elementos-del-conjunto-de-datos" class="section level2" number="7.3">
-<h2><span class="header-section-number">7.3</span> Fase 3) Ponderar los
-elementos del conjunto de datos</h2>
-<p>Actividades: a) … b) …</p>
-</div>
-</div>
-<div id="objetivo-analizar-las-facilidades-para-publicar-información-desde-rstudio" class="section level1" number="8">
-<h1><span class="header-section-number">8</span> Objetivo: Analizar las
-facilidades para publicar información desde RStudio</h1>
-<div id="conclusiones-se-encontraron-cuatro-alternativas-para-publicar-información-desde-r" class="section level2" number="8.1">
-<h2><span class="header-section-number">8.1</span> Conclusiones: Se
-encontraron cuatro alternativas para publicar información desde R</h2>
-<ul>
-<li><ol style="list-style-type: decimal">
-<li>La plataforma “RPubs”: Contra no permite definir un criterio privado
-para el documento a publicar, por lo cual parece adecuadas para
-documentos públicos. Se accede desde el resultado de generación de un
-documetno HTML utilizando “Knit”, luego “Publish” y “Rpubs”. Se debe
-generar un usuario. Configuración desde RStudio en <a href="https://www.youtube.com/watch?v=pWQmm0pAo-k&amp;ab_channel=Joaqu%C3%ADnCarrascosa" class="uri">https://www.youtube.com/watch?v=pWQmm0pAo-k&amp;ab_channel=Joaqu%C3%ADnCarrascosa</a></li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li>La plataforma “R Studio Connect”: contra es de pago. Se accede desde
-“Publish” en la interfaz de RStudio.</li>
-</ol></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li>La plataforma “Shinny”. Configuración desde RStudio en <a href="https://www.shinyapps.io/admin/#/dashboard" class="uri">https://www.shinyapps.io/admin/#/dashboard</a></li>
-</ol></li>
-<li><ol start="4" style="list-style-type: decimal">
-<li>La plataforma “GitHub Pages”: A favor, es gratuita y permite
-controlar los accesos a las páginas publicadas. Es conveniente instalar
-GitHub Desktop para gestionar GitHub de manera más ágil. Configuración
-en <a href="https://pages.github.com/" class="uri">https://pages.github.com/</a> (o en <a href="https://docs.github.com/es/pages/quickstart" class="uri">https://docs.github.com/es/pages/quickstart</a>) Para
-publicar un archivo, se debería vincular RStudio al repositorio de
-github pages. Luego se utiliza knit para generar el archivo html a
-publicar y se hace el commit. Se accede desde <a href="https://cschenone.github.io" class="uri">https://cschenone.github.io</a>.</li>
-</ol></li>
-</ul>
-</div>
-<div id="interesante-formateo-del-documento" class="section level2" number="8.2">
-<h2><span class="header-section-number">8.2</span> Interesante: Formateo
-del documento</h2>
-<div id="bibliometrix-paquete-de-r" class="section level3" number="8.2.1">
-<h3><span class="header-section-number">8.2.1</span> Bibliometrix
-(paquete de R)</h3>
-<p>Con el objetivo de ajustar los textos y las secciones del documento,
-se propone comparar el documento en construcción con el modelo de
-reporte de bibliometrix, descargado desde bibliometrix.org. El documento
-está ubicado en la carpeta “doctorado/articulo/bibliometrix_Report”</p>
-</div>
-<div id="r-markdown" class="section level3" number="8.2.2">
-<h3><span class="header-section-number">8.2.2</span> R Markdown</h3>
-<p>Revisar los formatos disponibles en markdown: <a href="https://github.com/ricval/Documentacion/blob/master/Guias/GitHub/mastering-markdown.md" class="uri">https://github.com/ricval/Documentacion/blob/master/Guias/GitHub/mastering-markdown.md</a></p>
-</div>
-</div>
-<div id="interesante-shinydashboard-makes-it-easy-to-use-shiny-to-create-dashboards" class="section level2" number="8.3">
-<h2><span class="header-section-number">8.3</span> Interesante:
-Shinydashboard makes it easy to use Shiny to create dashboards</h2>
-<p>Sitio oficial: <a href="http://rstudio.github.io/shinydashboard/" class="uri">http://rstudio.github.io/shinydashboard/</a> Configuración
-en <a href="http://rstudio.github.io/shinydashboard/get_started.html" class="uri">http://rstudio.github.io/shinydashboard/get_started.html</a></p>
-</div>
-<div id="interesante-información-complementaria-para-análisis-de-datos" class="section level2" number="8.4">
-<h2><span class="header-section-number">8.4</span> Interesante:
-Información complementaria para análisis de datos</h2>
-<p>Enlace a github: <a href="https://github.com/jboscomendoza/rpubs/tree/master/red_semantica" class="uri">https://github.com/jboscomendoza/rpubs/tree/master/red_semantica</a>
-Git-hub General: <a href="https://github.com/jboscomendoza/rpubs" class="uri">https://github.com/jboscomendoza/rpubs</a></p>
-<div id="temas-abordados-en-el-git" class="section level3" number="8.4.1">
-<h3><span class="header-section-number">8.4.1</span> Temas abordados en
-el Git</h3>
-<ul>
-<li>Alfa de Cronbach - Psicometría con R</li>
-<li>Webscrapping, APIs y minería de texto con R. Análisis de
-sentimientos de Coheed and Cambria</li>
-<li>Mapas temáticos con R - Homicidios en México durante el 2017</li>
-<li>Análisis exploratorio de datos - Encontrar y visualizar
-inconsistencias en los datos.</li>
-<li>La importancia de explorar nuestros datos (Ventas de videojuegos con
-R)</li>
-<li>Naïve Bayes con R para clasificacion de texto</li>
-<li>Análisis de sentimientos con R - Léxico Afinn</li>
-<li>Introducción a la minería de textos con R</li>
-</ul>
-</div>
-</div>
-<div id="interesante-aporte-a-la-discusión-sobre-los-ítems-incorporados-en-la-sección-analisis-de-datos-del-trabajo" class="section level2" number="8.5">
-<h2><span class="header-section-number">8.5</span> Interesante: Aporte a
-la discusión sobre los ítems incorporados en la sección “Analisis de
-datos” del trabajo</h2>
-<p>Mirar los “Example analyses” de: <a href="https://github.com/massimoaria/openalexR/blob/main/README.md" class="uri">https://github.com/massimoaria/openalexR/blob/main/README.md</a>
-Por ejemplo: Goal: track the popularity of Biology concepts over time.
-Goal: Rank institutions in Italy by total number of citations. Goal:
-Visualize big journals’ topics.</p>
-</div>
-</div>
-<div id="objetivo-analizar-las-facilidades-implementadas-en-openalex-api-para-recuperar-datos-de-la-base-de-datos-openalex" class="section level1" number="9">
-<h1><span class="header-section-number">9</span> Objetivo: Analizar las
-facilidades implementadas en OpenAlex API para recuperar datos de la
-base de datos OpenAlex</h1>
-<div id="overview-openalex" class="section level2" number="9.1">
-<h2><span class="header-section-number">9.1</span> Overview
-OpenAlex</h2>
-<p>OpenAlex is a fully open catalog of the global research system. It’s
-named after the ancie4nt Library of Alexandria and made by the nonprofit
-OurResearch.</p>
-<p>The OpenAlex dataset describes scholarly entities and how those
-entities are connected to each other. There are five types of entities:
-work, authors, venues, institutions, and concepts.</p>
-<p>Together, these make a huge web (or more technically, heterogeneous
-directed graph) of hundreds of millions of entities and billions of
-connections between them all.</p>
-<p>Referencia: <a href="https://docs.openalex.org/" class="uri">https://docs.openalex.org/</a></p>
-</div>
-<div id="cuáles-son-las-facilidades-de-openalex-api" class="section level2" number="9.2">
-<h2><span class="header-section-number">9.2</span> ¿Cuáles son las
-facilidades de OpenAlex API?</h2>
-<p>The API is the primary way to get OpenAlex data. It’s free and
-requires no authentication. For best performance, add your email to all
-API requests, like <a href="mailto:mailto=example@domain.com" class="email">mailto=example@domain.com</a>.</p>
-<p>Documentación: <a href="https://docs.openalex.org/quickstart-tutorial" class="uri">https://docs.openalex.org/quickstart-tutorial</a></p>
-</div>
-</div>
-<div id="objetivo-presentar-las-facilidades-de-búsqueda-de-openalex-api" class="section level1" number="10">
-<h1><span class="header-section-number">10</span> Objetivo: Presentar
-las facilidades de búsqueda de OpenAlex API</h1>
-<div id="conviene-utilizar-el-paquete-openalaexr-para-consultar-la-base-de-datos-openalex" class="section level2" number="10.1">
-<h2><span class="header-section-number">10.1</span> ¿Conviene utilizar
-el paquete openalaexR para consultar la base de datos OpenAlex?</h2>
-<p>Debido a algunos inconvenientes al momento de transformar la
-información obtenida por el cliente openalexR, seguimos un camino
-alternativo, suponiendo que consultar la API Web diretamente (como
-presentan en la pagina de OpenAlex) traería ventajas, como por ejemplo u
-mayor control, si bien quizás la construcción del filtro puede ser más
-sencilla, otros procesos presentan dificultades, entre otros hallazgos
-podemos mencionar la necesidad de aplicar transformaciones al conjunto
-de datos obtenidos, el cual viene en forma de objeto json y su
-transformación a data frame / tibble no es trivial.</p>
-<p>Conclusión: Se retoma la exploración del cliente openalexR. Como
-primer desafío se presenta la necesidad de descubrir el formato por
-medio del cual se pueden incorporar operadores lógicos en las palabras
-clave de los filtros.</p>
-<p>Hallazgos: En el “Documento de trabajo” se analizar los resultados de
-las pruebas. Se detectó la forma para hacer búsquedas por “AND” en el
-titulo. Para lo cual se deben incorporar tantos argumentos
-“title.search”, como frases se deseen buscar. Luego las palabras como
-“OR” se agregan en la misma “title.search” con el separador “|” o con la
-función c().</p>
-</div>
-<div id="cómo-incorporo-operadores-lógicos-en-las-consultas-a-openalex-by-openalex-api" class="section level2" number="10.2">
-<h2><span class="header-section-number">10.2</span> ¿Cómo incorporo
-operadores lógicos en las consultas a OpenAlex by OpenAlex API?</h2>
-<p>It’s best to read about filters before trying these out. It will show
-you how to combine filters and build an AND, OR, or negation query <a href="https://docs.openalex.org/how-to-use-the-api/get-lists-of-entities/filter-entity-lists" class="uri">https://docs.openalex.org/how-to-use-the-api/get-lists-of-entities/filter-entity-lists</a></p>
-<p>Filtros para trabajos (entidad:works) <a href="https://docs.openalex.org/api-entities/works/filter-works#works-convenience-filters" class="uri">https://docs.openalex.org/api-entities/works/filter-works#works-convenience-filters</a>
-<a href="https://docs.openalex.org/api-entities/works/filter-works#works-attribute-filters" class="uri">https://docs.openalex.org/api-entities/works/filter-works#works-attribute-filters</a></p>
-<p>Mirar: <a href="https://blog.ourresearch.org/new-openalex-api-features/" class="uri">https://blog.ourresearch.org/new-openalex-api-features/</a>
-Search: You can now search both titles and abstracts. We’ve also
-implemented stemming, so a search for “frogs” now automatically gets
-your results mentioning “frog,” too. Thanks to these changes, searches
-for works now deliver around 10x more results. This can all be accessed
-using the new search query parameter.</p>
-<p>Herramienta útil: Conversor online de una uri a su forma legible.
-Seleccionar “Raw url decode”: <a href="https://cafewebmaster.com/online_tools/utf8_encode" class="uri">https://cafewebmaster.com/online_tools/utf8_encode</a></p>
-<div id="ejemplo" class="section level3" number="10.2.1">
-<h3><span class="header-section-number">10.2.1</span> Ejemplo:</h3>
-<p>Input: <a href="https://api.openalex.org/works?filter=title.search%3Abibliometric%20analysis%7Cscience%20mapping%2Ccited_by_count%3A%3E50%2Cfrom_publication_date%3A2020-01-01%2Cto_publication_date%3A2021-12-31&amp;sort=cited_by_count%3Adesc" class="uri">https://api.openalex.org/works?filter=title.search%3Abibliometric%20analysis%7Cscience%20mapping%2Ccited_by_count%3A%3E50%2Cfrom_publication_date%3A2020-01-01%2Cto_publication_date%3A2021-12-31&amp;sort=cited_by_count%3Adesc</a></p>
-<p>Output: <a href="https://api.openalex.org/works?filter=title.search:bibliometric" class="uri">https://api.openalex.org/works?filter=title.search:bibliometric</a>
-analysis|science
-mapping,cited_by_count:&gt;50,from_publication_date:2020-01-01,to_publication_date:2021-12-31&amp;sort=cited_by_count:desc</p>
-<p>Ver más casos en (Recuadro Goal, luego de cada ejemplo): <a href="https://github.com/massimoaria/openalexR" class="uri">https://github.com/massimoaria/openalexR</a></p>
-</div>
-</div>
-<div id="discusión-sobre-facilidad-search-en-openaalex-api-busca-en-title-abstract-y-fulltext-vs-filter-específico-para-alguno-de-los-atributos" class="section level2" number="10.3">
-<h2><span class="header-section-number">10.3</span> Discusión sobre
-facilidad “Search” en OpenaAlex API (busca en title, abstract y
-fulltext) vs Filter (específico para alguno de los atributos)</h2>
-<p>Resumen: Search busca en title, abstract y fulltext, y Filter permite
-enfocar la búsqueda en un campo (title.search, abstract.search or
-fulltext.search)</p>
-<p>Search searches across any fields (title, abstract and fulltext): The
-best way to search for works is to use the search query parameter, which
-searches across title, abstract, and fulltext.</p>
-<div id="example" class="section level3" number="10.3.1">
-<h3><span class="header-section-number">10.3.1</span> Example:</h3>
-<p>Get works with search term “dna” in the title, abstract, or fulltext:
-<a href="https://api.openalex.org/works?search=dna" class="uri">https://api.openalex.org/works?search=dna</a></p>
-</div>
-</div>
-<div id="search-at-specific-field-title-abstract-andor-fulltext" class="section level2" number="10.4">
-<h2><span class="header-section-number">10.4</span> Search at specific
-field (title, abstract and/or fulltext)</h2>
-<p>You can use search as a filter, allowing you to fine-tune the fields
-you’re searching over. To do this, you append .search to the end of the
-property you are filtering for:</p>
-<p>Get works with “cubist” in the title: <a href="https://api.openalex.org/works?filter=title.search:cubist" class="uri">https://api.openalex.org/works?filter=title.search:cubist</a></p>
-<p>The following fields can be searched within works: + abstract.search
-+ title.search as same as display_name.search + fulltext.search</p>
-</div>
-<div id="fulltext-search-is-powered-by-an-index-of-word-sequences-called-n-grams." class="section level2" number="10.5">
-<h2><span class="header-section-number">10.5</span> Fulltext search is
-powered by an index of word sequences called “n-grams”.</h2>
-<p>You can read more about search . It will show you how relevance score
-is calculated and how words are stemmed to improve search results.</p>
-<p>Capacidades de la búsqueda utilizando “n-grams” en OpenAlex.
-Documentación: <a href="https://docs.openalex.org/api-entities/works/get-n-grams" class="uri">https://docs.openalex.org/api-entities/works/get-n-grams</a>
-<a href="https://github.com/massimoaria/openalexR/blob/b3541e4f2695da771f15d0d92a7a050757e67e9c/vignettes/articles/A_Brief_Introduction_to_openalexR.Rmd" class="uri">https://github.com/massimoaria/openalexR/blob/b3541e4f2695da771f15d0d92a7a050757e67e9c/vignettes/articles/A_Brief_Introduction_to_openalexR.Rmd</a>
-<a href="https://www.bibliometrix.org/home/" class="uri">https://www.bibliometrix.org/home/</a></p>
-</div>
-<div id="qué-facilidades-brinda-la-búsqueda-por-n-gramas" class="section level2" number="10.6">
-<h2><span class="header-section-number">10.6</span> ¿Qué facilidades
-brinda la búsqueda por “n-gramas”?</h2>
-<p>Puede servir como complemento de la búsqueda en el titulo, abstract y
-full text de los documentos. Como complemento permitiría intentar hallar
-artículos no encontrados con las búsquedas tradicionales. En la página
-<a href="https://docs.openalex.org/api-entities/works/get-n-grams" class="uri">https://docs.openalex.org/api-entities/works/get-n-grams</a>,
-se presentan estadísticas de la cantidad de trabajos indexados con
-n-gramas mostrando que la cobertura aún es escasa, para ser considerado
-una técnica principal, la cobertura debería ser mayor al 90% y
-actualmente promedia el 25%.</p>
-</div>
-<div id="capacidades-de-la-búsqueda-fulltext-en-openalex" class="section level2" number="10.7">
-<h2><span class="header-section-number">10.7</span> Capacidades de la
-búsqueda “Fulltext” en OpenAlex</h2>
-<p>Analizar la capacidad de full text search. Referencia: <a href="https://blog.ourresearch.org/fulltext-search-in-openalex/" class="uri">https://blog.ourresearch.org/fulltext-search-in-openalex/</a></p>
-<p>Full text search se relaciona con el ítem: “Analizar la
-capacidad”N-grams” de openalexR”. <a href="https://docs.openalex.org/api-entities/works/get-n-grams" class="uri">https://docs.openalex.org/api-entities/works/get-n-grams</a></p>
-</div>
-<div id="analizar-la-posibilidad-de-acceder-al-texto-completo-del-trabajo" class="section level2" number="10.8">
-<h2><span class="header-section-number">10.8</span> Analizar la
-posibilidad de acceder al texto completo del trabajo</h2>
-<p>En principio OpenAlex brinda la posibilidad de saber si el artículo
-pertenece a la categoría Open Access, mediante el atributo is_oa ==
-TRUE. En caso contrario sólamente se podrá acceder a búsquedas en el
-texto completo mediante la facilidad fulltext search.</p>
-<div id="analizar-las-facilidades-que-brinda-el-atributo-best_oa_location.-aplica-a-todos-los-artículos-o-solamente-a-los-del-tipo-open-access" class="section level3" number="10.8.1">
-<h3><span class="header-section-number">10.8.1</span> Analizar las
-facilidades que brinda el atributo best_oa_location. ¿Aplica a todos los
-artículos o solamente a los del tipo open access?</h3>
-<p>Revisar el atributo “best_oa_location” para obtener los datos que
-permitan acceder al documento (en caso que esté disponible). Una opción
-a explorar para los trabajos que no dispongan de esta información es
-utilizar la técnica de scrapping. best_oa_location (Object): A Location
-object with the best available open access location for this work. We
-score open locations to determine which is best using these factors: *
-Must have is_oa: true * type: “publisher” is better than “repository”. *
-version: “publishedVersion” is better than “acceptedVersion”, which is
-better than “submittedVersion”. * pdf_url: A location with a direct PDF
-link is better than one without. * repository rankings: Some major
-repositories like PubMed Central and arXiv are ranked above others.</p>
-</div>
-</div>
-<div id="análisis-de-la-facilidad-fulltext-search-vs-atributo-n-grams-para-resolver-los-problemas-que-involucren-análisis-semántico-de-texto." class="section level2" number="10.9">
-<h2><span class="header-section-number">10.9</span> Análisis de la
-facilidad fulltext search vs atributo n-grams para resolver los
-problemas que involucren análisis semántico de texto.</h2>
-<p>Como primer punto de análisis convendría aclarar si la búsqueda de
-OpenaAlex Fulltext Search recupera los trabajos buscando en el texto
-completo a partir de la consulta a n-gramas, sería la solución al
-problema planteado.</p>
-<p>En caso que la búsqueda fulltext search no brinde resultados
-satisfactorios, una propuesta alternativa sería recuperar los trabajos
-más significativos a partir del análisis bibliográfico. Considerando
-alguna (o un grupo) de variables, por ejemplo los 20 trabajos con mayor
-cantidad de citas, para hacer un análisis en profundidad del contenido
-de estos trabajos. Este análisis se puede realizar a partir de la
-minería de texto, como presenta el siguiente trabajo: <a href="https://rpubs.com/jboscomendoza/redes_semanticas_r" class="uri">https://rpubs.com/jboscomendoza/redes_semanticas_r</a></p>
-<p>Resumen: Las redes semánticas son una técnica de representación usada
-en distintas disciplinas, entre ellas, la minería de texto. Estas redes
-son una forma de obtener y visualizar la relación entre elementos de un
-texto, que pueden ser palabras, n-gramas, frases u otras unidades de
-texto. El resultado es similar a una telaraña, en la que cada nodo o
-punto de unión es una unidad, y de ellas salen líneas que las unen a
-otras unidades. De esta manera podemos extraer la información relevante
-de cuerpos de complejos.</p>
-</div>
-</div>
-<div id="objetivo-general-definir-las-buenas-prácticas" class="section level1" number="11">
-<h1><span class="header-section-number">11</span> Objetivo general:
-Definir las buenas prácticas</h1>
-<div id="es-pertienente-utilizar-el-paquete-bibliometrix-para-acompañar-el-analisis-de-los-resultados" class="section level2" number="11.1">
-<h2><span class="header-section-number">11.1</span> ¿Es pertienente
-utilizar el paquete bibliometrix para acompañar el analisis de los
-resultados?</h2>
-<p>Utilizar el archivo “OpenAlexAPI_A_Brief_Example_v01.Rmd”, las
-posibilidades del paquete bibliometrix, además de biblioanalysis y
-summary(). El siguiente trabajo de investigación puede resultar de ayuda
-para la discusión: <a href="https://arxiv.org/ftp/arxiv/papers/2205/2205.13471.pdf" class="uri">https://arxiv.org/ftp/arxiv/papers/2205/2205.13471.pdf</a></p>
-<p>Conclusión: Una vez que se disponen de los datos se lo pueden
-procesar con las herramientas de R y además con bibliometrix. En este
-punto sería interesante analizar el modelo de documento descargado desde
-la pagina de bibliometrix dispuesto en el Git:
-doctorado/articulo/bibliometrix_Report.</p>
-</div>
-<div id="cómo-empezar-y-qué-tener-en-cuenta-cuando-escribes-tu-función-en-r" class="section level2" number="11.2">
-<h2><span class="header-section-number">11.2</span> ¿ Cómo empezar y qué
-tener en cuenta cuando escribes tu función en R?</h2>
-<p>Para poder ejecutar una función primero debes guardarla en la
-memoria. Ocurre lo mismo que al activar/cargar una librería/biblioteca,
-hasta que no lo hagas las funciones contenidas en ella no se pueden
-llamar/utilizar. Existen dos métodos para cargar funciones en la
-memoria:</p>
-<ol style="list-style-type: lower-alpha">
-<li>Crear el texto de la función y pegarlo en la consola.</li>
-<li>Utilizar la función “source()” para cargar funciones desde un
-archivo .R (puedes tenerlo en tu directorio o descargarlo desde la
-web).</li>
-</ol>
-<p>La mejor opción es la segunda, por eso recomiendo crear tus funciones
-en un archivo .R con un nombre sencillo e intuitivo y guardarlo en su
-ordenador para llamarlo en el momento que desees. Por ejemplo:</p>
-<p>source( “ mifuncion.R”) # desde tu directorio &gt; # Para acceder a
-una función que se encuentra en la web &gt; source(“<a href="https://raw.github.com/tonybreyal/Blog-Reference-Functions/master/R/bingSearchXScraper/bingSearchXScraper.R" class="uri">https://raw.github.com/tonybreyal/Blog-Reference-Functions/master/R/bingSearchXScraper/bingSearchXScraper.R</a>”)</p>
-</div>
-<div id="plantear-una-sección-al-comienzo-destinada-a-la-definición-de-las-variables-de-entorno-de-r" class="section level2" number="11.3">
-<h2><span class="header-section-number">11.3</span> Plantear una sección
-al comienzo destinada a la definición de las variables de entorno de
-R</h2>
-<div id="configurar-el-directorio-de-trabajo" class="section level3" number="11.3.1">
-<h3><span class="header-section-number">11.3.1</span> Configurar el
-directorio de trabajo</h3>
-<p>setwd(“C:/Users/cschenone/Documents/GitHub/doctorado”)</p>
-</div>
-</div>
-<div id="propuesta-para-el-desarrollo-de-scripts-en-r-para-facilitar-las-comprobaciones" class="section level2" number="11.4">
-<h2><span class="header-section-number">11.4</span> Propuesta para el
-desarrollo de scripts en R para facilitar las comprobaciones</h2>
-<p>Para ordenar las propuestas de solución a los problemas planteados en
-el documento general se creó el archivo: “script_OpenAlex_v01.R”</p>
-<p>Analizarlo mirando las siguientes referencias: openalexR: Getting
-Bibliographic Records from ‘OpenAlex’ Database Using ‘DSL’ API (<a href="https://cran.r-project.org/web/packages/openalexR/openalexR.pdf" class="uri">https://cran.r-project.org/web/packages/openalexR/openalexR.pdf</a>)
-A brief introduction to bibliometrix (<a href="https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html" class="uri">https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html</a>)</p>
-</div>
-<div id="propuesta-para-el-armado-de-una-notebook-para-analizar-las-capacidades-de-los-filtros-de-openalex-api" class="section level2" number="11.5">
-<h2><span class="header-section-number">11.5</span> Propuesta para el
-armado de una Notebook para analizar las capacidades de los filtros de
-OpenAlex API</h2>
-<p>Enlace a la notebook: <a href="https://github.com/ourresearch/openalex-api-tutorials/blob/develop/notebooks/institutions/oa-percentage.ipynb" class="uri">https://github.com/ourresearch/openalex-api-tutorials/blob/develop/notebooks/institutions/oa-percentage.ipynb</a></p>
-</div>
-<div id="dónde-puedo-obtener-respuestas-a-preguntas-frecuentes-sobre-bibliometrix" class="section level2" number="11.6">
-<h2><span class="header-section-number">11.6</span> ¿Dónde puedo obtener
-respuestas a preguntas frecuentes sobre bibliometrix?</h2>
-<p>Por ejemplo: Q8 - I would like to understand the difference between
-the concepts “Global Citation” and “Local Citation”. <a href="https://www.bibliometrix.org/home/index.php/faq" class="uri">https://www.bibliometrix.org/home/index.php/faq</a></p>
 </div>
 </div>
 
