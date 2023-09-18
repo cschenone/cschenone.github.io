@@ -10,5 +10,5 @@ A continuación listamos los documentos publicados:
 
 * Proyecto de investigación detección de "Cianobacterias": el objetivo del proyecto es realizar la detección de cianobacterias utilizando técnicas de aprendizaje profundo aplicadas al procesamientos de imágenes satelitales de fuentes abiertas. 
 
-* Proyecto de investigación detección de "Plazas y Malezas":  el objetivo del proyecto es realizar un aporte a la detección de plagas y malezas utilizando utilizando técnicas de aprendizaje profundo aplicada al procesamientos de imágenes satelitales de fuentes abiertas e imágenes capturadas del sobrevuelo de drones.
+* Proyecto de investigación detección de "Plazas y Malezas":  el objetivo del proyecto es realizar la detección de plagas y malezas utilizando técnicas de aprendizaje profundo aplicada al procesamientos de imágenes satelitales de fuentes abiertas e imágenes capturadas del sobrevuelo de drones.
 
