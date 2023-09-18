@@ -8,8 +8,7 @@ A continuación listamos los documentos publicados:
 
 * Metodología híbrida para el análisis de un corpus de artículos académicos: contiene una metodología para abordar el estudio mixto de un corpus, con el objetivo de conocer el estado del arte de un tema de investigación, aplicando en primer término técnicas de análisis bibliométrico y posteriormente se profundiza el análisis del corpus resultante aplicando criterios de la revisión sistemática, con el objetivo de aportar un conjunto de elementos que ayuden a realizar el análisis de la estructura y el desarrollo de un campo científico utilizando métodos cuantitativos y datos bibliográficos.
 
-* Proyectos de Investigación: en el espacio vamos a publicar los avances en los trabajos enfocados en aplicar herramientas de procesamientos de imágenes aplicando aprendizaje profundo.
+* Proyecto de investigación detección de "Cianobacterias": el objetivo del proyecto es realizar la detección de cianobacterias utilizando técnicas de aprendizaje profundo aplicada al procesamientos de imágenes satelitales de fuentes abiertas. 
 
-** Cianobacterias: el objetivo del proyecto es realizar la detección de cianobacterias utilizando imágenes  satelitales de fuentes abiertas. 
+* Proyecto de investigación detección de "Plazas y Malezas":  el objetivo del proyecto es realizar un aporte a la detección de plagas y malezas utilizando utilizando técnicas de aprendizaje profundo aplicada al procesamientos de imágenes satelitales de fuentes abiertas e imágenes capturadas del sobrevuelo de drones.
 
-** Plazas y Malezas:  el objetivo del proyecto es realizar un aporte a la detección de plagas y malezas utlizando imágenes obtenidas de fuentes satelitales abiertas y sobrevuelo de drones.
