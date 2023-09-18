@@ -4,9 +4,9 @@ En este espacio se ubicarán los documentos a compartir en el contexto del proye
 
 A continuación listamos los documentos publicados:
 
-* Próximos pasos: contiene las directrices y siguientes pasos recomendadas para el desarrollo del artículo de investigación del Doctorado
+* Proyecto de desarrollo "Metodología híbrida para el análisis de un corpus de artículos académicos": el objetivo de la actividad es desarrollar una herramienta que ayude a estudiar el estado del arte de un tema de investigación, aplicando análisis bibliométrico y técnicas de revisión sistemática, aportando un conjunto de elementos que simplifiquen el análisis de un campo científico. 
 
-* Metodología híbrida para el análisis de un corpus de artículos académicos: contiene una metodología para abordar el estudio mixto de un corpus, con el objetivo de conocer el estado del arte de un tema de investigación, aplicando en primer término técnicas de análisis bibliométrico y posteriormente se profundiza el análisis del corpus resultante aplicando criterios de la revisión sistemática, con el objetivo de aportar un conjunto de elementos que ayuden a realizar el análisis de la estructura y el desarrollo de un campo científico utilizando métodos cuantitativos y datos bibliográficos.
+* Próximos pasos: contiene las directrices y los siguientes pasos recomendadas para el desarrollo del artículo de investigación presentando los resultados de la investigación en "Metodología híbrida para el análisis de un corpus de artículos académicos" 
 
 * Proyecto de investigación detección de "Cianobacterias": el objetivo del proyecto es realizar la detección de cianobacterias utilizando técnicas de aprendizaje profundo aplicada al procesamientos de imágenes satelitales de fuentes abiertas. 
 
