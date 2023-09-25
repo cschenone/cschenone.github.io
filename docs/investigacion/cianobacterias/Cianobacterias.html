@@ -716,25 +716,163 @@ pronosticar el desarrollo de las floraciones y su movimiento.</p>
 </div>
 <div id="estado-del-arte" class="section level2">
 <h2>Estado del arte</h2>
-<div id="metodología-propuesta-etl---inputs" class="section level3">
-<h3>Metodología propuesta (ETL - Inputs)</h3>
+<div id="propuesta-general-de-abordaje-metodológico" class="section level3">
+<h3>Propuesta general de abordaje metodológico</h3>
 <p><a href="https://www.witpress.com/Secure/ejournals/papers/SDP130802f.pdf">Environmental
 Impact Assessment: A multilevel, multi-parametric framework for coastal
-waters</a> Resumen: Propone una metodología (MuM3) para evaluar impacto
-ambiental capturando datos en 3 dimensiones.</p>
+waters</a> Resumen: Propone una metodología (MuM3) para colaborar con la
+evaluación de impacto ambiental capturando datos en 3 dimensiones, pero
+se puede extender a otras áreas de interés. Cuando se planifican las
+operaciones de monitoreo, a menudo se descuida la naturaleza
+tridimensional (3D) de los puntos críticos de monitoreados. Considerndo
+este hecho, se puede optar por recopilar los datos utilizando un marco
+multiparamétrico y de múltiples niveles, que combina múltiples
+disciplinas y permite generar correlaciones entre varios conjuntos de
+datos adquiridos en cada escenario analizado. Este nuevo y novedoso
+marco se denomina <em>MuM3</em>, lo que significa que el Monitoreo (M)
+propuesto es multidisciplinario, multinivel y multiparamétrico (es
+decir, Mu) y se desarrolla en las tres dimensiones del espacio físico (M
+superíndice ‘3’). MuM3 incorpora diferentes escalas espaciales de
+observación (o niveles, entre ellos satélite, avión, helicóptero,
+vehículos aéreos no tripulados, conocidos como drones y análisis en
+superficie, por ejemplo, barco o laboratorio móvil), junto a los
+potenciales sensores que se pueden utilizar en cada nivel (algunos
+ejemplos son imágenes en infrarrojo cercano visible o VNIR, e infrarrojo
+térmico o TIR y muestreo atmosférico y en la superficie análisis
+físicos, químicos, biológicos. Acompaña al marco MuM3 un modelo de flujo
+de trabajo de tres pasos iniciando con la “adquisición de datos” sin
+procesar (raw) y la “transformación” e “integración” de diferentes datos
+en indicadores valiosos para la toma de decisiones en el proceso de
+evaluación de impacto ambiental u otras áreas de interés. El monitoreo
+constituye uno de los pasos relevantes de la evaluación de impacto
+ambiental, en particular el monitoreo de las aguas superficiales es
+especialmente relevante debido a su alta exposición a factores naturales
+(por ejemplo, transporte de sedimentos) y factores antropogénicos (por
+ejemplo, vertidos de aguas residuales). Sin embargo, la falta de datos a
+menudo constituye una barrera para estimar los efectos acumulativos de
+esos impactos. ¿Qué impulsa la evaluación? El nivel superior son los
+datos obtenidos mediante teledetección que deben validarse mediante
+mediciones in situ en un estudio top-down (se solicita validar la
+presencia de un un problema ambiental) pero también se puede utilizar
+para un estudio botom-up (donde se conoce la presencia de un problema y
+se desea extender el análisis)</p>
 <p><a href="https://pubmed.ncbi.nlm.nih.gov/34357943/">Monitoring
 Cyanobacterial Blooms during the COVID-19 Pandemic in Campania, Italy:
-The Case of Lake Avernus</a> Resumen: Aplica la metodología Mum3 para
-armar un mapa de calor identificando potenciales áreas de florecimiento
-de Cianobacterias en un lago.</p>
+The Case of Lake Avernus</a> Resumen: El trabajo aplica la metodología
+MuM3 top-down para armar un mapa de calor identificando potenciales
+áreas de florecimiento de Cianobacterias en un lago. Las cianobacterias
+son microorganismos fotosintéticos ubicuos considerados contribuyentes
+importantes a la formación de la atmósfera terrestre y al proceso de
+fijación de nitrógeno. Sin embargo, también se asocian frecuentemente
+con floraciones tóxicas, denominadas floraciones de algas nocivas
+cianobacterianas (cyanoHAB). Para evaluar el florecimiento de cianoHAB
+se propone utilizar la estrategia de detección rápida (FDS), mediante la
+integración de imágenes satelitales y la investigación biomolecular de
+las muestras ambientales tomadas en el lugar identificado por las
+imágenes (metodología MuM3 top-down).</p>
+<p><em>Métodos de sensado remoto y próximo (Remote and proximal
+sensing)</em> El conjunto de datos utilizado proviene de dos fuentes, en
+un caso se utilizaron imágenes satelitales con resolución espacial de 10
+píxeles/metro provistas por Sentinel-2, junto con imágenes de proximidad
+brindadas por un minidrone con una cámara multiespectral de 12
+megapíxeles a tres bandas y una cámara RGB de 20 megaíxeles.</p>
+<p>Sentinel-2 lleva una variedad de instrumentos ópticos, el instrumento
+multiespectral (MSI) muestrea 13 bandas espectrales: 4 bandas a 10 m, 6
+bandas a 20 m y 3 bandas a 60 m de resolución espacial. En el caso de
+Sentinel-2, la banda roja corresponde al cuarto canal (ancho de banda:
+640–690 nm), mientras que la banda NIR corresponde al octavo canal
+(ancho de banda: 780–910 nm), con una resolución espacial de 10
+píxeles/metro. El minidron cargó dos sensores electro-ópticos: una
+cámara multiespectral de 12 megapíxeles capaz de adquirir tres bandas
+(Naranja + Cian + NIR) y una cámara RGB de 20 megapíxeles con un sensor
+de una pulgada.</p>
+<p>La disponibilidad de datos multiespectrales permite el cálculo de
+índices específicos que han demostrado ser particularmente útiles y
+confiables, dentro de este grupo, el índice más conocido y probado es
+NDVI, calculado mediante una combinación de bandas roja e infrarroja
+cercana (NIR), generando valores entre −1 y 1. Además del índice NDVI,
+podrían calcularse otros índices, como CI, MCI, CARI, Chlgreen,
+Chlred-edge, RBD y CVI permitiendo realizar análisis cuantitativos,
+además de análisis cualitativos. Además de los anteriores, podemos
+comentar el espectro-radiómetro de imágenes de resolución moderada
+(MODIS), instalado en los satélites Terra y Aqua, que proporciona
+imágenes de 36 bandas en tres resoluciones espaciales (de 250m a 1000m),
+permitiendo cuantificar la concentración de Clorofila-a (midiendo las
+concentraciones de clorofila-a cerca de la superficie, expresadas en
+mg/m3, con una resolución espacial de píxeles de 1km x 1km en una base
+temporal diaria.</p>
+<p>La escasa resolución de la mayoría de los productos de las
+plataformas satelitales reduce la aplicabilidad de los conjuntos de
+datos a estudios de fenómenos de gran escala, pero el uso combinado de
+técnicas de detección remota (satélites y aviones) y técnicas de
+detección cercana o próxima (drones) supera la barrera anterior,
+permitiendo a los investigadores alcanzar objetivos de análisis de
+fenómenos en escalas más pequeñas.</p>
+<p>En este caso, el propósito del planteo del uso de sensado
+remoto/proximal se enfoca en la detección temprana de floraciones,
+centrado en métodos de detección cualitativos, que ayudaron a realizar
+la detección de los fenómenos de floración, en particular, la presencia
+de anomalías y reducir las áreas en las cuales profundizar las
+investigaciones y muestreos. Por este motivo, la utilización del mapeo
+del índice NDVI fue suficiente para cumplir con el objetivo planeado y,
+sobre todo, maximizar la eficiencia del proceso en términos de tiempo y
+costos, a partir de mapas NDVI clasificando los resultados en 10
+categorías y representándolas en una escala de colores falsos. El
+análisis de las categorías permitió a los investigadores señalar los
+puntos del lago con mayor probabilidad de presencia de cianobacterias,
+donde los investigadores realizaron las capturas de muestras para
+realizar análisis de laboratorio por medio de los cuales determinar la
+presencia de toxinas.</p>
 <p><a href="https://pubmed.ncbi.nlm.nih.gov/28858678/">Integrated
 hierarchical geo-environmental survey strategy applied to the detection
 and investigation of an illegal landfill: A case study in the Campania
-Region (Southern Italy)</a> Resumen: This paper describes an approach to
-detect and investigate the main characteristics of a solid waste
-landfill through the integration of geological, geographical and
-geophysical methods. Nota: Si bien aplica a la detección de desperdicios
-en el agua.</p>
+Region (Southern Italy)</a> Resumen: El artículo describe un enfoque
+para detectar e investigar las principales características de un
+vertedero de residuos sólidos mediante la integración de métodos
+geológicos, geográficos y geofísicos. En particular, se realizó un
+análisis multitemporal de la evolución morfológica del vertedero
+mediante fotografías aéreas y satelitales, ya que no se disponía de
+datos geológicos y geofísicos referentes al área de estudio.</p>
+<p>Nota: El artículo no representa información de interés.</p>
+<p>En general, un enfoque multiescala permite obtener resultados
+apreciables tanto en términos de la geometría del cuerpo del vertedero
+como de la caracterización de sus materiales. En este enfoque, las
+<em>herramientas de teledetección</em> desempeñan un papel clave y
+representan el primer paso de dicho proceso. De hecho, el sensado remoto
+se enfoca en la identificación de las potenciales fuentes de
+contaminantes, luego el trabajo de campo podría validar y profundizar
+los potenciales hallazgos.</p>
+<p>Existen varias técnicas de teledetección, ya utilizadas en el
+seguimiento ambiental, que pueden aplicarse para el propósito. Estos
+incluyen, la fusión de datos ópticos y de radar de apertura sintética
+(SAR), así como <em>imágenes multiespectrales</em>, ambas utilizadas
+para monitorear la contaminación superficial del suelo y el agua y para
+detectar vertidos ilegales en vertederos y otras actividades ilegales.
+Los diferentes resultados se pueden combinar con otras capas de datos en
+un entorno SIG tanto para definir la exposición de sitios culturales
+como para predecir violaciones ambientales. Por otro lado, también se
+probaron técnicas de prospección geofísica con fines forenses.</p>
+<p>Los principales objetivos de esta investigación fueron definir con
+precisión los bordes del vertedero, ayudar en la planificación de la
+recuperación del sitio y proporcionar información relacionada con la
+profundidad del vertedero. Los objetivos secundarios incluyeron la
+identificación de posibles vías de contaminación del vertedero,
+asociadas con la falta de barreras diseñadas, y la caracterización de la
+geología del sitio.</p>
+</div>
+<div id="metodología-específica-para-la-detección-de-floración-de-cianobacterias-usando-aprendizaje-profundo" class="section level3">
+<h3>Metodología específica para la detección de floración de
+cianobacterias usando aprendizaje profundo</h3>
+<p><a href="https://www.mdpi.com/2071-1050/15/5/4545">Deep
+Learning-Based Algal Bloom Identification Method from Remote Sensing
+Images—Take China’s Chaohu Lake as an Example (2023)</a></p>
+<p><a href="https://arxiv.org/pdf/1912.02305.pdf">HABNet: Machine
+Learning, Remote Sensing Based Detection and Prediction of Harmful Algal
+Blooms (2020)</a></p>
+<p><a href="https://www.sciencedirect.com/science/article/pii/S1569843223002455">A
+three-step machine learning approach for algal bloom detection using
+stationary RGB camera images (2023)</a> Resumen: usan camara RGB
+estáticas</p>
 </div>
 </div>
 <div id="modelado" class="section level2">
@@ -784,7 +922,7 @@ $(document).ready(function () {
 <!-- code folding -->
 <script>
 $(document).ready(function () {
-  window.initializeCodeFolding("show" === "show");
+  window.initializeCodeFolding("hide" === "show");
 });
 </script>
 
