@@ -11,9 +11,9 @@
 
 <meta name="author" content="Carlos Schenone" />
 
-<meta name="date" content="2023-06-08" />
+<meta name="date" content="2024-01-08" />
 
-<title>Metodología mixta de abordaje de un corpus</title>
+<title>Metodología híbrida para el abordaje de un corpus</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -276,23 +276,17 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before {
-content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "\e259";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "";
-border: none;
-}
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "";
+content: "\e258";
 font-family: 'Glyphicons Halflings';
-display: inline-block;
-padding: 10px;
-border-right: 1px solid #ddd;
+border: none;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -333,172 +327,218 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Metodología mixta de abordaje de un
+<h1 class="title toc-ignore">Metodología híbrida para el abordaje de un
 corpus</h1>
 <h4 class="author">Carlos Schenone</h4>
-<h4 class="date">2023-06-08</h4>
+<h4 class="date">2024-01-08</h4>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos" id="toc-metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos"><span class="toc-section-number">1</span> Metodología híbrida para al análisis
-de un corpus de artículos académicos</a></li>
-<li><a href="#planteo-general-de-la-metodología." id="toc-planteo-general-de-la-metodología."><span class="toc-section-number">2</span> Planteo general de la
+<li><a href="#metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos" id="toc-metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos">Metodología
+híbrida para al análisis de un corpus de artículos académicos</a></li>
+<li><a href="#planteo-general-de-la-metodología." id="toc-planteo-general-de-la-metodología.">Planteo general de la
 metodología.</a>
 <ul>
-<li><a href="#paso-1.-diseño-del-estudio" id="toc-paso-1.-diseño-del-estudio"><span class="toc-section-number">2.1</span> Paso 1. Diseño del estudio</a>
+<li><a href="#paso-1.-diseño-del-estudio" id="toc-paso-1.-diseño-del-estudio">Paso 1. Diseño del estudio</a>
 <ul>
-<li><a href="#descripción" id="toc-descripción"><span class="toc-section-number">2.1.1</span> Descripción</a></li>
-<li><a href="#actividades" id="toc-actividades"><span class="toc-section-number">2.1.2</span> Actividades</a></li>
-<li><a href="#formulación-de-preguntas-de-investigación" id="toc-formulación-de-preguntas-de-investigación"><span class="toc-section-number">2.1.3</span> 1.1. Formulación de preguntas de
-investigación</a></li>
+<li><a href="#descripción" id="toc-descripción">Descripción</a></li>
+<li><a href="#actividades" id="toc-actividades">Actividades</a>
+<ul>
+<li><a href="#formulación-de-preguntas-de-investigación" id="toc-formulación-de-preguntas-de-investigación">1.1. Formulación de
+preguntas de investigación</a></li>
+<li><a href="#selección-de-métodos" id="toc-selección-de-métodos">1.2.
+Selección de métodos</a></li>
+<li><a href="#determinación-del-marco-de-tiempo" id="toc-determinación-del-marco-de-tiempo">1.3. Determinación del marco
+de tiempo</a></li>
 </ul></li>
-<li><a href="#paso-2.-recopilación-de-datos" id="toc-paso-2.-recopilación-de-datos"><span class="toc-section-number">2.2</span> Paso 2. Recopilación de datos</a>
+</ul></li>
+<li><a href="#paso-2.-recopilación-de-datos" id="toc-paso-2.-recopilación-de-datos">Paso 2. Recopilación de datos</a>
 <ul>
-<li><a href="#descripción-1" id="toc-descripción-1"><span class="toc-section-number">2.2.1</span> Descripción</a></li>
-<li><a href="#actividades-1" id="toc-actividades-1"><span class="toc-section-number">2.2.2</span> Actividades</a></li>
-<li><a href="#selección-de-fuentes-de-datos" id="toc-selección-de-fuentes-de-datos"><span class="toc-section-number">2.2.3</span> 2.1. Selección de fuentes de
+<li><a href="#descripción-1" id="toc-descripción-1">Descripción</a></li>
+<li><a href="#actividades-1" id="toc-actividades-1">Actividades</a>
+<ul>
+<li><a href="#selección-de-fuentes-de-datos" id="toc-selección-de-fuentes-de-datos">2.1. Selección de fuentes de
 datos</a></li>
+<li><a href="#definición-de-criterios-de-búsqueda" id="toc-definición-de-criterios-de-búsqueda">2.2. Definición de
+criterios de búsqueda</a></li>
+<li><a href="#extracción-de-datos" id="toc-extracción-de-datos">2.3.
+Extracción de datos</a></li>
 </ul></li>
-<li><a href="#paso-3.-análisis-de-datos" id="toc-paso-3.-análisis-de-datos"><span class="toc-section-number">2.3</span> Paso 3. Análisis de datos</a>
+</ul></li>
+<li><a href="#paso-3.-análisis-de-datos" id="toc-paso-3.-análisis-de-datos">Paso 3. Análisis de datos</a>
 <ul>
-<li><a href="#descripción-2" id="toc-descripción-2"><span class="toc-section-number">2.3.1</span> Descripción</a></li>
-<li><a href="#actividades-2" id="toc-actividades-2"><span class="toc-section-number">2.3.2</span> Actividades</a></li>
-<li><a href="#preparación-y-limpieza-de-datos" id="toc-preparación-y-limpieza-de-datos"><span class="toc-section-number">2.3.3</span> 3.1. Preparación y limpieza de
+<li><a href="#descripción-2" id="toc-descripción-2">Descripción</a></li>
+<li><a href="#actividades-2" id="toc-actividades-2">Actividades</a>
+<ul>
+<li><a href="#preparación-y-limpieza-de-datos" id="toc-preparación-y-limpieza-de-datos">3.1. Preparación y limpieza de
 datos</a></li>
+<li><a href="#cálculo-de-métricas-bibliométricas" id="toc-cálculo-de-métricas-bibliométricas">3.2. Cálculo de métricas
+bibliométricas</a></li>
+<li><a href="#análisis-de-redes" id="toc-análisis-de-redes">3.3.
+Análisis de redes</a></li>
+<li><a href="#análisis-de-co-ocurrencia-de-términos" id="toc-análisis-de-co-ocurrencia-de-términos">3.4. Análisis de
+co-ocurrencia de términos</a></li>
 </ul></li>
-<li><a href="#paso-4.-visualización-de-datos" id="toc-paso-4.-visualización-de-datos"><span class="toc-section-number">2.4</span> Paso 4. Visualización de datos</a>
-<ul>
-<li><a href="#descripción-3" id="toc-descripción-3"><span class="toc-section-number">2.4.1</span> Descripción</a></li>
-<li><a href="#actividades-3" id="toc-actividades-3"><span class="toc-section-number">2.4.2</span> Actividades</a></li>
-<li><a href="#selección-de-métodos-de-visualización" id="toc-selección-de-métodos-de-visualización"><span class="toc-section-number">2.4.3</span> 4.1. Selección de métodos de
-visualización</a></li>
 </ul></li>
-<li><a href="#paso-5.-interpretación-y-presentación-de-resultados" id="toc-paso-5.-interpretación-y-presentación-de-resultados"><span class="toc-section-number">2.5</span> Paso 5. Interpretación y
-presentación de resultados</a>
+<li><a href="#paso-4.-visualización-de-datos" id="toc-paso-4.-visualización-de-datos">Paso 4. Visualización de
+datos</a>
 <ul>
-<li><a href="#descripción-4" id="toc-descripción-4"><span class="toc-section-number">2.5.1</span> Descripción</a></li>
-<li><a href="#actividades-4" id="toc-actividades-4"><span class="toc-section-number">2.5.2</span> Actividades</a></li>
-<li><a href="#interpretación-de-los-hallazgos" id="toc-interpretación-de-los-hallazgos"><span class="toc-section-number">2.5.3</span> 5.1. Interpretación de los
+<li><a href="#descripción-3" id="toc-descripción-3">Descripción</a></li>
+<li><a href="#actividades-3" id="toc-actividades-3">Actividades</a>
+<ul>
+<li><a href="#selección-de-métodos-de-visualización" id="toc-selección-de-métodos-de-visualización">4.1. Selección de métodos
+de visualización</a></li>
+<li><a href="#creación-de-gráficos-y-mapas" id="toc-creación-de-gráficos-y-mapas">4.2. Creación de gráficos y
+mapas</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#paso-5.-interpretación-y-presentación-de-resultados" id="toc-paso-5.-interpretación-y-presentación-de-resultados">Paso 5.
+Interpretación y presentación de resultados</a>
+<ul>
+<li><a href="#descripción-4" id="toc-descripción-4">Descripción</a></li>
+<li><a href="#actividades-4" id="toc-actividades-4">Actividades</a>
+<ul>
+<li><a href="#interpretación-de-los-hallazgos" id="toc-interpretación-de-los-hallazgos">5.1. Interpretación de los
 hallazgos</a></li>
+<li><a href="#descripción-de-resultados" id="toc-descripción-de-resultados">5.2. Descripción de
+resultados</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico" id="toc-nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico"><span class="toc-section-number">3</span> Nivel 1: Estudio general mediante
-técnicas de análisis bibliométrico</a>
-<ul>
-<li><a href="#descripción-5" id="toc-descripción-5"><span class="toc-section-number">3.0.1</span> Descripción</a></li>
-<li><a href="#etapa-1-selección-y-preparación-del-corpus" id="toc-etapa-1-selección-y-preparación-del-corpus"><span class="toc-section-number">3.1</span> Etapa 1: Selección y preparación
-del corpus</a>
-<ul>
-<li><a href="#descripción-6" id="toc-descripción-6"><span class="toc-section-number">3.1.1</span> Descripción</a></li>
-<li><a href="#actividades-5" id="toc-actividades-5"><span class="toc-section-number">3.1.2</span> Actividades</a></li>
-<li><a href="#identificación-de-bases-de-datos-académicas-relevantes" id="toc-identificación-de-bases-de-datos-académicas-relevantes"><span class="toc-section-number">3.1.3</span> 1.1. Identificación de bases de
-datos académicas relevantes</a></li>
 </ul></li>
-<li><a href="#etapa-2-recopilación-y-limpieza-de-datos" id="toc-etapa-2-recopilación-y-limpieza-de-datos"><span class="toc-section-number">3.2</span> Etapa 2: Recopilación y limpieza
-de datos</a>
+<li><a href="#niveles-del-estudio-híbrido" id="toc-niveles-del-estudio-híbrido">Niveles del estudio híbrido</a>
 <ul>
-<li><a href="#descripción-7" id="toc-descripción-7"><span class="toc-section-number">3.2.1</span> Descripción</a></li>
-<li><a href="#actividades-6" id="toc-actividades-6"><span class="toc-section-number">3.2.2</span> Actividades</a></li>
-<li><a href="#extracción-de-datos-bibliográficos" id="toc-extracción-de-datos-bibliográficos"><span class="toc-section-number">3.2.3</span> 2.1. Extracción de datos
+<li><a href="#nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico" id="toc-nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico">Nivel
+1: Estudio general mediante técnicas de análisis bibliométrico</a>
+<ul>
+<li><a href="#descripción-5" id="toc-descripción-5">Descripción</a></li>
+<li><a href="#etapa-1-selección-y-preparación-del-corpus" id="toc-etapa-1-selección-y-preparación-del-corpus">Etapa 1: Selección y
+preparación del corpus</a></li>
+<li><a href="#descripción-6" id="toc-descripción-6">Descripción</a></li>
+<li><a href="#actividades-5" id="toc-actividades-5">Actividades</a>
+<ul>
+<li><a href="#identificación-de-bases-de-datos-académicas-relevantes" id="toc-identificación-de-bases-de-datos-académicas-relevantes">1.1.
+Identificación de bases de datos académicas relevantes</a></li>
+<li><a href="#definición-de-criterios-de-búsqueda-1" id="toc-definición-de-criterios-de-búsqueda-1">1.2. Definición de
+criterios de búsqueda</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#etapa-2-recopilación-y-limpieza-de-datos" id="toc-etapa-2-recopilación-y-limpieza-de-datos">Etapa 2: Recopilación
+y limpieza de datos</a>
+<ul>
+<li><a href="#descripción-7" id="toc-descripción-7">Descripción</a></li>
+<li><a href="#actividades-6" id="toc-actividades-6">Actividades</a>
+<ul>
+<li><a href="#extracción-de-datos-bibliográficos" id="toc-extracción-de-datos-bibliográficos">2.1. Extracción de datos
 bibliográficos</a></li>
+<li><a href="#eliminación-de-duplicados-y-datos-irrelevantes" id="toc-eliminación-de-duplicados-y-datos-irrelevantes">2.2. Eliminación
+de duplicados y datos irrelevantes</a></li>
 </ul></li>
-<li><a href="#etapa-3-análisis-de-datos-bibliométricos" id="toc-etapa-3-análisis-de-datos-bibliométricos"><span class="toc-section-number">3.3</span> Etapa 3: Análisis de datos
-bibliométricos</a>
+</ul></li>
+<li><a href="#etapa-3-análisis-de-datos-bibliométricos" id="toc-etapa-3-análisis-de-datos-bibliométricos">Etapa 3: Análisis de
+datos bibliométricos</a>
 <ul>
-<li><a href="#descripción-8" id="toc-descripción-8"><span class="toc-section-number">3.3.1</span> Descripción</a></li>
-<li><a href="#actividades-7" id="toc-actividades-7"><span class="toc-section-number">3.3.2</span> Actividades</a></li>
-<li><a href="#análisis-de-coautoría-y-colaboración" id="toc-análisis-de-coautoría-y-colaboración"><span class="toc-section-number">3.3.3</span> 3.1. Análisis de coautoría y
-colaboración</a></li>
+<li><a href="#descripción-8" id="toc-descripción-8">Descripción</a></li>
+<li><a href="#actividades-7" id="toc-actividades-7">Actividades</a>
+<ul>
+<li><a href="#análisis-de-coautoría-y-colaboración" id="toc-análisis-de-coautoría-y-colaboración">3.1. Análisis de coautoría
+y colaboración</a></li>
+<li><a href="#análisis-de-citas" id="toc-análisis-de-citas">3.2.
+Análisis de citas</a></li>
 </ul></li>
-<li><a href="#etapa-4.-visualización-de-datos." id="toc-etapa-4.-visualización-de-datos."><span class="toc-section-number">3.4</span> Etapa 4. Visualización de
+</ul></li>
+<li><a href="#etapa-4.-visualización-de-datos." id="toc-etapa-4.-visualización-de-datos.">Etapa 4. Visualización de
 datos.</a>
 <ul>
-<li><a href="#descripcion" id="toc-descripcion"><span class="toc-section-number">3.4.1</span> Descripcion</a></li>
-<li><a href="#actividades-8" id="toc-actividades-8"><span class="toc-section-number">3.4.2</span> Actividades</a></li>
-<li><a href="#selección-de-métodos-de-visualización-1" id="toc-selección-de-métodos-de-visualización-1"><span class="toc-section-number">3.4.3</span> 4.1. Selección de métodos de
-visualización</a></li>
-</ul></li>
-<li><a href="#etapa-5-interpretación-y-presentación-de-resultados." id="toc-etapa-5-interpretación-y-presentación-de-resultados."><span class="toc-section-number">3.5</span> Etapa 5: Interpretación y
-presentación de resultados.</a>
+<li><a href="#descripcion" id="toc-descripcion">Descripcion</a></li>
+<li><a href="#actividades-8" id="toc-actividades-8">Actividades</a>
 <ul>
-<li><a href="#descripción-9" id="toc-descripción-9"><span class="toc-section-number">3.5.1</span> Descripción</a></li>
-<li><a href="#actividades-9" id="toc-actividades-9"><span class="toc-section-number">3.5.2</span> Actividades</a></li>
-<li><a href="#interpretación-de-los-hallazgos-1" id="toc-interpretación-de-los-hallazgos-1"><span class="toc-section-number">3.5.3</span> 5.1. Interpretación de los
-hallazgos</a></li>
+<li><a href="#selección-de-métodos-de-visualización-1" id="toc-selección-de-métodos-de-visualización-1">4.1. Selección de
+métodos de visualización</a></li>
+<li><a href="#creación-de-gráficos-y-mapas-1" id="toc-creación-de-gráficos-y-mapas-1">4.2. Creación de gráficos y
+mapas</a></li>
 </ul></li>
-<li><a href="#etapa-6-priorización-del-corpus" id="toc-etapa-6-priorización-del-corpus"><span class="toc-section-number">3.6</span> Etapa 6: Priorización del
+</ul></li>
+<li><a href="#etapa-5-interpretación-y-presentación-de-resultados." id="toc-etapa-5-interpretación-y-presentación-de-resultados.">Etapa 5:
+Interpretación y presentación de resultados.</a>
+<ul>
+<li><a href="#descripción-9" id="toc-descripción-9">Descripción</a></li>
+<li><a href="#actividades-9" id="toc-actividades-9">Actividades</a>
+<ul>
+<li><a href="#interpretación-de-los-hallazgos-1" id="toc-interpretación-de-los-hallazgos-1">5.1. Interpretación de los
+hallazgos</a></li>
+<li><a href="#descripción-de-resultados-1" id="toc-descripción-de-resultados-1">5.2. Descripción de
+resultados</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#etapa-6-priorización-del-corpus" id="toc-etapa-6-priorización-del-corpus">Etapa 6: Priorización del
 corpus</a>
 <ul>
-<li><a href="#descripción-10" id="toc-descripción-10"><span class="toc-section-number">3.6.1</span> Descripción</a></li>
-<li><a href="#actividades-10" id="toc-actividades-10"><span class="toc-section-number">3.6.2</span> Actividades</a></li>
-<li><a href="#análisis-temático-del-corpus" id="toc-análisis-temático-del-corpus"><span class="toc-section-number">3.6.3</span> 6.1. Análisis temático del
+<li><a href="#descripción-10" id="toc-descripción-10">Descripción</a></li>
+<li><a href="#actividades-10" id="toc-actividades-10">Actividades</a>
+<ul>
+<li><a href="#análisis-temático-del-corpus" id="toc-análisis-temático-del-corpus">6.1. Análisis temático del
 corpus</a></li>
-<li><a href="#priorización-del-corpus" id="toc-priorización-del-corpus"><span class="toc-section-number">3.6.4</span> 6.2. Priorización del
-corpus</a></li>
+<li><a href="#priorización-del-corpus" id="toc-priorización-del-corpus">6.2. Priorización del corpus</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma" id="toc-nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma"><span class="toc-section-number">4</span> Nivel 2: Estudio detallado mediante
-revisión sistemática basada en PRISMA</a>
+<li><a href="#nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma" id="toc-nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma">Nivel
+2: Estudio detallado mediante revisión sistemática basada en PRISMA</a>
 <ul>
-<li><a href="#descripción-11" id="toc-descripción-11"><span class="toc-section-number">4.0.1</span> Descripción</a></li>
-<li><a href="#etapa-7-aplicación-de-la-metodología-de-revisión-prisma" id="toc-etapa-7-aplicación-de-la-metodología-de-revisión-prisma"><span class="toc-section-number">4.1</span> Etapa 7: Aplicación de la
-metodología de revisión PRISMA</a>
+<li><a href="#descripción-11" id="toc-descripción-11">Descripción</a></li>
+</ul></li>
+<li><a href="#etapa-7-aplicación-de-la-metodología-de-revisión-prisma" id="toc-etapa-7-aplicación-de-la-metodología-de-revisión-prisma">Etapa
+7: Aplicación de la metodología de revisión PRISMA</a>
 <ul>
-<li><a href="#descripción-12" id="toc-descripción-12"><span class="toc-section-number">4.1.1</span> Descripción</a></li>
-<li><a href="#link-a-la-referencia-httpsprisma.shinyapps.iochecklist" id="toc-link-a-la-referencia-httpsprisma.shinyapps.iochecklist"><span class="toc-section-number">4.1.2</span> Link a la referencia:
-https://prisma.shinyapps.io/checklist/</a></li>
-<li><a href="#actividades-11" id="toc-actividades-11"><span class="toc-section-number">4.1.3</span> Actividades</a></li>
-<li><a href="#diseño-del-protocolo-de-revisión" id="toc-diseño-del-protocolo-de-revisión"><span class="toc-section-number">4.1.4</span> 7.1. Diseño del protocolo de
+<li><a href="#descripción-12" id="toc-descripción-12">Descripción</a></li>
+<li><a href="#comentario" id="toc-comentario">Comentario:</a></li>
+<li><a href="#secciones" id="toc-secciones">Secciones:</a></li>
+<li><a href="#link-a-la-referencia" id="toc-link-a-la-referencia">Link a
+la referencia</a></li>
+<li><a href="#actividades-11" id="toc-actividades-11">Actividades</a>
+<ul>
+<li><a href="#diseño-del-protocolo-de-revisión" id="toc-diseño-del-protocolo-de-revisión">7.1. Diseño del protocolo de
 revisión</a></li>
+<li><a href="#búsqueda-y-priorización-de-artículos" id="toc-búsqueda-y-priorización-de-artículos">7.2. Búsqueda y
+priorización de artículos</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos" id="toc-aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos"><span class="toc-section-number">5</span> Aportes a la revisión de la
-metodología híbrida desde otras fuentes de datos</a>
+<li><a href="#aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos" id="toc-aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos">Aportes
+a la revisión de la metodología híbrida desde otras fuentes de datos</a>
 <ul>
-<li><a href="#posible-estructura-del-trabajo" id="toc-posible-estructura-del-trabajo"><span class="toc-section-number">5.1</span> Posible estructura del trabajo</a>
-<ul>
-<li><a href="#caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production" id="toc-caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production"><span class="toc-section-number">5.1.1</span> Caso 1: A bibliometric analysis
-of bitcoin scientific production</a></li>
-<li><a href="#caso-2-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" id="toc-caso-2-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis"><span class="toc-section-number">5.1.2</span> Caso 2: WHERE DO WE STAND IN
-CRYPTOCURRENCIES ECONOMIC RESEARCH: A SURVEY BASED ON HYBRID
-ANALYSIS</a></li>
-<li><a href="#caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" id="toc-caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering"><span class="toc-section-number">5.1.3</span> Caso 3: Guidelines for
-Snowballing in Systematic Literature Studies and a Replication in
-Software Engineering</a></li>
-</ul></li>
-<li><a href="#justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex" id="toc-justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex"><span class="toc-section-number">5.2</span> Justificación de base de datos (en
-nuestro caso optamos por OpenAlex)</a>
-<ul>
-<li><a href="#documento-lineamientos-para-análisis-bibliométrico.-v01" id="toc-documento-lineamientos-para-análisis-bibliométrico.-v01"><span class="toc-section-number">5.2.1</span> Documento: Lineamientos para
-Análisis Bibliométrico. v01</a></li>
-<li><a href="#link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit" id="toc-link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit"><span class="toc-section-number">5.2.2</span> Link:
-https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></li>
-<li><a href="#caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews" id="toc-caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews"><span class="toc-section-number">5.2.3</span> Caso 4: A Comparison of Citation
-Sources for Reference and Citation-Based Search in Systematic Literature
-Reviews</a></li>
-<li><a href="#caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels" id="toc-caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels"><span class="toc-section-number">5.2.4</span> Caso 5: Comparative Analysis of
-the Bibliographic Data Sources Dimensions and Scopus: An Approach at the
-Country and Institutional Levels</a></li>
-</ul></li>
-<li><a href="#justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix" id="toc-justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix"><span class="toc-section-number">5.3</span> Justificación de uso de
-herramienta de análisis bibliométrico (en nuestro caso Bibliometrix)</a>
-<ul>
-<li><a href="#documento-lineamientos-para-análisis-bibliométrico.-v01-1" id="toc-documento-lineamientos-para-análisis-bibliométrico.-v01-1"><span class="toc-section-number">5.3.1</span> Documento: Lineamientos para
-Análisis Bibliométrico. v01</a></li>
-<li><a href="#link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit-1" id="toc-link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit-1"><span class="toc-section-number">5.3.2</span> Link:
-https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></li>
-<li><a href="#caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis." id="toc-caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis."><span class="toc-section-number">5.3.3</span> Caso 6: Bibliometrix : An R-tool
-for comprehensive science mapping analysis.</a></li>
+<li><a href="#posible-estructura-del-trabajo" id="toc-posible-estructura-del-trabajo">Posible estructura del
+trabajo</a></li>
+<li><a href="#caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production" id="toc-caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production">Caso
+1: A bibliometric analysis of bitcoin scientific production</a></li>
+<li><a href="#caso-2-where-do-we-stand-in-cryptocurrencies-economic-research_-a-survey-based-on-hybrid-analysis" id="toc-caso-2-where-do-we-stand-in-cryptocurrencies-economic-research_-a-survey-based-on-hybrid-analysis">Caso
+2: Where do we stand in cryptocurrencies economic research_ A survey
+based on hybrid analysis</a></li>
+<li><a href="#caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" id="toc-caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering">Caso
+3: Guidelines for Snowballing in Systematic Literature Studies and a
+Replication in Software Engineering</a></li>
+<li><a href="#caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews" id="toc-caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews">Caso
+4: A Comparison of Citation Sources for Reference and Citation-Based
+Search in Systematic Literature Reviews</a></li>
+<li><a href="#caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels" id="toc-caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels">Caso
+5: Comparative Analysis of the Bibliographic Data Sources Dimensions and
+Scopus: An Approach at the Country and Institutional Levels</a></li>
+<li><a href="#caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis." id="toc-caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis.">Caso
+6: Bibliometrix : An R-tool for comprehensive science mapping
+analysis.</a></li>
+<li><a href="#justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex" id="toc-justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex">Justificación
+de base de datos (en nuestro caso optamos por OpenAlex)</a></li>
+<li><a href="#justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix" id="toc-justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix">Justificación
+de uso de herramienta de análisis bibliométrico (en nuestro caso
+Bibliometrix)</a></li>
 </ul></li>
 </ul></li>
 </ul>
 </div>
 
-<div id="metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Metodología híbrida
-para al análisis de un corpus de artículos académicos</h1>
+<div id="metodología-híbrida-para-al-análisis-de-un-corpus-de-artículos-académicos" class="section level1">
+<h1>Metodología híbrida para al análisis de un corpus de artículos
+académicos</h1>
 <p>A continuación se presenta una metodología para abordar un estudio
 mixto de un corpus, con el objetivo de conocer el estado del arte de un
 tema de investigación, aplicando en primer término técnicas de análisis
@@ -508,123 +548,140 @@ objetivo de aportar un conjunto de elementos que ayuden a realizar el
 análisis de la estructura y el desarrollo de un campo científico
 utilizando métodos cuantitativos y datos bibliográficos.</p>
 </div>
-<div id="planteo-general-de-la-metodología." class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Planteo general de la
-metodología.</h1>
-<div id="paso-1.-diseño-del-estudio" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Paso 1. Diseño del
-estudio</h2>
-<div id="descripción" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Descripción</h3>
+<div id="planteo-general-de-la-metodología." class="section level1">
+<h1>Planteo general de la metodología.</h1>
+<div id="paso-1.-diseño-del-estudio" class="section level2">
+<h2>Paso 1. Diseño del estudio</h2>
+<div id="descripción" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa, los académicos definen las preguntas de investigación
 y seleccionan los métodos bibliométricos apropiados que pueden responder
 a esas preguntas. Se mencionan tres tipos generales de preguntas de
-investigación que se pueden abordar mediante la bibliometría: ### *
-identificar la base de conocimientos de un tema o campo de investigación
-y su estructura intelectual, ### * examinar el frente de investigación o
-estructura conceptual de un tema o campo de investigación, y ### *
-producir una estructura de red social de una comunidad científica
-específica.</p>
+investigación que se pueden abordar mediante la bibliometría:</p>
+<ul>
+<li><p>identificar la base de conocimientos de un tema o campo de
+investigación y su estructura intelectual,</p></li>
+<li><p>examinar el frente de investigación o estructura conceptual de un
+tema o campo de investigación,</p></li>
+<li><p>producir una estructura de red social de una comunidad científica
+específica.</p></li>
+</ul>
 <p>También se menciona la importancia de decidir el marco de tiempo del
 estudio, ya sea como un momento específico o dividido en períodos de
 tiempo, para capturar el desarrollo del campo a lo largo del tiempo.</p>
 </div>
-<div id="actividades" class="section level3" number="2.1.2">
-<h3><span class="header-section-number">2.1.2</span> Actividades</h3>
+<div id="actividades" class="section level3">
+<h3>Actividades</h3>
+<div id="formulación-de-preguntas-de-investigación" class="section level4">
+<h4>1.1. Formulación de preguntas de investigación</h4>
+<p>Identificación y definición de las preguntas específicas que se
+abordarán en el estudio bibliométrico.</p>
 </div>
-<div id="formulación-de-preguntas-de-investigación" class="section level3" number="2.1.3">
-<h3><span class="header-section-number">2.1.3</span> 1.1. Formulación de
-preguntas de investigación</h3>
-<p>: Identificación y definición de las preguntas específicas que se
-abordarán en el estudio bibliométrico. ### 1.2. Selección de métodos :
-Elección de los métodos apropiados para responder a las preguntas de
-investigación planteadas. ### 1.3. Determinación del marco de tiempo :
-Decisión de utilizar un momento específico o dividir el período de
+<div id="selección-de-métodos" class="section level4">
+<h4>1.2. Selección de métodos</h4>
+<p>Elección de los métodos apropiados para responder a las preguntas de
+investigación planteadas.</p>
+</div>
+<div id="determinación-del-marco-de-tiempo" class="section level4">
+<h4>1.3. Determinación del marco de tiempo</h4>
+<p>Decisión de utilizar un momento específico o dividir el período de
 estudio en intervalos de tiempo.</p>
 </div>
 </div>
-<div id="paso-2.-recopilación-de-datos" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Paso 2. Recopilación
-de datos</h2>
-<div id="descripción-1" class="section level3" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Descripción</h3>
+</div>
+<div id="paso-2.-recopilación-de-datos" class="section level2">
+<h2>Paso 2. Recopilación de datos</h2>
+<div id="descripción-1" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa, los académicos seleccionan la base de datos que
 contiene los datos bibliométricos, filtran el conjunto de documentos
 principales y exportan los datos de la base de datos seleccionada. Se
 menciona que esta etapa puede implicar la construcción de una base de
 datos propia.</p>
 </div>
-<div id="actividades-1" class="section level3" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Actividades</h3>
+<div id="actividades-1" class="section level3">
+<h3>Actividades</h3>
+<div id="selección-de-fuentes-de-datos" class="section level4">
+<h4>2.1. Selección de fuentes de datos</h4>
+<p>Identificación y elección de las bases de datos bibliográficas o
+repositorios pertinentes para extraer la información necesaria.</p>
 </div>
-<div id="selección-de-fuentes-de-datos" class="section level3" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> 2.1. Selección de
-fuentes de datos</h3>
-<p>: Identificación y elección de las bases de datos bibliográficas o
-repositorios pertinentes para extraer la información necesaria. ### 2.2.
-Definición de criterios de búsqueda : Establecimiento de los criterios
-que se utilizarán para realizar búsquedas y recopilar los datos
-bibliométricos. ### 2.3. Extracción de datos : Recopilación y extracción
-de los datos bibliográficos relevantes según los criterios de búsqueda
-establecidos.</p>
+<div id="definición-de-criterios-de-búsqueda" class="section level4">
+<h4>2.2. Definición de criterios de búsqueda</h4>
+<p>Establecimiento de los criterios que se utilizarán para realizar
+búsquedas y recopilar los datos bibliométricos.</p>
+</div>
+<div id="extracción-de-datos" class="section level4">
+<h4>2.3. Extracción de datos</h4>
+<p>Recopilación y extracción de los datos bibliográficos relevantes
+según los criterios de búsqueda establecidos.</p>
 </div>
 </div>
-<div id="paso-3.-análisis-de-datos" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Paso 3. Análisis de
-datos</h2>
-<div id="descripción-2" class="section level3" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Descripción</h3>
+</div>
+<div id="paso-3.-análisis-de-datos" class="section level2">
+<h2>Paso 3. Análisis de datos</h2>
+<div id="descripción-2" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa, se utilizan una o más herramientas de software
 bibliométrico o estadístico para analizar los datos recopilados. También
 se menciona que los académicos pueden escribir su propio código
 informático para satisfacer sus requisitos de análisis.</p>
 </div>
-<div id="actividades-2" class="section level3" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> Actividades</h3>
+<div id="actividades-2" class="section level3">
+<h3>Actividades</h3>
+<div id="preparación-y-limpieza-de-datos" class="section level4">
+<h4>3.1. Preparación y limpieza de datos</h4>
+<p>Procesamiento de los datos recopilados, eliminando cualquier
+información no relevante o duplicada, y preparándolos para su
+análisis.</p>
 </div>
-<div id="preparación-y-limpieza-de-datos" class="section level3" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> 3.1. Preparación y
-limpieza de datos</h3>
-<p>: Procesamiento de los datos recopilados, eliminando cualquier
-información no relevante o duplicada, y preparándolos para su análisis.
-### 3.2. Cálculo de métricas bibliométricas : Aplicación de fórmulas y
-métodos para calcular métricas bibliométricas como citas, índices de
-impacto, cocitaciones, entre otros. ### 3.3. Análisis de redes :
-Utilización de técnicas de análisis de redes para identificar y
-visualizar las relaciones entre los documentos, autores o instituciones.
-### 3.4. Análisis de coocurrencia de términos : Identificación de la
-frecuencia y patrones de coocurrencia de términos clave en los
-documentos analizados.</p>
+<div id="cálculo-de-métricas-bibliométricas" class="section level4">
+<h4>3.2. Cálculo de métricas bibliométricas</h4>
+<p>Aplicación de fórmulas y métodos para calcular métricas
+bibliométricas como citas, índices de impacto, cocitaciones, entre
+otros.</p>
+</div>
+<div id="análisis-de-redes" class="section level4">
+<h4>3.3. Análisis de redes</h4>
+<p>Utilización de técnicas de análisis de redes para identificar y
+visualizar las relaciones entre los documentos, autores o
+instituciones.</p>
+</div>
+<div id="análisis-de-co-ocurrencia-de-términos" class="section level4">
+<h4>3.4. Análisis de co-ocurrencia de términos</h4>
+<p>Identificación de la frecuencia y patrones de coocurrencia de
+términos clave en los documentos analizados.</p>
 </div>
 </div>
-<div id="paso-4.-visualización-de-datos" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Paso 4. Visualización
-de datos</h2>
-<div id="descripción-3" class="section level3" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> Descripción</h3>
+</div>
+<div id="paso-4.-visualización-de-datos" class="section level2">
+<h2>Paso 4. Visualización de datos</h2>
+<div id="descripción-3" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa, los académicos deben decidir qué método de
 visualización se utilizará para presentar los resultados del análisis de
 datos. También se menciona la necesidad de utilizar el software de mapeo
 adecuado para la visualización.</p>
 </div>
-<div id="actividades-3" class="section level3" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> Actividades</h3>
+<div id="actividades-3" class="section level3">
+<h3>Actividades</h3>
+<div id="selección-de-métodos-de-visualización" class="section level4">
+<h4>4.1. Selección de métodos de visualización</h4>
+<p>Elección de las técnicas y herramientas de visualización adecuadas
+para representar los resultados del análisis bibliométrico.</p>
 </div>
-<div id="selección-de-métodos-de-visualización" class="section level3" number="2.4.3">
-<h3><span class="header-section-number">2.4.3</span> 4.1. Selección de
-métodos de visualización</h3>
-<p>: Elección de las técnicas y herramientas de visualización adecuadas
-para representar los resultados del análisis bibliométrico. ### 4.2.
-Creación de gráficos y mapas : Generación de gráficos, mapas y otros
-elementos visuales para mostrar patrones, tendencias y relaciones
-identificadas en los datos bibliométricos.</p>
+<div id="creación-de-gráficos-y-mapas" class="section level4">
+<h4>4.2. Creación de gráficos y mapas</h4>
+<p>Generación de gráficos, mapas y otros elementos visuales para mostrar
+patrones, tendencias y relaciones identificadas en los datos
+bibliométricos.</p>
 </div>
 </div>
-<div id="paso-5.-interpretación-y-presentación-de-resultados" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Paso 5.
-Interpretación y presentación de resultados</h2>
-<div id="descripción-4" class="section level3" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> Descripción</h3>
+</div>
+<div id="paso-5.-interpretación-y-presentación-de-resultados" class="section level2">
+<h2>Paso 5. Interpretación y presentación de resultados</h2>
+<div id="descripción-4" class="section level3">
+<h3>Descripción</h3>
 <p>En esta última etapa, se interpreta y describen los hallazgos. Se
 destaca que, aunque los métodos bibliométricos pueden revelar la
 estructura de un campo de manera diferente a las revisiones
@@ -632,386 +689,587 @@ tradicionales de literatura, no reemplazan la lectura exhaustiva en el
 campo. Se reconoce que los académicos con un conocimiento profundo del
 campo tienen una ventaja distintiva en esta etapa.</p>
 </div>
-<div id="actividades-4" class="section level3" number="2.5.2">
-<h3><span class="header-section-number">2.5.2</span> Actividades</h3>
+<div id="actividades-4" class="section level3">
+<h3>Actividades</h3>
+<div id="interpretación-de-los-hallazgos" class="section level4">
+<h4>5.1. Interpretación de los hallazgos</h4>
+<p>Análisis y comprensión de los resultados obtenidos a través de los
+métodos bibliométricos utilizados.</p>
 </div>
-<div id="interpretación-de-los-hallazgos" class="section level3" number="2.5.3">
-<h3><span class="header-section-number">2.5.3</span> 5.1. Interpretación
-de los hallazgos</h3>
-<p>: Análisis y comprensión de los resultados obtenidos a través de los
-métodos bibliométricos utilizados. ### 5.2. Descripción de resultados :
-Documentación y presentación de los resultados y conclusiones del
+<div id="descripción-de-resultados" class="section level4">
+<h4>5.2. Descripción de resultados</h4>
+<p>Documentación y presentación de los resultados y conclusiones del
 estudio bibliométrico, resaltando los aspectos más relevantes.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="niveles-del-estudio-híbrido" class="section level1">
+<h1>Niveles del estudio híbrido</h1>
 <p>A continuación se presentan los dos niveles de estudio, a través de
 los cuales se analizará el estudio del tema de interés, abordado de lo
 general a lo particular.</p>
-</div>
-</div>
-</div>
-<div id="nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico" class="section level1" number="3">
-<h1><span class="header-section-number">3</span> Nivel 1: Estudio
-general mediante técnicas de análisis bibliométrico</h1>
-<div id="descripción-5" class="section level3" number="3.0.1">
-<h3><span class="header-section-number">3.0.1</span> Descripción</h3>
+<div id="nivel-1-estudio-general-mediante-técnicas-de-análisis-bibliométrico" class="section level2">
+<h2>Nivel 1: Estudio general mediante técnicas de análisis
+bibliométrico</h2>
+<div id="descripción-5" class="section level3">
+<h3>Descripción</h3>
 <p>Realizar un estudio general del estado del arte del tema de
 investigación mediante el análisis bibliométrico de un corpus
-bibliográfico relevante y priorizado. ### Entrada: Bases de datos
-académicas relevantes y criterios de búsqueda (palabras clave, rango de
-fechas, filtros de búsqueda). ### Salida: Corpus bibliográfico relevante
-según los criterios establecidos.</p>
+bibliográfico relevante y priorizado.</p>
+<ul>
+<li><p><em>Entrada</em>: Bases de datos académicas relevantes y
+criterios de búsqueda (palabras clave, rango de fechas, filtros de
+búsqueda).</p></li>
+<li><p><em>Salida</em>: Corpus bibliográfico relevante según los
+criterios establecidos.</p></li>
+</ul>
 </div>
-<div id="etapa-1-selección-y-preparación-del-corpus" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Etapa 1: Selección y
-preparación del corpus</h2>
-<div id="descripción-6" class="section level3" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> Descripción</h3>
+<div id="etapa-1-selección-y-preparación-del-corpus" class="section level3">
+<h3>Etapa 1: Selección y preparación del corpus</h3>
+</div>
+<div id="descripción-6" class="section level3">
+<h3>Descripción</h3>
 <p>Identificar las bases de datos académicas relevantes y definir los
-criterios de búsqueda para la construcción del corpus. ### Herramientas
-recomendadas Por ejemplo, Web of Science, Scopus, PubMed. ### Referencia
-Van Eck, N. J., &amp; Waltman, L. (2011). Text mining and visualization
-using VOSviewer. Scientometrics, 87(3), 467-476.</p>
+criterios de búsqueda para la construcción del corpus.</p>
+<ul>
+<li><p>Herramientas recomendadas: Por ejemplo, Web of Science, Scopus,
+PubMed.</p></li>
+<li><p>Referencia: Van Eck, N. J., &amp; Waltman, L. (2011). Text mining
+and visualization using VOSviewer. Scientometrics, 87(3),
+467-476.</p></li>
+</ul>
 </div>
-<div id="actividades-5" class="section level3" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> Actividades</h3>
+<div id="actividades-5" class="section level3">
+<h3>Actividades</h3>
+<div id="identificación-de-bases-de-datos-académicas-relevantes" class="section level4">
+<h4>1.1. Identificación de bases de datos académicas relevantes</h4>
+<p>Seleccionar las bases de datos bibliográficas que contengan artículos
+académicos relevantes para el tema de investigación.</p>
 </div>
-<div id="identificación-de-bases-de-datos-académicas-relevantes" class="section level3" number="3.1.3">
-<h3><span class="header-section-number">3.1.3</span> 1.1. Identificación
-de bases de datos académicas relevantes</h3>
-<p>: Seleccionar las bases de datos bibliográficas que contengan
-artículos académicos relevantes para el tema de investigación. ### 1.2.
-Definición de criterios de búsqueda : Establecer los criterios de
-búsqueda, incluyendo palabras clave, rango de fechas de publicación y
-restricciones de búsqueda en el título, resumen y texto completo de los
-artículos.</p>
+<div id="definición-de-criterios-de-búsqueda-1" class="section level4">
+<h4>1.2. Definición de criterios de búsqueda</h4>
+<p>Establecer los criterios de búsqueda, incluyendo palabras clave,
+rango de fechas de publicación y restricciones de búsqueda en el título,
+resumen y texto completo de los artículos.</p>
 </div>
 </div>
-<div id="etapa-2-recopilación-y-limpieza-de-datos" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Etapa 2: Recopilación
-y limpieza de datos</h2>
-<div id="descripción-7" class="section level3" number="3.2.1">
-<h3><span class="header-section-number">3.2.1</span> Descripción</h3>
+</div>
+<div id="etapa-2-recopilación-y-limpieza-de-datos" class="section level2">
+<h2>Etapa 2: Recopilación y limpieza de datos</h2>
+<div id="descripción-7" class="section level3">
+<h3>Descripción</h3>
 <p>Extraer los datos bibliográficos necesarios y eliminar duplicados y
-datos irrelevantes del corpus. ### Herramientas recomendadas Por
-ejemplo, Zotero, EndNote. ### Referencia Zhang, J., &amp; Li, X. (2019).
-Comparative study of reference management software: EndNote, Zotero, and
-Mendeley. Journal of Library Administration, 59(3), 319-332.</p>
+datos irrelevantes del corpus.</p>
+<ul>
+<li><p>Herramientas recomendadas: Por ejemplo, Zotero, EndNote.</p></li>
+<li><p>Referencia: Zhang, J., &amp; Li, X. (2019). Comparative study of
+reference management software: EndNote, Zotero, and Mendeley. Journal of
+Library Administration, 59(3), 319-332.</p></li>
+</ul>
 </div>
-<div id="actividades-6" class="section level3" number="3.2.2">
-<h3><span class="header-section-number">3.2.2</span> Actividades</h3>
+<div id="actividades-6" class="section level3">
+<h3>Actividades</h3>
+<div id="extracción-de-datos-bibliográficos" class="section level4">
+<h4>2.1. Extracción de datos bibliográficos</h4>
+<p>Recopilar los metadatos de los artículos académicos que cumplen con
+los criterios de búsqueda.</p>
 </div>
-<div id="extracción-de-datos-bibliográficos" class="section level3" number="3.2.3">
-<h3><span class="header-section-number">3.2.3</span> 2.1. Extracción de
-datos bibliográficos</h3>
-<p>: Recopilar los metadatos de los artículos académicos que cumplen con
-los criterios de búsqueda. ### 2.2. Eliminación de duplicados y datos
-irrelevantes : Limpiar el corpus eliminando duplicados y aquellos
-artículos que no sean relevantes para el estudio.</p>
+<div id="eliminación-de-duplicados-y-datos-irrelevantes" class="section level4">
+<h4>2.2. Eliminación de duplicados y datos irrelevantes</h4>
+<p>Limpiar el corpus eliminando duplicados y aquellos artículos que no
+sean relevantes para el estudio.</p>
 </div>
 </div>
-<div id="etapa-3-análisis-de-datos-bibliométricos" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Etapa 3: Análisis de
-datos bibliométricos</h2>
-<div id="descripción-8" class="section level3" number="3.3.1">
-<h3><span class="header-section-number">3.3.1</span> Descripción</h3>
+</div>
+<div id="etapa-3-análisis-de-datos-bibliométricos" class="section level2">
+<h2>Etapa 3: Análisis de datos bibliométricos</h2>
+<div id="descripción-8" class="section level3">
+<h3>Descripción</h3>
 <p>Realizar análisis de coautoría, colaboración y citas para obtener
 información sobre la estructura y las relaciones en el corpus. ###
 Herramientas recomendadas Por ejemplo, VOSviewer, CiteSpace. ###
 Referencia Chen, C. (2017). Science mapping: A systematic review of the
 literature. Journal of Data and Information Science, 2(2), 1-40.</p>
 </div>
-<div id="actividades-7" class="section level3" number="3.3.2">
-<h3><span class="header-section-number">3.3.2</span> Actividades</h3>
+<div id="actividades-7" class="section level3">
+<h3>Actividades</h3>
+<div id="análisis-de-coautoría-y-colaboración" class="section level4">
+<h4>3.1. Análisis de coautoría y colaboración</h4>
+<p>Identificar patrones de coautoría y colaboración entre autores e
+instituciones.</p>
 </div>
-<div id="análisis-de-coautoría-y-colaboración" class="section level3" number="3.3.3">
-<h3><span class="header-section-number">3.3.3</span> 3.1. Análisis de
-coautoría y colaboración</h3>
-<p>: Identificar patrones de coautoría y colaboración entre autores e
-instituciones. ### 3.2. Análisis de citas : Calcular métricas de citas
-para evaluar la influencia y relevancia de los artículos
-seleccionados.</p>
+<div id="análisis-de-citas" class="section level4">
+<h4>3.2. Análisis de citas</h4>
+<p>Calcular métricas de citas para evaluar la influencia y relevancia de
+los artículos seleccionados.</p>
 </div>
 </div>
-<div id="etapa-4.-visualización-de-datos." class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> Etapa 4.
-Visualización de datos.</h2>
-<div id="descripcion" class="section level3" number="3.4.1">
-<h3><span class="header-section-number">3.4.1</span> Descripcion</h3>
+</div>
+<div id="etapa-4.-visualización-de-datos." class="section level2">
+<h2>Etapa 4. Visualización de datos.</h2>
+<div id="descripcion" class="section level3">
+<h3>Descripcion</h3>
 <p>En esta etapa, los académicos deben decidir qué método de
 visualización se utilizará para presentar los resultados del análisis de
 datos. También se menciona la necesidad de utilizar el software de mapeo
 adecuado para la visualización.</p>
 </div>
-<div id="actividades-8" class="section level3" number="3.4.2">
-<h3><span class="header-section-number">3.4.2</span> Actividades</h3>
+<div id="actividades-8" class="section level3">
+<h3>Actividades</h3>
+<div id="selección-de-métodos-de-visualización-1" class="section level4">
+<h4>4.1. Selección de métodos de visualización</h4>
+<p>Elección de las técnicas y herramientas de visualización adecuadas
+para representar los resultados del análisis bibliométrico.</p>
 </div>
-<div id="selección-de-métodos-de-visualización-1" class="section level3" number="3.4.3">
-<h3><span class="header-section-number">3.4.3</span> 4.1. Selección de
-métodos de visualización</h3>
-<p>: Elección de las técnicas y herramientas de visualización adecuadas
-para representar los resultados del análisis bibliométrico. ### 4.2.
-Creación de gráficos y mapas : Generación de gráficos, mapas y otros
-elementos visuales para mostrar patrones, tendencias y relaciones
-identificadas en los datos bibliométricos.</p>
+<div id="creación-de-gráficos-y-mapas-1" class="section level4">
+<h4>4.2. Creación de gráficos y mapas</h4>
+<p>Generación de gráficos, mapas y otros elementos visuales para mostrar
+patrones, tendencias y relaciones identificadas en los datos
+bibliométricos.</p>
 </div>
 </div>
-<div id="etapa-5-interpretación-y-presentación-de-resultados." class="section level2" number="3.5">
-<h2><span class="header-section-number">3.5</span> Etapa 5:
-Interpretación y presentación de resultados.</h2>
-<div id="descripción-9" class="section level3" number="3.5.1">
-<h3><span class="header-section-number">3.5.1</span> Descripción</h3>
+</div>
+<div id="etapa-5-interpretación-y-presentación-de-resultados." class="section level2">
+<h2>Etapa 5: Interpretación y presentación de resultados.</h2>
+<div id="descripción-9" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa, se interpetan y describen los hallazgos.</p>
 </div>
-<div id="actividades-9" class="section level3" number="3.5.2">
-<h3><span class="header-section-number">3.5.2</span> Actividades</h3>
+<div id="actividades-9" class="section level3">
+<h3>Actividades</h3>
+<div id="interpretación-de-los-hallazgos-1" class="section level4">
+<h4>5.1. Interpretación de los hallazgos</h4>
+<p>Análisis y comprensión de los resultados obtenidos a través de los
+métodos bibliométricos utilizados.</p>
 </div>
-<div id="interpretación-de-los-hallazgos-1" class="section level3" number="3.5.3">
-<h3><span class="header-section-number">3.5.3</span> 5.1. Interpretación
-de los hallazgos</h3>
-<p>: Análisis y comprensión de los resultados obtenidos a través de los
-métodos bibliométricos utilizados. ### 5.2. Descripción de resultados :
-Documentación y presentación de los resultados y conclusiones del
+<div id="descripción-de-resultados-1" class="section level4">
+<h4>5.2. Descripción de resultados</h4>
+<p>Documentación y presentación de los resultados y conclusiones del
 estudio bibliométrico, resaltando los aspectos más relevantes.</p>
 </div>
 </div>
-<div id="etapa-6-priorización-del-corpus" class="section level2" number="3.6">
-<h2><span class="header-section-number">3.6</span> Etapa 6: Priorización
-del corpus</h2>
-<div id="descripción-10" class="section level3" number="3.6.1">
-<h3><span class="header-section-number">3.6.1</span> Descripción</h3>
+</div>
+<div id="etapa-6-priorización-del-corpus" class="section level2">
+<h2>Etapa 6: Priorización del corpus</h2>
+<div id="descripción-10" class="section level3">
+<h3>Descripción</h3>
 <p>Analizar el corpus obtenido y aplicar criterios para priorizar los
 artículos más cercanos y relevantes al tema de investigación.</p>
 </div>
-<div id="actividades-10" class="section level3" number="3.6.2">
-<h3><span class="header-section-number">3.6.2</span> Actividades</h3>
-</div>
-<div id="análisis-temático-del-corpus" class="section level3" number="3.6.3">
-<h3><span class="header-section-number">3.6.3</span> 6.1. Análisis
-temático del corpus</h3>
-<p>: Identificar los artículos más relevantes y cercanos al tema de
-investigación. #### Herramientas recomendadas : Por ejemplo, Topic
-Modeling (con LDA o LSA), análisis de palabras clave y coocurrencias.
-#### Referencia : Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003).
+<div id="actividades-10" class="section level3">
+<h3>Actividades</h3>
+<div id="análisis-temático-del-corpus" class="section level4">
+<h4>6.1. Análisis temático del corpus</h4>
+<p>Identificar los artículos más relevantes y cercanos al tema de
+investigación.</p>
+<ul>
+<li><p>Herramientas recomendadas : Por ejemplo, Topic Modeling (con LDA
+o LSA), análisis de palabras clave y coocurrencias.</p></li>
+<li><p>Referencia : Blei, D. M., Ng, A. Y., &amp; Jordan, M. I. (2003).
 Latent Dirichlet allocation. Journal of Machine Learning Research,
-3(Jan), 993-1022.</p>
+3(Jan), 993-1022.</p></li>
+</ul>
 </div>
-<div id="priorización-del-corpus" class="section level3" number="3.6.4">
-<h3><span class="header-section-number">3.6.4</span> 6.2. Priorización
-del corpus</h3>
-<p>: Ordenar los artículos según su relevancia y cercanía al tema de
-investigación. #### Herramientas recomendadas : Por ejemplo, algoritmos
-de clasificación o puntuación basados en criterios definidos. ####
-Referencia : Yang, Y., &amp; Pedersen, J. O. (1997). A comparative study
-on feature selection in text categorization. In ICML (Vol. 97,
-pp. 412-420).</p>
+<div id="priorización-del-corpus" class="section level4">
+<h4>6.2. Priorización del corpus</h4>
+<p>Ordenar los artículos según su relevancia y cercanía al tema de
+investigación.</p>
+<ul>
+<li><p>Herramientas recomendadas : Por ejemplo, algoritmos de
+clasificación o puntuación basados en criterios definidos.</p></li>
+<li><p>Referencia : Yang, Y., &amp; Pedersen, J. O. (1997). A
+comparative study on feature selection in text categorization. In ICML
+(Vol. 97, pp. 412-420).</p></li>
+</ul>
 </div>
 </div>
 </div>
-<div id="nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma" class="section level1" number="4">
-<h1><span class="header-section-number">4</span> Nivel 2: Estudio
-detallado mediante revisión sistemática basada en PRISMA</h1>
-<div id="descripción-11" class="section level3" number="4.0.1">
-<h3><span class="header-section-number">4.0.1</span> Descripción</h3>
+<div id="nivel-2-estudio-detallado-mediante-revisión-sistemática-basada-en-prisma" class="section level2">
+<h2>Nivel 2: Estudio detallado mediante revisión sistemática basada en
+PRISMA</h2>
+<div id="descripción-11" class="section level3">
+<h3>Descripción</h3>
 <p>Complementar los resultados de la revisión bibliométrica realizando
 una revisión detallada del corpus priorizado obtenido, dado que si bien
 los métodos bibliométricos pueden revelar la estructura de un campo de
 manera diferente a las revisiones tradicionales de literatura, no
-reemplazan el estudio en profundidad de cada elemento recuperado. ###
-Entrada: Corpus priorizado a partir de las técnicas bibliométricas. ###
-Salida: Corpus priorizado según la cercanía con el tema de interés.</p>
+reemplazan el estudio en profundidad de cada elemento recuperado.</p>
+<ul>
+<li><p>Entrada: Corpus priorizado a partir de las técnicas
+bibliométricas.</p></li>
+<li><p>Salida: Corpus priorizado según la cercanía con el tema de
+interés.</p></li>
+</ul>
 </div>
-<div id="etapa-7-aplicación-de-la-metodología-de-revisión-prisma" class="section level2" number="4.1">
-<h2><span class="header-section-number">4.1</span> Etapa 7: Aplicación
-de la metodología de revisión PRISMA</h2>
-<div id="descripción-12" class="section level3" number="4.1.1">
-<h3><span class="header-section-number">4.1.1</span> Descripción</h3>
-<p>Diseñar el protocolo de revisión y aplicarlo al corpus priorizado.
-### Herramientas recomendadas Por ejemplo, Rayyan, Covidence. ###
-Referencia Moher, D., Liberati, A., Tetzlaff, J., &amp; Altman, D. G.
-(2009). Preferred reporting items for systematic reviews and
-meta-analyses: The PRISMA statement. PLoS Medicine, 6(7), e1000097.
-Comentario: Secciones:</p>
-<p>Title Abstract 1. Introduction</p>
-<ol start="2" style="list-style-type: decimal">
-<li><p>Methods Eligibility criteria Information sources Search strategy
-Selection process Data collection process Data items Study risk of bias
-assessment Effect measures Synthesis methods Reporting bias assessment
-Certainty assessment</p></li>
-<li><p>Results Study selection Study characteristics Risk of bias in
+</div>
+<div id="etapa-7-aplicación-de-la-metodología-de-revisión-prisma" class="section level2">
+<h2>Etapa 7: Aplicación de la metodología de revisión PRISMA</h2>
+<div id="descripción-12" class="section level3">
+<h3>Descripción</h3>
+<p>Diseñar el protocolo de revisión y aplicarlo al corpus
+priorizado.</p>
+<ul>
+<li><p>Herramientas recomendadas: Por ejemplo, Rayyan,
+Covidence.</p></li>
+<li><p>Referencia: Moher, D., Liberati, A., Tetzlaff, J., &amp; Altman,
+D. G. (2009). Preferred reporting items for systematic reviews and
+meta-analyses: The PRISMA statement. PLoS Medicine, 6(7),
+e1000097.</p></li>
+</ul>
+</div>
+<div id="comentario" class="section level3">
+<h3>Comentario:</h3>
+</div>
+<div id="secciones" class="section level3">
+<h3>Secciones:</h3>
+<ul>
+<li><p>Title</p></li>
+<li><p>Abstract</p></li>
+<li><p>1.Introduction</p></li>
+<li><p>2.lMethods Eligibility criteria Information sources Search
+strategy Selection process Data collection process Data items Study risk
+of bias assessment Effect measures Synthesis methods Reporting bias
+assessment Certainty assessment</p></li>
+<li><p>3.Results Study selection Study characteristics Risk of bias in
 studies Results of individual studies Results of syntheses Reporting
 biases Certainty of evidence</p></li>
-<li><p>Discussion</p></li>
-</ol>
-<p>5, Other information Registration and protocol Support Competing
-interests Availability of data, code and other materials</p>
+<li><p>4.Discussion</p></li>
+<li><p>5.Other information Registration and protocol Support Competing
+interests Availability of data, code and other materials</p></li>
+</ul>
 </div>
-<div id="link-a-la-referencia-httpsprisma.shinyapps.iochecklist" class="section level3" number="4.1.2">
-<h3><span class="header-section-number">4.1.2</span> Link a la
-referencia: <a href="https://prisma.shinyapps.io/checklist/" class="uri">https://prisma.shinyapps.io/checklist/</a></h3>
+<div id="link-a-la-referencia" class="section level3">
+<h3>Link a la referencia</h3>
+<p><a href="https://prisma.shinyapps.io/checklist/" class="uri">https://prisma.shinyapps.io/checklist/</a></p>
 </div>
-<div id="actividades-11" class="section level3" number="4.1.3">
-<h3><span class="header-section-number">4.1.3</span> Actividades</h3>
+<div id="actividades-11" class="section level3">
+<h3>Actividades</h3>
+<div id="diseño-del-protocolo-de-revisión" class="section level4">
+<h4>7.1. Diseño del protocolo de revisión</h4>
+<p>Establecer los criterios de inclusión y exclusión, así como los
+procedimientos de priorización a aplicar al corpus.</p>
 </div>
-<div id="diseño-del-protocolo-de-revisión" class="section level3" number="4.1.4">
-<h3><span class="header-section-number">4.1.4</span> 7.1. Diseño del
-protocolo de revisión</h3>
-<p>: Establecer los criterios de inclusión y exclusión, así como los
-procedimientos de priorización a aplicar al corpus. ### 7.2. Búsqueda y
-priorización de artículos : Realizar una búsqueda exhaustiva en el
-corpus seleccionado según el protocolo definido.</p>
+<div id="búsqueda-y-priorización-de-artículos" class="section level4">
+<h4>7.2. Búsqueda y priorización de artículos</h4>
+<p>Realizar una búsqueda exhaustiva en el corpus seleccionado según el
+protocolo definido.</p>
 </div>
 </div>
 </div>
-<div id="aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos" class="section level1" number="5">
-<h1><span class="header-section-number">5</span> Aportes a la revisión
-de la metodología híbrida desde otras fuentes de datos</h1>
-<div id="posible-estructura-del-trabajo" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Posible estructura
-del trabajo</h2>
+<div id="aportes-a-la-revisión-de-la-metodología-híbrida-desde-otras-fuentes-de-datos" class="section level2">
+<h2>Aportes a la revisión de la metodología híbrida desde otras fuentes
+de datos</h2>
+<div id="posible-estructura-del-trabajo" class="section level3">
+<h3>Posible estructura del trabajo</h3>
 <p>A continuación se rescatan las secciones de los artículos donde se
 abordan el análisis bibliométrico, revisión sistemática, a fin de
-comparar y definir la estructura del artículo. ### Documento:
-Lineamientos para Análisis Bibliométrico. v01 ### Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></p>
-<div id="caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production" class="section level3" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> Caso 1: A
-bibliometric analysis of bitcoin scientific production</h3>
-<p>1.1. Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a>
-1.2. Comentario: 1.3. Secciones:</p>
-<p>Title Abstract Keywords 1. Introduction 2. Related literature 3. Data
-and results 3.1. Corresponding author’s geographical distribution 3.2.
-Top publication sources 3.3. Main keywords. 3.4. Highly cited papers
-3.5. Degree of concentration of selected variables 3.6. Citation,
-sources and authors graphs 4. Potential research lines 5. Conclusions
-Acknowledgments References</p>
+comparar y definir la estructura del artículo.</p>
+<ul>
+<li><p>Documento: Lineamientos para Análisis Bibliométrico. v01</p></li>
+<li><p>Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></p></li>
+</ul>
 </div>
-<div id="caso-2-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" class="section level3" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Caso 2: WHERE DO WE
-STAND IN CRYPTOCURRENCIES ECONOMIC RESEARCH: A SURVEY BASED ON HYBRID
-ANALYSIS</h3>
-<p>2.1. Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a>
-2.2. Comentario: En la propuesta de enfoque híbrido, se aborda un primer
-filtro vía Bibliometría (lectura distante, para identificar clusters,
-determinar autores, áreas de interés), y luego se realiza una lectura
-detallada (close reading). La estragia anterior permite identificar los
-artículos de interés a analizar en detalle, para poder comentarlos. 2.3.
-Secciones:</p>
-<p>Title Abstract Keywords 1. Introduction 2. Methodological Design 2.1
-First Step: Distant Reading by Means of Bibliometric Analysis 2.2 Second
-Step: Close Reading of Cryptocurrency Literature 3. Close Reading
-Findings 3.1 Data Sources 3.2 Data Frequency 3.3 Main Research Topics
-3.3.1 Monetary Economics and Overview of Bitcoin Ecosystem 3.3.2
-Informational Efficiency 3.3.3 Price Discovery 3.3.4 Price Volatility
-3.3.5 Assets Correlation and Portfolio Optimization 3.3.6 Safe-Haven
-Characteristics 3.3.7 Bubble Formation 3.3.8 Initial Coin Offering (ICO)
-4. Literature Gaps and Open Research Paths 5. Conclusions
-Acknowledgments Data Availability Statement Notes References</p>
+<div id="caso-1-a-bibliometric-analysis-of-bitcoin-scientific-production" class="section level3">
+<h3>Caso 1: A bibliometric analysis of bitcoin scientific
+production</h3>
+<ul>
+<li><p>Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a></p></li>
+<li><p>Comentario:</p></li>
+<li><p>Secciones:</p>
+<ul>
+<li><p>Title</p></li>
+<li><p>Abstract</p></li>
+<li><p>Keywords</p></li>
+<li><p>1. Introduction</p></li>
+<li><p>2. Related literature</p></li>
+<li><p>3. Data and results</p>
+<ul>
+<li><p>3.1. Corresponding author’s geographical distribution</p></li>
+<li><p>3.2. Top publication sources</p></li>
+<li><p>3.3. Main keywords.</p></li>
+<li><p>3.4. Highly cited papers</p></li>
+<li><p>3.5. Degree of concentration of selected variables</p></li>
+<li><p>3.6. Citation, sources and authors graphs</p></li>
+</ul></li>
+<li><p>4. Potential research lines</p></li>
+<li><p>5. Conclusions</p></li>
+<li><p>Acknowledgments</p></li>
+<li><p>References</p></li>
+</ul></li>
+</ul>
 </div>
-<div id="caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" class="section level3" number="5.1.3">
-<h3><span class="header-section-number">5.1.3</span> Caso 3: Guidelines
-for Snowballing in Systematic Literature Studies and a Replication in
-Software Engineering</h3>
-<p>3.1. Fuente: <a href="https://sci-hub.se/10.1145/2601248.2601268" class="uri">https://sci-hub.se/10.1145/2601248.2601268</a> 3.2.
-Comentario: 3.3. Secciones:</p>
-<p>Title Abstract Categories and Subject Descriptors General Terms
-Keywords 1. INTRODUCTION 2. RELATED WORK 3. SNOWBALLING PROCEDURE 3.1
-Start Set 3.2 Iterations 3.2.1 Backward Snowballing 3.2.2 Forward
-Snowballing 3.2.3 Inclusion and Exclusion Figure 1. Snowballing
-procedure 3.3 Authors 3.4 Data Extraction 4. REPLICATION 4.1
-Introduction 4.2 Start Set 4.3 Iteration 1 4.3.1 Backward Snowballing
-4.3.2 Forward Snowballing 4.3.3 Summary of Status 4.4 Iteration 2 4.4.1
-Backward Snowballing 4.4.2 Forward Snowballing 4.5 Iteration 3 4.6
-Efficiency 4.7 Authors 4.8 Citation Matrix and Timeline 4.9 Reflections
-4.9.1 Ten Lessons Learned from Snowballing 4.9.2 Validity Threats 4.10
-Comparison 5. DISCUSSION SNOWBALLING 6. SUMMARY 7. ACKNOWLEDGMENTS 8.
-REFERENCES</p>
+<div id="caso-2-where-do-we-stand-in-cryptocurrencies-economic-research_-a-survey-based-on-hybrid-analysis" class="section level3">
+<h3>Caso 2: Where do we stand in cryptocurrencies economic research_ A
+survey based on hybrid analysis</h3>
+<ul>
+<li><p>Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a></p></li>
+<li><p>Comentario: En la propuesta de enfoque híbrido, se aborda un
+primer filtro vía Bibliometría (lectura distante, para identificar
+clusters, determinar autores, áreas de interés), y luego se realiza una
+lectura detallada (close reading). La estrategia anterior permite
+identificar los artículos de interés a analizar en detalle, para poder
+comentarlos.</p></li>
+<li><p>Secciones:</p>
+<ul>
+<li><p>Title</p></li>
+<li><p>Abstract</p></li>
+<li><p>Keywords</p></li>
+<li><p>1. Introduction</p></li>
+<li><p>2. Methodological Design</p>
+<ul>
+<li><p>2.1 <em>First Step</em>: Distant Reading by Means of Bibliometric
+Analysis</p></li>
+<li><p>2.2 <em>Second Step</em>: Close Reading of Cryptocurrency
+Literature</p></li>
+</ul></li>
+<li><p>3. Close Reading Findings</p>
+<ul>
+<li><p>3.1 Data Sources</p></li>
+<li><p>3.2 Data Frequency</p></li>
+<li><p>3.3 Main Research Topics</p>
+<ul>
+<li><p>3.3.1 Monetary Economics and Overview of Bitcoin
+Ecosystem</p></li>
+<li><p>3.3.2 Informational Efficiency</p></li>
+<li><p>3.3.3 Price Discovery</p></li>
+<li><p>3.3.4 Price Volatility</p></li>
+<li><p>3.3.5 Assets Correlation and Portfolio Optimization</p></li>
+<li><p>3.3.6 Safe-Haven Characteristics</p></li>
+<li><p>3.3.7 Bubble Formation</p></li>
+<li><p>3.3.8 Initial Coin Offering (ICO)</p></li>
+</ul></li>
+</ul></li>
+<li><p>4. Literature Gaps and Open Research Paths</p></li>
+<li><p>5. Conclusions</p></li>
+<li><p>Acknowledgments</p></li>
+<li><p>Data Availability</p></li>
+<li><p>Statement</p></li>
+<li><p>Notes References</p></li>
+</ul></li>
+</ul>
 </div>
+<div id="caso-3-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" class="section level3">
+<h3>Caso 3: Guidelines for Snowballing in Systematic Literature Studies
+and a Replication in Software Engineering</h3>
+<ul>
+<li><p>Fuente: <a href="https://sci-hub.se/10.1145/2601248.2601268" class="uri">https://sci-hub.se/10.1145/2601248.2601268</a></p></li>
+<li><p>Comentario:</p></li>
+<li><p>Secciones:</p>
+<ul>
+<li><p>Title</p></li>
+<li><p>Abstract</p></li>
+<li><p>Categories and Subject Descriptors</p></li>
+<li><p>General Terms</p></li>
+<li><p>Keywords</p></li>
+<li><p>1. Introduction</p></li>
+<li><p>2. Related Work</p></li>
+<li><p>3. Snowballing Procedure</p>
+<ul>
+<li><p>3.1 Start Set</p></li>
+<li><p>3.2 Iterations</p>
+<ul>
+<li><p>3.2.1 Backward Snowballing</p></li>
+<li><p>3.2.2 Forward Snowballing</p></li>
+<li><p>3.2.3 Inclusion and Exclusion</p></li>
+<li><p>Figure 1. Snowballing procedure</p></li>
+</ul></li>
+<li><p>3.3 Authors</p></li>
+<li><p>3.4 Data Extraction</p></li>
+</ul></li>
+<li><p>4. Replication</p>
+<ul>
+<li><p>4.1 Introduction</p></li>
+<li><p>4.2 Start Set</p></li>
+<li><p>4.3 Iteration 1</p>
+<ul>
+<li><p>4.3.1 Backward Snowballing</p></li>
+<li><p>4.3.2 Forward Snowballing</p></li>
+<li><p>4.3.3 Summary of Status</p></li>
+</ul></li>
+<li><p>4.4 Iteration 2</p>
+<ul>
+<li><p>4.4.1 Backward Snowballing</p></li>
+<li><p>4.4.2 Forward Snowballing</p></li>
+</ul></li>
+<li><p>4.5 Iteration 3</p></li>
+<li><p>4.6 Efficiency</p></li>
+<li><p>4.7 Authors</p></li>
+<li><p>4.8 Citation Matrix and Timeline</p></li>
+<li><p>4.9 Reflections</p>
+<ul>
+<li><p>4.9.1 Ten Lessons Learned from Snowballing</p></li>
+<li><p>4.9.2 Validity Threats</p></li>
+</ul></li>
+<li><p>4.10 Comparison</p></li>
+<li><p>5. Discussion Snowballing</p></li>
+<li><p>6. Summary</p></li>
+<li><p>7. Acknowledgments</p></li>
+<li><p>8. References</p></li>
+</ul></li>
+</ul></li>
+</ul>
 </div>
-<div id="justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Justificación de base
-de datos (en nuestro caso optamos por OpenAlex)</h2>
-<div id="documento-lineamientos-para-análisis-bibliométrico.-v01" class="section level3" number="5.2.1">
-<h3><span class="header-section-number">5.2.1</span> Documento:
-Lineamientos para Análisis Bibliométrico. v01</h3>
+<div id="caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews" class="section level3">
+<h3>Caso 4: A Comparison of Citation Sources for Reference and
+Citation-Based Search in Systematic Literature Reviews</h3>
+<ul>
+<li><p>Fuente: <a href="https://www.diva-portal.org/smash/get/diva2:1663616/FULLTEXT01.pdf" class="uri">https://www.diva-portal.org/smash/get/diva2:1663616/FULLTEXT01.pdf</a></p></li>
+<li><p>Comentario:</p></li>
+<li><p>Secciones:</p>
+<ul>
+<li><p>Title</p></li>
+<li><p>Abstract (Context, Objective, Method, Results, Conclusion,
+Keywords)</p></li>
+<li><p>1. Introduction</p></li>
+<li><p>2. Related work</p>
+<ul>
+<li><p>2.1. Search guidelines for systematic secondary studies</p></li>
+<li><p>2.2. Comparison of databases for keyword-based search in SE
+(software engineering)</p></li>
+<li><p>2.3. Studies comparing citation databases outside SE (software
+engineering)</p></li>
+</ul></li>
+<li><p>3. Research method</p>
+<ul>
+<li><p>3.1. Criteria for assessing the effectiveness and
+usefulness</p></li>
+<li><p>3.2. Overview of the relevant aspects of the case SLR</p></li>
+</ul></li>
+<li><p>4. Results</p>
+<ul>
+<li><p>4.1. Effectiveness of GS and Scopus</p></li>
+<li><p>4.2. Usefulness of GS and Scopus</p></li>
+</ul></li>
+<li><p>5. Discussion of GS in light of the related work</p>
+<ul>
+<li><p>5.1. Lack of transparency in what is indexed</p></li>
+<li><p>5.2. Quality of metadata</p></li>
+<li><p>5.3. The quality of literature in GS</p></li>
+</ul></li>
+<li><p>6. Recommendations when using snowball sampling</p></li>
+<li><p>7. Validity threats</p></li>
+<li><p>8. Conclusion</p></li>
+<li><p>Acknowledgements</p></li>
+<li><p>References</p></li>
+</ul></li>
+</ul>
 </div>
-<div id="link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit" class="section level3" number="5.2.2">
-<h3><span class="header-section-number">5.2.2</span> Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></h3>
+<div id="caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels" class="section level3">
+<h3>Caso 5: Comparative Analysis of the Bibliographic Data Sources
+Dimensions and Scopus: An Approach at the Country and Institutional
+Levels</h3>
+<ul>
+<li><p>Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a></p></li>
+<li><p>Comentario:</p></li>
+<li><p>Secciones:</p>
+<ul>
+<li><p>Title</p></li>
+<li><p>Abstract</p></li>
+<li><p>Keywords</p></li>
+<li><p>Introduction (Objectives/Research Questions)</p></li>
+<li><p>Material and methods (Matching between the Dimensions and Scopus
+databases)</p></li>
+<li><p>Results (The Results of Matching)</p></li>
+<li><p>Discussion</p></li>
+<li><p>Data availability</p></li>
+<li><p>Statment</p></li>
+<li><p>Author contributions</p></li>
+<li><p>Acknowledgments</p></li>
+<li><p>Supplementary material</p></li>
+<li><p>References</p></li>
+<li><p>Conflict of Interest</p></li>
+</ul></li>
+</ul>
 </div>
-<div id="caso-4-a-comparison-of-citation-sources-for-reference-and-citation-based-search-in-systematic-literature-reviews" class="section level3" number="5.2.3">
-<h3><span class="header-section-number">5.2.3</span> Caso 4: A
-Comparison of Citation Sources for Reference and Citation-Based Search
-in Systematic Literature Reviews</h3>
-<p>4.1. Fuente: <a href="https://www.diva-portal.org/smash/get/diva2:1663616/FULLTEXT01.pdf" class="uri">https://www.diva-portal.org/smash/get/diva2:1663616/FULLTEXT01.pdf</a>
-4.2. Comentario: 4.2. Secciones:</p>
-<p>Title Abstract (Context, Objective, Method, Results, Conclusion,
-Keywords) 1. Introduction 2. Related work 2.1. Search guidelines for
-systematic secondary studies 2.2. Comparison of databases for
-keyword-based search in SE (software engineering) 2.3. Studies comparing
-citation databases outside SE (software engineering) 3. Research method
-3.1. Criteria for assessing the effectiveness and usefulness 3.2.
-Overview of the relevant aspects of the case SLR 4. Results 4.1.
-Effectiveness of GS and Scopus 4.2. Usefulness of GS and Scopus 5.
-Discussion of GS in light of the related work 5.1. Lack of transparency
-in what is indexed 5.2. Quality of metadata 5.3. The quality of
-literature in GS 6. Recommendations when using snowball sampling 7.
-Validity threats 8. Conclusion Acknowledgements References</p>
-</div>
-<div id="caso-5-comparative-analysis-of-the-bibliographic-data-sources-dimensions-and-scopus-an-approach-at-the-country-and-institutional-levels" class="section level3" number="5.2.4">
-<h3><span class="header-section-number">5.2.4</span> Caso 5: Comparative
-Analysis of the Bibliographic Data Sources Dimensions and Scopus: An
-Approach at the Country and Institutional Levels</h3>
-<p>5.1. Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e" class="uri">https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e</a>
-5.2. Comentario: 5.3. Secciones: Title Abstract Keywords INTRODUCTION
-Objectives/Research Questions MATERIAL AND METHODS Matching (between the
-Dimensions and Scopus databases) RESULTS The Results of Matching
-DISCUSSION DATA AVAILABILITY STATEMENT AUTHOR CONTRIBUTIONS
-ACKNOWLEDGMENTS SUPPLEMENTARY MATERIAL REFERENCES Conflict of
-Interest</p>
-</div>
-</div>
-<div id="justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Justificación de uso
-de herramienta de análisis bibliométrico (en nuestro caso
-Bibliometrix)</h2>
-<div id="documento-lineamientos-para-análisis-bibliométrico.-v01-1" class="section level3" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> Documento:
-Lineamientos para Análisis Bibliométrico. v01</h3>
-</div>
-<div id="link-httpsdocs.google.comdocumentd19yulnw4ctmdkysfy2gj01zsrj_vzeszcdzet2_potnuedit-1" class="section level3" number="5.3.2">
-<h3><span class="header-section-number">5.3.2</span> Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></h3>
-</div>
-<div id="caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis." class="section level3" number="5.3.3">
-<h3><span class="header-section-number">5.3.3</span> Caso 6:
-Bibliometrix : An R-tool for comprehensive science mapping
+<div id="caso-6-bibliometrix-an-r-tool-for-comprehensive-science-mapping-analysis." class="section level3">
+<h3>Caso 6: Bibliometrix : An R-tool for comprehensive science mapping
 analysis.</h3>
-<p>6.1. Fuente: <a href="https://sci-hub.st/10.1016/j.joi.2017.08.007" class="uri">https://sci-hub.st/10.1016/j.joi.2017.08.007</a> 6.2.
-Comentario: 6.3. Secciones:</p>
-<p>Title Abstract Keywords 1. Introduction 2. Recommended workflow for
-science mapping 2.0. Study design; 2.1. Data collection 2.2. Data
-analysis 2.3. Data visualization; 2.4. Interpretation. 3. Related
-bibliometric software tools 3.1. Software tools for science mapping 3.2.
-R-packages for bibliometric analysis Fig. 1. bibliometrix and the
-recommended science mapping workflow</p>
-<ol start="4" style="list-style-type: decimal">
-<li>bibliometrix and the recommended science mapping workflow .1. Data
-collection. bibliometrix supports the following sub-stage:</li>
-</ol>
-<ol style="list-style-type: lower-alpha">
-<li>Data loading and conversion to R data frame (Section 4.1). .2. Data
-Analysis, articulated in three sub-stages:</li>
+<ul>
+<li><p>Fuente: <a href="https://sci-hub.st/10.1016/j.joi.2017.08.007" class="uri">https://sci-hub.st/10.1016/j.joi.2017.08.007</a></p></li>
+<li><p>Comentario:</p></li>
+<li><p>Secciones:</p>
+<ul>
+<li><p>Title</p></li>
+<li><p>Abstract</p></li>
+<li><p>Keywords</p></li>
+<li><p>1. Introduction</p></li>
+<li><p>2. Recommended workflow for science mapping</p>
+<ul>
+<li><p>2.0. Study design</p></li>
+<li><p>2.1. Data collection</p></li>
+<li><p>2.2. Data analysis</p></li>
+<li><p>2.3. Data visualization</p></li>
+<li><p>2.4. Interpretation.</p></li>
+</ul></li>
+<li><p>3. Related bibliometric software tools</p>
+<ul>
+<li><p>3.1. Software tools for science mapping</p></li>
+<li><p>3.2. R-packages for bibliometric analysis</p></li>
+<li><p>Fig. 1. bibliometrix and the recommended science mapping
+workflow</p></li>
+</ul></li>
+<li><p>4. Bibliometrix and the recommended science mapping workflow</p>
+<ul>
+<li><p>1. Data collection. bibliometrix supports the following
+sub-stage:</p>
+<ul>
+<li>Data loading and conversion to R data frame (Section 4.1).</li>
+</ul></li>
+<li><p>2. Data Analysis, articulated in three sub-stages:</p>
+<ul>
 <li>Descriptive analysis of a bibliographic data frame (Section
-4.2);</li>
-<li>Network creation for bibliographic coupling, co-citation,
-collaboration, and co-occurrence analyses (Section 4.3);</li>
-<li>Normalization (Section 4.4). .3. Data visualization:</li>
-<li>Conceptual structure mapping (Section 4.3e);</li>
-<li>Network mapping (Section 4.5).</li>
-</ol>
-<p>4.1. Data loading and converting to R data frame 4.2. Descriptive
-analysis of a bibliographic data frame</p>
-<p>4.3. Network creation for bibliographic coupling, co-citation,
-collaboration, and co-occurrence analyses a) Bibliographic coupling b)
-Co-citation analysis c) Collaboration analysis d) Co-word analysis</p>
-<p>4.4. Normalization 4.5. Network mapping 5. Conclusions</p>
-<p>Author contributions Acknowledgements References</p>
+4.2).</li>
+</ul></li>
+<li><p>3. Data visualization:</p>
+<ul>
+<li><p>Network creation for bibliographic coupling, co-citation,
+collaboration, and co-occurrence analyses (Section 4.3).</p>
+<ul>
+<li><p>Conceptual structure mapping:</p>
+<ul>
+<li><ol style="list-style-type: lower-alpha">
+<li>Bibliographic coupling</li>
+</ol></li>
+<li><ol start="2" style="list-style-type: lower-alpha">
+<li>Co-citation analysis</li>
+</ol></li>
+<li><ol start="3" style="list-style-type: lower-alpha">
+<li>Collaboration analysis</li>
+</ol></li>
+<li><ol start="4" style="list-style-type: lower-alpha">
+<li>Co-word analysis</li>
+</ol></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>4. Normalization</p></li>
+<li><p>5. Network mapping</p></li>
+</ul></li>
+<li><p>5. Conclusions</p></li>
+<li><p>Author contributions</p></li>
+<li><p>Acknowledgements</p></li>
+<li><p>References</p></li>
+</ul></li>
+</ul>
+</div>
+<div id="justificación-de-base-de-datos-en-nuestro-caso-optamos-por-openalex" class="section level3">
+<h3>Justificación de base de datos (en nuestro caso optamos por
+OpenAlex)</h3>
+<ul>
+<li><p>Documento: <strong>Lineamientos para Análisis Bibliométrico.
+v01</strong></p></li>
+<li><p>Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></p></li>
+</ul>
+</div>
+<div id="justificación-de-uso-de-herramienta-de-análisis-bibliométrico-en-nuestro-caso-bibliometrix" class="section level3">
+<h3>Justificación de uso de herramienta de análisis bibliométrico (en
+nuestro caso Bibliometrix)</h3>
+<ul>
+<li><p>Documento: <strong>Lineamientos para Análisis Bibliométrico.
+v01</strong></p></li>
+<li><p>Link: <a href="https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit" class="uri">https://docs.google.com/document/d/19yulnW4cTmdKYsfy2gJ01ZsRj_VzESZcDzET2_pOtnU/edit</a></p></li>
+</ul>
 </div>
 </div>
 </div>

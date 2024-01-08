@@ -11,7 +11,7 @@
 
 <meta name="author" content="Carlos Schenone" />
 
-<meta name="date" content="2024-01-05" />
+<meta name="date" content="2024-01-08" />
 
 <title>Metodología híbrida para el abordaje de la extracción de patrones en videos usando CCN y RNN</title>
 
@@ -330,133 +330,158 @@ display: none;
 <h1 class="title toc-ignore">Metodología híbrida para el abordaje de la
 extracción de patrones en videos usando CCN y RNN</h1>
 <h4 class="author">Carlos Schenone</h4>
-<h4 class="date">2024-01-05</h4>
+<h4 class="date">2024-01-08</h4>
 
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#extracción-de-patrones-en-videos-usando-ccn-y-rnn" id="toc-extracción-de-patrones-en-videos-usando-ccn-y-rnn"><span class="toc-section-number">1</span> Extracción de patrones en videos
-usando CCN y RNN</a>
+<li><a href="#extracción-de-patrones-en-videos-usando-ccn-y-rnn" id="toc-extracción-de-patrones-en-videos-usando-ccn-y-rnn">Extracción de
+patrones en videos usando CCN y RNN</a>
 <ul>
-<li><a href="#referencias" id="toc-referencias"><span class="toc-section-number">1.1</span> Referencias</a>
+<li><a href="#referencias" id="toc-referencias">Referencias</a>
 <ul>
-<li><a href="#caso-1-loading-and-preprocessing-video-data-with-tensorflow" id="toc-caso-1-loading-and-preprocessing-video-data-with-tensorflow"><span class="toc-section-number">1.1.1</span> Caso 1: Loading and
-preprocessing video data with TensorFlow</a></li>
-<li><a href="#description." id="toc-description."><span class="toc-section-number">1.1.2</span> Description.</a></li>
-<li><a href="#resources." id="toc-resources."><span class="toc-section-number">1.1.3</span> Resources.</a></li>
-<li><a href="#caso-2-video-classification-with-a-cnn-rnn-architecture-human-activity-recognition" id="toc-caso-2-video-classification-with-a-cnn-rnn-architecture-human-activity-recognition"><span class="toc-section-number">1.1.4</span> Caso 2: Video Classification
-with a CNN-RNN Architecture | Human Activity Recognition</a></li>
+<li><a href="#caso-1-loading-and-preprocessing-video-data-with-tensorflow" id="toc-caso-1-loading-and-preprocessing-video-data-with-tensorflow">Caso
+1: Loading and preprocessing video data with TensorFlow</a>
+<ul>
+<li><a href="#description." id="toc-description.">Description.</a></li>
+<li><a href="#resources." id="toc-resources.">Resources.</a></li>
+</ul></li>
+<li><a href="#caso-2-video-classification-with-a-cnn-rnn-architecture-human-activity-recognition" id="toc-caso-2-video-classification-with-a-cnn-rnn-architecture-human-activity-recognition">Caso
+2: Video Classification with a CNN-RNN Architecture | Human Activity
+Recognition</a>
+<ul>
+<li><a href="#description.-1" id="toc-description.-1">Description.</a></li>
+<li><a href="#resources.-1" id="toc-resources.-1">Resources.</a></li>
+<li><a href="#definitions" id="toc-definitions">Definitions:</a></li>
+<li><a href="#steps" id="toc-steps">Steps:</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#planteo-general-de-la-metodología." id="toc-planteo-general-de-la-metodología."><span class="toc-section-number">2</span> Planteo general de la
+</ul></li>
+<li><a href="#planteo-general-de-la-metodología." id="toc-planteo-general-de-la-metodología.">Planteo general de la
 metodología.</a>
 <ul>
-<li><a href="#paso-1.-objetivo-del-estudio" id="toc-paso-1.-objetivo-del-estudio"><span class="toc-section-number">2.1</span> Paso 1. Objetivo del estudio</a>
+<li><a href="#paso-1.-objetivo-del-estudio" id="toc-paso-1.-objetivo-del-estudio">Paso 1. Objetivo del estudio</a>
 <ul>
-<li><a href="#descripción" id="toc-descripción"><span class="toc-section-number">2.1.1</span> Descripción</a></li>
+<li><a href="#descripción" id="toc-descripción">Descripción</a></li>
 </ul></li>
-<li><a href="#paso-2.-estado-del-arte" id="toc-paso-2.-estado-del-arte"><span class="toc-section-number">2.2</span> Paso 2. Estado del arte</a>
+<li><a href="#paso-2.-estado-del-arte" id="toc-paso-2.-estado-del-arte">Paso 2. Estado del arte</a>
 <ul>
-<li><a href="#descripción-1" id="toc-descripción-1"><span class="toc-section-number">2.2.1</span> Descripción</a></li>
-<li><a href="#actividades" id="toc-actividades"><span class="toc-section-number">2.2.2</span> Actividades</a></li>
-<li><a href="#estudio-del-estado-del-arte-de-los-modelos-disponibles-y-sus-características" id="toc-estudio-del-estado-del-arte-de-los-modelos-disponibles-y-sus-características"><span class="toc-section-number">2.2.3</span> 2.1. Estudio del estado del arte
-de los modelos disponibles y sus características</a></li>
+<li><a href="#descripción-1" id="toc-descripción-1">Descripción</a></li>
+<li><a href="#actividades" id="toc-actividades">Actividades</a>
+<ul>
+<li><a href="#estudio-del-estado-del-arte-de-los-modelos-disponibles-y-sus-características" id="toc-estudio-del-estado-del-arte-de-los-modelos-disponibles-y-sus-características">2.1.
+Estudio del estado del arte de los modelos disponibles y sus
+características</a></li>
 </ul></li>
-<li><a href="#paso-3.-diseño-del-estudio" id="toc-paso-3.-diseño-del-estudio"><span class="toc-section-number">2.3</span> Paso 3. Diseño del estudio</a>
+</ul></li>
+<li><a href="#paso-3.-diseño-del-estudio" id="toc-paso-3.-diseño-del-estudio">Paso 3. Diseño del estudio</a>
 <ul>
-<li><a href="#descripción-2" id="toc-descripción-2"><span class="toc-section-number">2.3.1</span> Descripción</a></li>
-<li><a href="#actividades-1" id="toc-actividades-1"><span class="toc-section-number">2.3.2</span> Actividades</a></li>
-<li><a href="#selección-del-modelo-a-utilizar" id="toc-selección-del-modelo-a-utilizar"><span class="toc-section-number">2.3.3</span> (3.1) Selección del modelo a
+<li><a href="#descripción-2" id="toc-descripción-2">Descripción</a></li>
+<li><a href="#actividades-1" id="toc-actividades-1">Actividades</a>
+<ul>
+<li><a href="#selección-del-modelo-a-utilizar" id="toc-selección-del-modelo-a-utilizar">3.1. Selección del modelo a
 utilizar</a></li>
-<li><a href="#selección-de-la-técnica-de-evaluación-del-modelo" id="toc-selección-de-la-técnica-de-evaluación-del-modelo"><span class="toc-section-number">2.3.4</span> (3.2) Selección de la técnica de
-evaluación del modelo</a></li>
-<li><a href="#selección-de-la-técnica-de-entrenamiento-y-evaluación" id="toc-selección-de-la-técnica-de-entrenamiento-y-evaluación"><span class="toc-section-number">2.3.5</span> (3.3) Selección de la técnica de
-entrenamiento y evaluación</a></li>
-<li><a href="#selección-del-framework-a-utilizar-para-realizar-la-construcción-entrenamiento-y-test-del-modelo." id="toc-selección-del-framework-a-utilizar-para-realizar-la-construcción-entrenamiento-y-test-del-modelo."><span class="toc-section-number">2.3.6</span> (3.4) Selección del Framework a
-utilizar para realizar la construcción, entrenamiento y test del
-modelo.</a></li>
+<li><a href="#selección-de-la-técnica-de-evaluación-del-modelo" id="toc-selección-de-la-técnica-de-evaluación-del-modelo">3.2. Selección
+de la técnica de evaluación del modelo</a></li>
+<li><a href="#selección-de-la-técnica-de-entrenamiento-y-evaluación" id="toc-selección-de-la-técnica-de-entrenamiento-y-evaluación">3.3.
+Selección de la técnica de entrenamiento y evaluación</a></li>
+<li><a href="#selección-del-framework-a-utilizar-para-realizar-la-construcción-entrenamiento-y-test-del-modelo." id="toc-selección-del-framework-a-utilizar-para-realizar-la-construcción-entrenamiento-y-test-del-modelo.">3.4.
+Selección del Framework a utilizar para realizar la construcción,
+entrenamiento y test del modelo.</a></li>
 </ul></li>
-<li><a href="#paso-4.-selección-y-ajuste-del-conjunto-de-datos-a-utilizar" id="toc-paso-4.-selección-y-ajuste-del-conjunto-de-datos-a-utilizar"><span class="toc-section-number">2.4</span> Paso 4. Selección y ajuste del
-conjunto de datos a utilizar</a>
-<ul>
-<li><a href="#descripción-3" id="toc-descripción-3"><span class="toc-section-number">2.4.1</span> Descripción</a>
-<ul>
-<li><a href="#general-categories" id="toc-general-categories"><span class="toc-section-number">2.4.1.1</span> General Categories</a></li>
-<li><a href="#human-actions" id="toc-human-actions"><span class="toc-section-number">2.4.1.2</span> Human Actions</a></li>
 </ul></li>
-<li><a href="#selección-de-la-fuentes-de-datos" id="toc-selección-de-la-fuentes-de-datos"><span class="toc-section-number">2.4.2</span> 4.1. Selección de la fuentes de
-datos</a></li>
-<li><a href="#preprocesamiento-del-dataset" id="toc-preprocesamiento-del-dataset"><span class="toc-section-number">2.4.3</span> 4.2. Preprocesamiento del
+<li><a href="#paso-4.-selección-y-ajuste-del-conjunto-de-datos-a-utilizar" id="toc-paso-4.-selección-y-ajuste-del-conjunto-de-datos-a-utilizar">Paso
+4. Selección y ajuste del conjunto de datos a utilizar</a>
+<ul>
+<li><a href="#descripción-3" id="toc-descripción-3">Descripción</a></li>
+<li><a href="#conjunto-de-datos" id="toc-conjunto-de-datos">Conjunto de
+datos</a>
+<ul>
+<li><a href="#general-categories" id="toc-general-categories">General
+Categories</a></li>
+<li><a href="#human-actions" id="toc-human-actions">Human
+Actions</a></li>
+</ul></li>
+<li><a href="#actividades-2" id="toc-actividades-2">Actividades</a>
+<ul>
+<li><a href="#selección-de-la-fuentes-de-datos" id="toc-selección-de-la-fuentes-de-datos">4.1. Selección de la fuentes
+de datos</a></li>
+<li><a href="#preprocesamiento-del-dataset" id="toc-preprocesamiento-del-dataset">4.2. Preprocesamiento del
 dataset</a></li>
 </ul></li>
-<li><a href="#paso-5.-entrenamiento-del-modelo" id="toc-paso-5.-entrenamiento-del-modelo"><span class="toc-section-number">2.5</span> Paso 5. Entrenamiento del
+</ul></li>
+<li><a href="#paso-5.-entrenamiento-del-modelo" id="toc-paso-5.-entrenamiento-del-modelo">Paso 5. Entrenamiento del
 modelo</a>
 <ul>
-<li><a href="#descripción-4" id="toc-descripción-4"><span class="toc-section-number">2.5.1</span> Descripción</a></li>
+<li><a href="#descripción-4" id="toc-descripción-4">Descripción</a></li>
 </ul></li>
-<li><a href="#paso-6.-test-del-modelo" id="toc-paso-6.-test-del-modelo"><span class="toc-section-number">2.6</span> Paso 6. Test del modelo</a>
+<li><a href="#paso-6.-test-del-modelo" id="toc-paso-6.-test-del-modelo">Paso 6. Test del modelo</a>
 <ul>
-<li><a href="#descripción-5" id="toc-descripción-5"><span class="toc-section-number">2.6.1</span> Descripción</a></li>
+<li><a href="#descripción-5" id="toc-descripción-5">Descripción</a></li>
 </ul></li>
-<li><a href="#paso-7.-desarrollo-del-estudio" id="toc-paso-7.-desarrollo-del-estudio"><span class="toc-section-number">2.7</span> Paso 7. Desarrollo del estudio</a>
+<li><a href="#paso-7.-desarrollo-del-estudio" id="toc-paso-7.-desarrollo-del-estudio">Paso 7. Desarrollo del
+estudio</a>
 <ul>
-<li><a href="#descripción-6" id="toc-descripción-6"><span class="toc-section-number">2.7.1</span> Descripción</a></li>
-<li><a href="#actividades-2" id="toc-actividades-2"><span class="toc-section-number">2.7.2</span> Actividades</a>
+<li><a href="#descripción-6" id="toc-descripción-6">Descripción</a></li>
+<li><a href="#actividades-3" id="toc-actividades-3">Actividades</a>
 <ul>
-<li><a href="#preprocesamiento-del-video" id="toc-preprocesamiento-del-video"><span class="toc-section-number">2.7.2.1</span> 7.1. Preprocesamiento del
-video:</a></li>
+<li><a href="#preprocesamiento-del-video." id="toc-preprocesamiento-del-video.">7.1. Preprocesamiento del
+video.</a></li>
+<li><a href="#extracción-de-características-de-los-fotogramas." id="toc-extracción-de-características-de-los-fotogramas.">7.2.
+Extracción de características de los fotogramas.</a></li>
+<li><a href="#etiquetación-de-los-fotogramas" id="toc-etiquetación-de-los-fotogramas">7.3. Etiquetación de los
+fotogramas</a></li>
+<li><a href="#etiquetación-del-video" id="toc-etiquetación-del-video">7.4. Etiquetación del video</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#paso-8.-visualización-de-los-resultados" id="toc-paso-8.-visualización-de-los-resultados"><span class="toc-section-number">2.8</span> Paso 8. Visualización de los
-resultados</a>
+<li><a href="#paso-8.-visualización-de-los-resultados" id="toc-paso-8.-visualización-de-los-resultados">Paso 8. Visualización
+de los resultados</a>
 <ul>
-<li><a href="#descripción-7" id="toc-descripción-7"><span class="toc-section-number">2.8.1</span> Descripción</a></li>
+<li><a href="#descripción-7" id="toc-descripción-7">Descripción</a></li>
 </ul></li>
-<li><a href="#paso-9.-interpretación-y-presentación-de-resultados" id="toc-paso-9.-interpretación-y-presentación-de-resultados"><span class="toc-section-number">2.9</span> Paso 9. Interpretación y
-presentación de resultados</a>
+<li><a href="#paso-9.-interpretación-y-presentación-de-resultados" id="toc-paso-9.-interpretación-y-presentación-de-resultados">Paso 9.
+Interpretación y presentación de resultados</a>
 <ul>
-<li><a href="#descripción-8" id="toc-descripción-8"><span class="toc-section-number">2.9.1</span> Descripción</a></li>
-<li><a href="#actividades-3" id="toc-actividades-3"><span class="toc-section-number">2.9.2</span> Actividades</a>
+<li><a href="#descripción-8" id="toc-descripción-8">Descripción</a></li>
+<li><a href="#actividades-4" id="toc-actividades-4">Actividades</a>
 <ul>
-<li><a href="#interpretación-de-los-hallazgos" id="toc-interpretación-de-los-hallazgos"><span class="toc-section-number">2.9.2.1</span> 9.1. Interpretación de los
+<li><a href="#interpretación-de-los-hallazgos" id="toc-interpretación-de-los-hallazgos">9.1. Interpretación de los
 hallazgos</a></li>
-<li><a href="#descripción-de-resultados" id="toc-descripción-de-resultados"><span class="toc-section-number">2.9.2.2</span> 9.2. Descripción de
+<li><a href="#descripción-de-resultados" id="toc-descripción-de-resultados">9.2. Descripción de
 resultados</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#anexo-estructuras-del-estudio-propuestas" id="toc-anexo-estructuras-del-estudio-propuestas"><span class="toc-section-number">2.10</span> Anexo: Estructuras del Estudio
-propuestas</a>
+<li><a href="#anexo-estructuras-del-estudio-propuestas" id="toc-anexo-estructuras-del-estudio-propuestas">Anexo: Estructuras del
+Estudio propuestas</a>
 <ul>
-<li><a href="#caso-1" id="toc-caso-1"><span class="toc-section-number">2.10.1</span> Caso 1</a></li>
-<li><a href="#caso-2-a-bibliometric-analysis-of-bitcoin-scientific-production" id="toc-caso-2-a-bibliometric-analysis-of-bitcoin-scientific-production"><span class="toc-section-number">2.10.2</span> Caso 2: A bibliometric analysis
-of bitcoin scientific production</a></li>
-<li><a href="#caso-3-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" id="toc-caso-3-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis"><span class="toc-section-number">2.10.3</span> Caso 3: WHERE DO WE STAND IN
-CRYPTOCURRENCIES ECONOMIC RESEARCH: A SURVEY BASED ON HYBRID
-ANALYSIS</a></li>
-<li><a href="#caso-4-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" id="toc-caso-4-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering"><span class="toc-section-number">2.10.4</span> Caso 4: Guidelines for
-Snowballing in Systematic Literature Studies and a Replication in
-Software Engineering</a></li>
+<li><a href="#caso-1" id="toc-caso-1">Caso 1: …</a></li>
+<li><a href="#caso-2-a-bibliometric-analysis-of-bitcoin-scientific-production" id="toc-caso-2-a-bibliometric-analysis-of-bitcoin-scientific-production">Caso
+2: A bibliometric analysis of bitcoin scientific production</a></li>
+<li><a href="#caso-3-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" id="toc-caso-3-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis">Caso
+3: Where do we stand in cryptocurrencies economic research: A survey
+based on hybrid analysis</a></li>
+<li><a href="#caso-4-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" id="toc-caso-4-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering">Caso
+4: Guidelines for Snowballing in Systematic Literature Studies and a
+Replication in Software Engineering</a></li>
 </ul></li>
 </ul></li>
 </ul>
 </div>
 
-<div id="extracción-de-patrones-en-videos-usando-ccn-y-rnn" class="section level1" number="1">
-<h1><span class="header-section-number">1</span> Extracción de patrones
-en videos usando CCN y RNN</h1>
+<div id="extracción-de-patrones-en-videos-usando-ccn-y-rnn" class="section level1">
+<h1>Extracción de patrones en videos usando CCN y RNN</h1>
 <p>A continuación se presenta un modelo para realizar la extracción de
 patrones en videos, aplicando redes neuronales convolucionales y redes
 neuronales recurrentes, con el objetivo de etiquetar los objetos y
 acciones del video.</p>
-<div id="referencias" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> Referencias</h2>
-<div id="caso-1-loading-and-preprocessing-video-data-with-tensorflow" class="section level3" number="1.1.1">
-<h3><span class="header-section-number">1.1.1</span> Caso 1: <a href="https://www.youtube.com/watch?v=3xualF8abC4&amp;ab_channel=TensorFlow">Loading
+<div id="referencias" class="section level2">
+<h2>Referencias</h2>
+<div id="caso-1-loading-and-preprocessing-video-data-with-tensorflow" class="section level3">
+<h3>Caso 1: <a href="https://www.youtube.com/watch?v=3xualF8abC4&amp;ab_channel=TensorFlow">Loading
 and preprocessing video data with TensorFlow</a></h3>
-</div>
-<div id="description." class="section level3" number="1.1.2">
-<h3><span class="header-section-number">1.1.2</span> Description.</h3>
+<div id="description." class="section level4">
+<h4>Description.</h4>
 <p>Learn how to preprocess video data and load it into a TensorFlow
 model. Loading video data into a deep learning model is similar to how
 you would load in image data, but with an extra dimension. Shilpa
@@ -465,8 +490,8 @@ split videos into frames, or images, in this tutorial. This video shows
 Python code snippets so you can understand how to use deep learning,
 which is helpful for studying computer vision.</p>
 </div>
-<div id="resources." class="section level3" number="1.1.3">
-<h3><span class="header-section-number">1.1.3</span> Resources.</h3>
+<div id="resources." class="section level4">
+<h4>Resources.</h4>
 <ul>
 <li><p><a href="https://goo.gle/3XxGkUU">You can find the code from this
 video here</a></p></li>
@@ -483,32 +508,54 @@ TensorFlow</a></p></li>
 </ul>
 <p>Products mentioned: TensorFlow - General</p>
 </div>
-<div id="caso-2-video-classification-with-a-cnn-rnn-architecture-human-activity-recognition" class="section level3" number="1.1.4">
-<h3><span class="header-section-number">1.1.4</span> Caso 2: <a href="https://www.youtube.com/watch?v=ezjnySXqdTo&amp;ab_channel=CodeWithAarohi">Video
+</div>
+<div id="caso-2-video-classification-with-a-cnn-rnn-architecture-human-activity-recognition" class="section level3">
+<h3>Caso 2: <a href="https://www.youtube.com/watch?v=ezjnySXqdTo&amp;ab_channel=CodeWithAarohi">Video
 Classification with a CNN-RNN Architecture | Human Activity
 Recognition</a></h3>
-<p><a href="https://github.com/AarohiSingla/Video...">Github
-Repository</a></p>
-<p>Topics which I will cover in this Video Classification Tutorial are:
-- Overview of Video Classification - Steps to build our own Video
-Classification model - Exploring the Video Classification dataset -
-Training our Video Classification Model - Evaluating our Video
-Classification Model</p>
 <p>Author: In case of any query, You can comment or you can contact me
 at <a href="mailto:aarohisingla1987@gmail.com" class="email">aarohisingla1987@gmail.com</a></p>
-<p>Definitions: - What are videos? Videos are a collection of
-images(frames) arranged in a specific order. - What are video
-classification? Video Classification is the task of predicting a label
-that is relevant to the video. - What is image classification? In Image
-classification: we take images, use feature extractors (like
-convolutional neural networks or CNNs) to extract features from images,
-and then classify that image based on these extracted features. Video
-classification involves just one extra step.</p>
-<p>Steps: While performing Video classification we can follow these
-steps: - 1-We first extract frames from the given video. - 2-We use
-feature extractors (like convolutional neural networks or CNNs) to
-extract features from all the frames, - 3-Classify every frame based on
-these extracted features.</p>
+<div id="description.-1" class="section level4">
+<h4>Description.</h4>
+<p><a href="https://github.com/AarohiSingla/Video...">Github
+Repository</a></p>
+</div>
+<div id="resources.-1" class="section level4">
+<h4>Resources.</h4>
+<p>Topics which I will cover in this Video Classification Tutorial
+are:</p>
+<ul>
+<li><p>Overview of Video Classification</p></li>
+<li><p>Steps to build our own Video Classification model</p></li>
+<li><p>Exploring the Video Classification dataset</p></li>
+<li><p>Training our Video Classification Model</p></li>
+<li><p>Evaluating our Video Classification Model</p></li>
+</ul>
+</div>
+<div id="definitions" class="section level4">
+<h4>Definitions:</h4>
+<ul>
+<li><p>What are videos? Videos are a collection of images(frames)
+arranged in a specific order.</p></li>
+<li><p>What are video classification? Video Classification is the task
+of predicting a label that is relevant to the video.</p></li>
+<li><p>What is image classification? In Image classification: we take
+images, use feature extractors (like convolutional neural networks or
+CNNs) to extract features from images, and then classify that image
+based on these extracted features. Video classification involves just
+one extra step.</p></li>
+</ul>
+</div>
+<div id="steps" class="section level4">
+<h4>Steps:</h4>
+<p>While performing Video classification we can follow these steps:</p>
+<ul>
+<li><p>1-We first extract frames from the given video.</p></li>
+<li><p>2-We use feature extractors (like convolutional neural networks
+or CNNs) to extract features from all the frames,</p></li>
+<li><p>3-Classify every frame based on these extracted
+features.</p></li>
+</ul>
 <p>Before we talk about Video Classification, let us first understand
 what is Human Activity Recognition?. The task of classifying or
 predicting the activity/action performed by someone is called Activity
@@ -518,41 +565,38 @@ of Human Activity Recognition.</p>
 </div>
 </div>
 </div>
-<div id="planteo-general-de-la-metodología." class="section level1" number="2">
-<h1><span class="header-section-number">2</span> Planteo general de la
-metodología.</h1>
-<div id="paso-1.-objetivo-del-estudio" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Paso 1. Objetivo del
-estudio</h2>
-<div id="descripción" class="section level3" number="2.1.1">
-<h3><span class="header-section-number">2.1.1</span> Descripción</h3>
+</div>
+<div id="planteo-general-de-la-metodología." class="section level1">
+<h1>Planteo general de la metodología.</h1>
+<div id="paso-1.-objetivo-del-estudio" class="section level2">
+<h2>Paso 1. Objetivo del estudio</h2>
+<div id="descripción" class="section level3">
+<h3>Descripción</h3>
 <p>El estudio se basa en lograr un modelo basado en redes neuronales
 enfocado en la extracción de objetos y clasificación de escenas en
 videos.</p>
 </div>
 </div>
-<div id="paso-2.-estado-del-arte" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Paso 2. Estado del
-arte</h2>
-<div id="descripción-1" class="section level3" number="2.2.1">
-<h3><span class="header-section-number">2.2.1</span> Descripción</h3>
+<div id="paso-2.-estado-del-arte" class="section level2">
+<h2>Paso 2. Estado del arte</h2>
+<div id="descripción-1" class="section level3">
+<h3>Descripción</h3>
 <p>Estudio del estado del arte del objetivo del estudio.</p>
 </div>
-<div id="actividades" class="section level3" number="2.2.2">
-<h3><span class="header-section-number">2.2.2</span> Actividades</h3>
-</div>
-<div id="estudio-del-estado-del-arte-de-los-modelos-disponibles-y-sus-características" class="section level3" number="2.2.3">
-<h3><span class="header-section-number">2.2.3</span> 2.1. Estudio del
-estado del arte de los modelos disponibles y sus características</h3>
+<div id="actividades" class="section level3">
+<h3>Actividades</h3>
+<div id="estudio-del-estado-del-arte-de-los-modelos-disponibles-y-sus-características" class="section level4">
+<h4>2.1. Estudio del estado del arte de los modelos disponibles y sus
+características</h4>
 <p>Se analiza el estado del arte de la clasificación de videos usando
 técnicas de inteligencia artificial</p>
 </div>
 </div>
-<div id="paso-3.-diseño-del-estudio" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Paso 3. Diseño del
-estudio</h2>
-<div id="descripción-2" class="section level3" number="2.3.1">
-<h3><span class="header-section-number">2.3.1</span> Descripción</h3>
+</div>
+<div id="paso-3.-diseño-del-estudio" class="section level2">
+<h2>Paso 3. Diseño del estudio</h2>
+<div id="descripción-2" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa, se diseña el experimento. Se define el modelo a
 utilizar, junto con los parámetros de evaluación y los niveles de
 aceptación para cada indicador. Por ejemplo, generalmente se mencionan
@@ -562,36 +606,31 @@ como parámetros de evaluación:</p>
 <li><p>Sencibilidad o Recall</p></li>
 <li><p>Presición</p></li>
 <li><p>F1 Score.</p></li>
-<li><p>A continuación se ofrece el siguiente blog que habla del tema <a href="https://datos.gob.es/es/blog/como-se-si-mi-modelo-de-prediccion-es-realmente-bueno#:~:text=Exactitud%20o%20accuracy%3A%20la%20fracci%C3%B3n,de%20cada%20clase%20es%20similar">¿Cómo
-sé si mi modelo de predicción es realmente bueno?</a>. Idioma Español.
-Fecha de publicación: 26-01-2021.</p></li>
 </ul>
+<p>A continuación se ofrece el siguiente blog que habla del tema <a href="https://datos.gob.es/es/blog/como-se-si-mi-modelo-de-prediccion-es-realmente-bueno#:~:text=Exactitud%20o%20accuracy%3A%20la%20fracci%C3%B3n,de%20cada%20clase%20es%20similar">¿Cómo
+sé si mi modelo de predicción es realmente bueno?</a>. Idioma Español.
+Fecha de publicación: 26-01-2021.</p>
 </div>
-<div id="actividades-1" class="section level3" number="2.3.2">
-<h3><span class="header-section-number">2.3.2</span> Actividades</h3>
-</div>
-<div id="selección-del-modelo-a-utilizar" class="section level3" number="2.3.3">
-<h3><span class="header-section-number">2.3.3</span> (3.1) Selección del
-modelo a utilizar</h3>
+<div id="actividades-1" class="section level3">
+<h3>Actividades</h3>
+<div id="selección-del-modelo-a-utilizar" class="section level4">
+<h4>3.1. Selección del modelo a utilizar</h4>
 <p>Se definirá la arquitectura</p>
 </div>
-<div id="selección-de-la-técnica-de-evaluación-del-modelo" class="section level3" number="2.3.4">
-<h3><span class="header-section-number">2.3.4</span> (3.2) Selección de
-la técnica de evaluación del modelo</h3>
+<div id="selección-de-la-técnica-de-evaluación-del-modelo" class="section level4">
+<h4>3.2. Selección de la técnica de evaluación del modelo</h4>
 <p>Se definirá la/las indicadores a utilizar para evaluar la calidad del
 modelo construido</p>
 </div>
-<div id="selección-de-la-técnica-de-entrenamiento-y-evaluación" class="section level3" number="2.3.5">
-<h3><span class="header-section-number">2.3.5</span> (3.3) Selección de
-la técnica de entrenamiento y evaluación</h3>
+<div id="selección-de-la-técnica-de-entrenamiento-y-evaluación" class="section level4">
+<h4>3.3. Selección de la técnica de entrenamiento y evaluación</h4>
 <p>Se evaluarán el uso de técnicas de aceleramiento del entrenamiento
 como la transferencia de conocimiento desde modelos pre-entrenados o
 entrenamiento desde cero.</p>
 </div>
-<div id="selección-del-framework-a-utilizar-para-realizar-la-construcción-entrenamiento-y-test-del-modelo." class="section level3" number="2.3.6">
-<h3><span class="header-section-number">2.3.6</span> (3.4) Selección del
-Framework a utilizar para realizar la construcción, entrenamiento y test
-del modelo.</h3>
+<div id="selección-del-framework-a-utilizar-para-realizar-la-construcción-entrenamiento-y-test-del-modelo." class="section level4">
+<h4>3.4. Selección del Framework a utilizar para realizar la
+construcción, entrenamiento y test del modelo.</h4>
 <p>Como recomendación se utilizará el siguiente entorno:</p>
 <ul>
 <li>Python (para desarrollo)</li>
@@ -601,24 +640,25 @@ del modelo.</h3>
 </ul>
 </div>
 </div>
-<div id="paso-4.-selección-y-ajuste-del-conjunto-de-datos-a-utilizar" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Paso 4. Selección y
-ajuste del conjunto de datos a utilizar</h2>
-<div id="descripción-3" class="section level3" number="2.4.1">
-<h3><span class="header-section-number">2.4.1</span> Descripción</h3>
+</div>
+<div id="paso-4.-selección-y-ajuste-del-conjunto-de-datos-a-utilizar" class="section level2">
+<h2>Paso 4. Selección y ajuste del conjunto de datos a utilizar</h2>
+<div id="descripción-3" class="section level3">
+<h3>Descripción</h3>
 <p>En la etapa se selecciona el conjunto de datos a utilizar durante el
-entrenamiento y test. Se pueden consultar sitios de referencia como los
-siguientes:</p>
-<div id="general-categories" class="section level4" number="2.4.1.1">
-<h4><span class="header-section-number">2.4.1.1</span> General
-Categories</h4>
+entrenamiento, validación y test. Se pueden consultar sitios de
+referencia como los siguientes:</p>
+</div>
+<div id="conjunto-de-datos" class="section level3">
+<h3>Conjunto de datos</h3>
+<div id="general-categories" class="section level4">
+<h4>General Categories</h4>
 <ul>
 <li><a href="https://www.kaggle.com/datasets">Kaggle</a></li>
 </ul>
 </div>
-<div id="human-actions" class="section level4" number="2.4.1.2">
-<h4><span class="header-section-number">2.4.1.2</span> Human
-Actions</h4>
+<div id="human-actions" class="section level4">
+<h4>Human Actions</h4>
 <ul>
 <li>UDF101</li>
 <li><a href="https://www.crcv.ucf.edu/data/UCF101.php">UCF101 - Action
@@ -630,105 +670,112 @@ Images Dataset</a></li>
 </ul>
 </div>
 </div>
-<div id="selección-de-la-fuentes-de-datos" class="section level3" number="2.4.2">
-<h3><span class="header-section-number">2.4.2</span> 4.1. Selección de
-la fuentes de datos</h3>
+<div id="actividades-2" class="section level3">
+<h3>Actividades</h3>
+<div id="selección-de-la-fuentes-de-datos" class="section level4">
+<h4>4.1. Selección de la fuentes de datos</h4>
 <p>Identificación y elección del dataset para entrenamiento y test del
 modelo.</p>
 </div>
-<div id="preprocesamiento-del-dataset" class="section level3" number="2.4.3">
-<h3><span class="header-section-number">2.4.3</span> 4.2.
-Preprocesamiento del dataset</h3>
+<div id="preprocesamiento-del-dataset" class="section level4">
+<h4>4.2. Preprocesamiento del dataset</h4>
 <p>Ajustes en el formato de los videos del dataset de acuerdo a los
 requerimientos del modelo.</p>
 </div>
 </div>
-<div id="paso-5.-entrenamiento-del-modelo" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Paso 5. Entrenamiento
-del modelo</h2>
-<div id="descripción-4" class="section level3" number="2.5.1">
-<h3><span class="header-section-number">2.5.1</span> Descripción</h3>
+</div>
+<div id="paso-5.-entrenamiento-del-modelo" class="section level2">
+<h2>Paso 5. Entrenamiento del modelo</h2>
+<div id="descripción-4" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa se realiza el entrenamiento del modelo.</p>
 </div>
 </div>
-<div id="paso-6.-test-del-modelo" class="section level2" number="2.6">
-<h2><span class="header-section-number">2.6</span> Paso 6. Test del
-modelo</h2>
-<div id="descripción-5" class="section level3" number="2.6.1">
-<h3><span class="header-section-number">2.6.1</span> Descripción</h3>
+<div id="paso-6.-test-del-modelo" class="section level2">
+<h2>Paso 6. Test del modelo</h2>
+<div id="descripción-5" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa se realiza el test del modelo. Si el resultado está
 dentro de lo esperable se acepta el modelo y se continúa, sino se debe
 revisar.</p>
 </div>
 </div>
-<div id="paso-7.-desarrollo-del-estudio" class="section level2" number="2.7">
-<h2><span class="header-section-number">2.7</span> Paso 7. Desarrollo
-del estudio</h2>
-<div id="descripción-6" class="section level3" number="2.7.1">
-<h3><span class="header-section-number">2.7.1</span> Descripción</h3>
+<div id="paso-7.-desarrollo-del-estudio" class="section level2">
+<h2>Paso 7. Desarrollo del estudio</h2>
+<div id="descripción-6" class="section level3">
+<h3>Descripción</h3>
 <p>En esta etapa, se aplica el modelo a un conjunto de videos con el
 objeto de extraer las características (objetos y acciones) y evaluar los
 resultados.</p>
 </div>
-<div id="actividades-2" class="section level3" number="2.7.2">
-<h3><span class="header-section-number">2.7.2</span> Actividades</h3>
-<div id="preprocesamiento-del-video" class="section level4" number="2.7.2.1">
-<h4><span class="header-section-number">2.7.2.1</span> 7.1.
-Preprocesamiento del video:</h4>
+<div id="actividades-3" class="section level3">
+<h3>Actividades</h3>
+<div id="preprocesamiento-del-video." class="section level4">
+<h4>7.1. Preprocesamiento del video.</h4>
 <p>Separación en fotogramas y ajustes de los parámetros del video
-(color, tamaño de los cuadros y cantidad de fotogramas). #### 7.2.
-Extracción de características de los fotogramas: a) extracción de
-objetos y b) clasificación de acciones #### 7.3. Etiquetación de los
-fotogramas Considerando las características extraídas (objetos y
-acciones) #### 7.4. Etiquetación del video A partir de las
-características extraídas de los fotogramas</p>
+(color, tamaño de los cuadros y cantidad de fotogramas).</p>
+</div>
+<div id="extracción-de-características-de-los-fotogramas." class="section level4">
+<h4>7.2. Extracción de características de los fotogramas.</h4>
+<ol style="list-style-type: lower-alpha">
+<li>extracción de objetos y b) clasificación de acciones</li>
+</ol>
+</div>
+<div id="etiquetación-de-los-fotogramas" class="section level4">
+<h4>7.3. Etiquetación de los fotogramas</h4>
+<p>Considerando las características extraídas (objetos y acciones)</p>
+</div>
+<div id="etiquetación-del-video" class="section level4">
+<h4>7.4. Etiquetación del video</h4>
+<p>A partir de las características extraídas de los fotogramas</p>
 </div>
 </div>
 </div>
-<div id="paso-8.-visualización-de-los-resultados" class="section level2" number="2.8">
-<h2><span class="header-section-number">2.8</span> Paso 8. Visualización
-de los resultados</h2>
-<div id="descripción-7" class="section level3" number="2.8.1">
-<h3><span class="header-section-number">2.8.1</span> Descripción</h3>
+<div id="paso-8.-visualización-de-los-resultados" class="section level2">
+<h2>Paso 8. Visualización de los resultados</h2>
+<div id="descripción-7" class="section level3">
+<h3>Descripción</h3>
 <p>Se presenta el video de entrada y las características, junto a los
 fotogramas y sus características particulares.</p>
 </div>
 </div>
-<div id="paso-9.-interpretación-y-presentación-de-resultados" class="section level2" number="2.9">
-<h2><span class="header-section-number">2.9</span> Paso 9.
-Interpretación y presentación de resultados</h2>
-<div id="descripción-8" class="section level3" number="2.9.1">
-<h3><span class="header-section-number">2.9.1</span> Descripción</h3>
+<div id="paso-9.-interpretación-y-presentación-de-resultados" class="section level2">
+<h2>Paso 9. Interpretación y presentación de resultados</h2>
+<div id="descripción-8" class="section level3">
+<h3>Descripción</h3>
 <p>En esta última etapa, se interpreta y describen los hallazgos.</p>
 </div>
-<div id="actividades-3" class="section level3" number="2.9.2">
-<h3><span class="header-section-number">2.9.2</span> Actividades</h3>
-<div id="interpretación-de-los-hallazgos" class="section level4" number="2.9.2.1">
-<h4><span class="header-section-number">2.9.2.1</span> 9.1.
-Interpretación de los hallazgos</h4>
+<div id="actividades-4" class="section level3">
+<h3>Actividades</h3>
+<div id="interpretación-de-los-hallazgos" class="section level4">
+<h4>9.1. Interpretación de los hallazgos</h4>
 <p>Análisis y comprensión de los resultados obtenidos a través de los
 métodos utilizados.</p>
 </div>
-<div id="descripción-de-resultados" class="section level4" number="2.9.2.2">
-<h4><span class="header-section-number">2.9.2.2</span> 9.2. Descripción
-de resultados</h4>
+<div id="descripción-de-resultados" class="section level4">
+<h4>9.2. Descripción de resultados</h4>
 <p>Documentación y presentación de los resultados y conclusiones del
 estudio, resaltando los aspectos más relevantes.</p>
 </div>
 </div>
 </div>
-<div id="anexo-estructuras-del-estudio-propuestas" class="section level2" number="2.10">
-<h2><span class="header-section-number">2.10</span> Anexo: Estructuras
-del Estudio propuestas</h2>
+<div id="anexo-estructuras-del-estudio-propuestas" class="section level2">
+<h2>Anexo: Estructuras del Estudio propuestas</h2>
 <p>A continuación se presentan algunas estructuras posibles del
 estudio:</p>
-<div id="caso-1" class="section level3" number="2.10.1">
-<h3><span class="header-section-number">2.10.1</span> Caso 1</h3>
+<div id="caso-1" class="section level3">
+<h3>Caso 1: …</h3>
+<ul>
+<li><p>Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e">Google
+Drive</a></p></li>
+<li><p><em>Comentario</em>:</p></li>
+<li><p><strong>Secciones</strong></p>
 <ul>
 <li><p>Title</p></li>
 <li><p>Abstract</p></li>
 <li><p>1.Introduction</p></li>
-<li><p>2.Methods</p></li>
+<li><p>2.Methods</p>
+<ul>
 <li><p>Eligibility criteria</p></li>
 <li><p>Information sources</p></li>
 <li><p>Search strategy</p></li>
@@ -740,9 +787,9 @@ estudio:</p>
 <li><p>Synthesis methods</p></li>
 <li><p>Reporting bias assessment</p></li>
 <li><p>Certainty assessment</p></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li>Results</li>
-</ol></li>
+</ul></li>
+<li><p>3.Results</p>
+<ul>
 <li><p>Study selection</p></li>
 <li><p>Study characteristics</p></li>
 <li><p>Risk of bias in studies</p></li>
@@ -750,87 +797,82 @@ estudio:</p>
 <li><p>Results of syntheses</p></li>
 <li><p>Reporting biases</p></li>
 <li><p>Certainty of evidence</p></li>
-<li><ol start="4" style="list-style-type: decimal">
-<li>Discussion</li>
-</ol></li>
-<li><ol start="5" style="list-style-type: decimal">
-<li>Other information</li>
-</ol></li>
+</ul></li>
+<li><p>4.Discussion</p></li>
+<li><p>5.Other information</p>
+<ul>
 <li><p>Registration and protocol</p></li>
 <li><p>Support</p></li>
 <li><p>Competing interests</p></li>
 <li><p>Availability of data, code and other materials</p></li>
+</ul></li>
+</ul></li>
 </ul>
 </div>
-<div id="caso-2-a-bibliometric-analysis-of-bitcoin-scientific-production" class="section level3" number="2.10.2">
-<h3><span class="header-section-number">2.10.2</span> Caso 2: A
-bibliometric analysis of bitcoin scientific production</h3>
+<div id="caso-2-a-bibliometric-analysis-of-bitcoin-scientific-production" class="section level3">
+<h3>Caso 2: A bibliometric analysis of bitcoin scientific
+production</h3>
 <ul>
-<li><p>1.<a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e">Fuente:
-Google Drive</a></p></li>
-<li><p>2.Comentario:</p></li>
-<li><p>3.Secciones:</p></li>
+<li><p>Fuente: <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e">Google
+Drive</a></p></li>
+<li><p><em>Comentario</em>:</p></li>
+</ul>
+<!-- -->
+<ul>
+<li><p><strong>Secciones</strong>:</p>
+<ul>
 <li><p>Title</p></li>
 <li><p>Abstract</p></li>
 <li><p>Keywords</p></li>
-<li><ol style="list-style-type: decimal">
-<li>Introduction</li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li>Related literature</li>
-</ol></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li>Data and results</li>
-</ol></li>
+<li><p>1.Introduction</p></li>
+<li><p>2.Related literature</p></li>
+<li><p>3.Data and results</p>
+<ul>
 <li><p>3.1. Corresponding author’s geographical distribution</p></li>
 <li><p>3.2. Top publication sources</p></li>
 <li><p>3.3. Main keywords.</p></li>
 <li><p>3.4. Highly cited papers</p></li>
 <li><p>3.5. Degree of concentration of selected variables</p></li>
 <li><p>3.6. Citation, sources and authors graphs</p></li>
-<li><ol start="4" style="list-style-type: decimal">
-<li>Potential research lines</li>
-</ol></li>
-<li><ol start="5" style="list-style-type: decimal">
-<li>Conclusions</li>
-</ol></li>
+</ul></li>
+<li><p>4.Potential research lines</p></li>
+<li><p>5.Conclusions</p></li>
 <li><p>Acknowledgments</p></li>
 <li><p>References</p></li>
+</ul></li>
 </ul>
 </div>
-<div id="caso-3-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" class="section level3" number="2.10.3">
-<h3><span class="header-section-number">2.10.3</span> Caso 3: WHERE DO
-WE STAND IN CRYPTOCURRENCIES ECONOMIC RESEARCH: A SURVEY BASED ON HYBRID
-ANALYSIS</h3>
+<div id="caso-3-where-do-we-stand-in-cryptocurrencies-economic-research-a-survey-based-on-hybrid-analysis" class="section level3">
+<h3>Caso 3: Where do we stand in cryptocurrencies economic research: A
+survey based on hybrid analysis</h3>
 <ul>
-<li><p>1.<a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e">Fuente
-Google Drive</a></p></li>
-<li><p>2.Comentario: En la propuesta de enfoque híbrido, se aborda un
-primer filtro o <em>lectura distante</em> utilizando Bibliometría, para
-identificar clusters, determinar autores, áreas de interés y luego, se
-realiza una <em>lectura detallada</em> o close reading. La estrategia
-anterior permite identificar los artículos de interés a analizar en
-detalle, para poder comentarlos.</p></li>
-<li><p>3.Secciones:</p></li>
+<li><p>Fuente <a href="https://drive.google.com/drive/u/0/folders/1nFDrGLxQaTimxLZX-psFsX1XaxvXyh0e">Google
+Drive</a></p></li>
+<li><p><em>Comentario</em>: En la propuesta de enfoque híbrido, se
+aborda un primer filtro o <em>lectura distante</em> utilizando
+Bibliometría, para identificar clusters, determinar autores, áreas de
+interés y luego, se realiza una <em>lectura detallada</em> o close
+reading. La estrategia anterior permite identificar los artículos de
+interés a analizar en detalle, para poder comentarlos.</p></li>
+<li><p>Secciones:</p>
+<ul>
 <li><p>Title</p></li>
 <li><p>Abstract</p></li>
 <li><p>Keywords</p></li>
-<li><ol style="list-style-type: decimal">
-<li>Introduction</li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li>Methodological Design</li>
-</ol></li>
+<li><p>1.Introduction</p></li>
+<li><p>2.Methodological Design</p>
+<ul>
 <li><p>2.1 First Step: Distant Reading by Means of Bibliometric
 Analysis</p></li>
 <li><p>2.2 Second Step: Close Reading of Cryptocurrency
 Literature</p></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li>Close Reading Findings</li>
-</ol></li>
+</ul></li>
+<li><p>3.Close Reading Findings</p>
+<ul>
 <li><p>3.1 Data Sources</p></li>
 <li><p>3.2 Data Frequency</p></li>
-<li><p>3.3 Main Research Topics</p></li>
+<li><p>3.3 Main Research Topics</p>
+<ul>
 <li><p>3.3.1 Monetary Economics and Overview of Bitcoin
 Ecosystem</p></li>
 <li><p>3.3.2 Informational Efficiency</p></li>
@@ -840,87 +882,76 @@ Ecosystem</p></li>
 <li><p>3.3.6 Safe-Haven Characteristics</p></li>
 <li><p>3.3.7 Bubble Formation</p></li>
 <li><p>3.3.8 Initial Coin Offering (ICO)</p></li>
-<li><ol start="4" style="list-style-type: decimal">
-<li>Literature Gaps and Open Research Paths</li>
-</ol></li>
-<li><ol start="5" style="list-style-type: decimal">
-<li>Conclusions</li>
-</ol></li>
+</ul></li>
+</ul></li>
+<li><p>4.Literature Gaps and Open Research Paths</p></li>
+<li><p>5. Conclusions</p></li>
 <li><p>Acknowledgments</p></li>
 <li><p>Data Availability Statement</p></li>
 <li><p>Notes</p></li>
 <li><p>References</p></li>
+</ul></li>
 </ul>
 </div>
-<div id="caso-4-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" class="section level3" number="2.10.4">
-<h3><span class="header-section-number">2.10.4</span> Caso 4: Guidelines
-for Snowballing in Systematic Literature Studies and a Replication in
-Software Engineering</h3>
+<div id="caso-4-guidelines-for-snowballing-in-systematic-literature-studies-and-a-replication-in-software-engineering" class="section level3">
+<h3>Caso 4: Guidelines for Snowballing in Systematic Literature Studies
+and a Replication in Software Engineering</h3>
 <ul>
-<li><ol style="list-style-type: decimal">
-<li><a href="https://sci-hub.se/10.1145/2601248.2601268">Fuente
-Artículo</a></li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li>Comentario:</li>
-</ol></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li>Secciones:</li>
-</ol></li>
+<li><p>Fuente <a href="https://sci-hub.se/10.1145/2601248.2601268">Artículo</a></p></li>
+<li><p>Comentario:</p></li>
+<li><p>Secciones:</p>
+<ul>
 <li><p>Title</p></li>
 <li><p>Abstract</p></li>
 <li><p>Categories and Subject Descriptors</p></li>
 <li><p>General Terms</p></li>
 <li><p>Keywords</p></li>
-<li><ol style="list-style-type: decimal">
-<li>INTRODUCTION</li>
-</ol></li>
-<li><ol start="2" style="list-style-type: decimal">
-<li>RELATED WORK</li>
-</ol></li>
-<li><ol start="3" style="list-style-type: decimal">
-<li>SNOWBALLING PROCEDURE</li>
-</ol></li>
+<li><p>1. Introduction</p></li>
+<li><p>2.Related Work</p></li>
+<li><p>3.Snowballing Procedure</p>
+<ul>
 <li><p>3.1 Start Set</p></li>
-<li><p>3.2 Iterations</p></li>
+<li><p>3.2 Iterations</p>
+<ul>
 <li><p>3.2.1 Backward Snowballing</p></li>
 <li><p>3.2.2 Forward Snowballing</p></li>
 <li><p>3.2.3 Inclusion and Exclusion</p></li>
 <li><p>Figure 1. Snowballing procedure</p></li>
+</ul></li>
 <li><p>3.3 Authors</p></li>
 <li><p>3.4 Data Extraction</p></li>
-<li><ol start="4" style="list-style-type: decimal">
-<li>REPLICATION</li>
-</ol></li>
+</ul></li>
+<li><p>4.Replication</p>
+<ul>
 <li><p>4.1 Introduction</p></li>
 <li><p>4.2 Start Set</p></li>
-<li><p>4.3 Iteration 1</p></li>
+<li><p>4.3 Iteration 1</p>
+<ul>
 <li><p>4.3.1 Backward Snowballing</p></li>
 <li><p>4.3.2 Forward Snowballing</p></li>
 <li><p>4.3.3 Summary of Status</p></li>
-<li><p>4.4 Iteration 2</p></li>
+</ul></li>
+<li><p>4.4 Iteration 2</p>
+<ul>
 <li><p>4.4.1 Backward Snowballing</p></li>
 <li><p>4.4.2 Forward Snowballing</p></li>
+</ul></li>
 <li><p>4.5 Iteration 3</p></li>
 <li><p>4.6 Efficiency</p></li>
 <li><p>4.7 Authors</p></li>
 <li><p>4.8 Citation Matrix and Timeline</p></li>
-<li><p>4.9 Reflections</p></li>
+<li><p>4.9 Reflections</p>
+<ul>
 <li><p>4.9.1 Ten Lessons Learned from Snowballing</p></li>
 <li><p>4.9.2 Validity Threats</p></li>
+</ul></li>
 <li><p>4.10 Comparison</p></li>
-<li><ol start="5" style="list-style-type: decimal">
-<li>DISCUSSION SNOWBALLING</li>
-</ol></li>
-<li><ol start="6" style="list-style-type: decimal">
-<li>SUMMARY</li>
-</ol></li>
-<li><ol start="7" style="list-style-type: decimal">
-<li>ACKNOWLEDGMENTS</li>
-</ol></li>
-<li><ol start="8" style="list-style-type: decimal">
-<li>REFERENCES</li>
-</ol></li>
+</ul></li>
+<li><p>5.Discussion Snowballing</p></li>
+<li><p>6.Summary</p></li>
+<li><p>7.Acknowledgments</p></li>
+<li><p>8.References</p></li>
+</ul></li>
 </ul>
 </div>
 </div>
