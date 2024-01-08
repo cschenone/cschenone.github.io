@@ -17,7 +17,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 En este espacio se ubicarán los documentos a compartir en el contexto del proyecto Doctorado, publicado en la url <https://cschenone.github.io/>
 
-A continuación listamos los documentos publicados:
+A continuación listamos las carpetas donde se agrupan los documentos publicados:
+
+## Desarrollo
 
 -   Proyecto de desarrollo "*Metodología híbrida para el abordaje de la extracción de patrones en videos usando CCN y RNN*"
 
@@ -31,6 +33,8 @@ A continuación listamos los documentos publicados:
 
         El documento contiene las directrices y los siguientes pasos recomendadas para el desarrollo del artículo de investigación presentando los resultados de la investigación en "Metodología híbrida para el análisis de un corpus de artículos académicos"
 
+## Investigación
+
 -   Proyecto de investigación "*Detección de Cianobacterias"*
 
     El objetivo del proyecto es realizar la detección de cianobacterias utilizando técnicas de aprendizaje profundo aplicadas al procesamientos de imágenes satelitales de fuentes abiertas.
@@ -38,3 +42,9 @@ A continuación listamos los documentos publicados:
 -   Proyecto de investigación "*Detección de Plagas y Malezas*"
 
     El objetivo del proyecto es realizar la detección de plagas y malezas utilizando técnicas de aprendizaje profundo aplicada al procesamientos de imágenes satelitales de fuentes abiertas e imágenes capturadas del sobrevuelo de drones.
+
+## Genéricos
+
+-   Conceptos de Inteligencia Artificial
+
+-   Índice de bases de datos indexadas abiertas

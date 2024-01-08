@@ -57,6 +57,12 @@ A continuación presentamos los proyectos en los cuales estamos trabajando, cate
 
     El objetivo del proyecto es realizar la detección de plagas y malezas utilizando técnicas de aprendizaje profundo aplicadas al procesamientos de imágenes satelitales de fuentes abiertas e imágenes capturadas del sobrevuelo de drones
 
+## Genéricos
+
+-   Conceptos de Inteligencia Artificial
+
+-   Índice de bases de datos indexadas abiertas
+
 ## **Sitios amigos - Friendly sites**
 
 -   [TICAPPS/IIyA/UNAJ - Algoritmos de Machine Learning para procesamiento de imágenes en aplicaciones biomédicas, agronómicas y ambiental](https://investigacion.unaj.edu.ar/algoritmos-de-machine-learning-para-procesamiento-de-imagenes-en-aplicaciones-biomedicas-agronomicas-y-ambientales/).
