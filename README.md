@@ -1,20 +1,3 @@
----
-title: "Proyecto Doctorado: espacio para publicación de documentos"
-author: "Carlos Schenone"
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: false
-    toc_depth: 5  # up to five depths of headings (specified by #, ## and ...)
-    number_sections: false  # if you want number sections at each table header
-    theme: united  # specifies the theme style
-    highlight: tango  # specifies the syntax highlighting style 
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Introducción
 
 En este espacio se ubicarán los documentos a compartir en el contexto del proyecto Doctorado, publicado en la url <https://cschenone.github.io/>
