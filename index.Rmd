@@ -37,31 +37,35 @@ A continuación presentamos los proyectos en los cuales estamos trabajando, cate
 
 ### Desarrollo - Development
 
--   [Metodología híbrida para el abordaje de la extracción de patrones en videos usando CCN y RNN](http://127.0.0.1:13743/html_preview/docs/desarrollo/analisis-videos/Metodolog%C3%ADa-h%C3%ADbrida-para-el-abordaje-de-la-extracci%C3%B3n-de-patrones-en-videos-usando-CCN-y-RNN.html)
+-   [Metodología híbrida para el abordaje de la extracción de patrones en videos usando CCN y RNN](https://cschenone.github.io/docs/desarrollo/analisis-videos/Metodolog%C3%ADa-h%C3%ADbrida-para-el-abordaje-de-la-extracci%C3%B3n-de-patrones-en-videos-usando-CCN-y-RNN.html)
 
     El objetivo del proyecto es desarrollar un modelo para realizar la extracción de patrones en videos, aplicando redes neuronales convolucionales y redes neuronales recurrentes, con el objetivo de etiquetar los objetos y escenas del video.
 
--   [Metodología híbrida para el análisis de un corpus de artículos académicos](http://127.0.0.1:13743/html_preview/docs/desarrollo/analisis-corpus/Metodolog%C3%ADa-h%C3%ADbrida-para-al-an%C3%A1lisis-de-un-corpus-de-art%C3%ADculos-acad%C3%A9micos.html)
+-   [Metodología híbrida para el análisis de un corpus de artículos académicos](https://cschenone.github.io/docs/desarrollo/analisis-corpus/Metodolog%C3%ADa-h%C3%ADbrida-para-al-an%C3%A1lisis-de-un-corpus-de-art%C3%ADculos-acad%C3%A9micos.html)
 
     El objetivo del proyecto es desarrollar una herramienta que ayude a estudiar el estado del arte de un tema de investigación, aplicando análisis bibliométrico y técnicas de revisión sistemática, aportando un conjunto de elementos que simplifiquen el análisis de un campo científico
 
-    -   [Próximos pasos](http://127.0.0.1:13743/html_preview/docs/desarrollo/analisis-corpus/Proximos-pasos.html): El documento contiene las directrices y los siguientes pasos para el desarrollo del artículo donde se presenten los resultados del proyecto.
+    -   [Próximos pasos](https://cschenone.github.io/docs/desarrollo/analisis-corpus/Proximos-pasos.html): El documento contiene las directrices y los siguientes pasos para el desarrollo del artículo donde se presenten los resultados del proyecto.
 
 ### Investigación - Research
 
--   [Metodogía híbrida para la detección de Cianobacterias](http://127.0.0.1:13743/html_preview/docs/investigacion/cianobacterias/Cianobacterias.html)
+-   [Metodogía híbrida para la detección de Cianobacterias](https://cschenone.github.io/docs/investigacion/cianobacterias/Cianobacterias.html)
 
     El objetivo del proyecto es realizar la detección de cianobacterias utilizando técnicas de aprendizaje profundo aplicadas al procesamientos de imágenes satelitales de fuentes abiertas
 
--   [Metodología híbrida para la detección de Plagas y Malezas](http://127.0.0.1:13743/html_preview/docs/investigacion/plagasymalezas/PlagasyMalezas.html)
+-   [Metodología híbrida para la detección de Plagas y Malezas](https://cschenone.github.io/docs/investigacion/plagasymalezas/PlagasyMalezas.html)
 
     El objetivo del proyecto es realizar la detección de plagas y malezas utilizando técnicas de aprendizaje profundo aplicadas al procesamientos de imágenes satelitales de fuentes abiertas e imágenes capturadas del sobrevuelo de drones
 
 ## Genéricos
 
--   Conceptos de Inteligencia Artificial
+-   [Conceptos de Inteligencia Artificial](https://cschenone.github.io/docs/genericos/conceptos_de_ia.html)
 
--   Índice de bases de datos indexadas abiertas
+    Documento para realizar la puesta en común de temas sobre Inteligencia Artificial
+
+-   [Índice de bases de datos indexadas abiertas](https://cschenone.github.io/docs/genericos/Indice-de-Base-de-Datos-indexadas-Abiertas.html)
+
+    Enlaces que podrían ser útiles para acceder a las bases de datos de Rusia y China
 
 ## **Sitios amigos - Friendly sites**
 
@@ -69,6 +73,6 @@ A continuación presentamos los proyectos en los cuales estamos trabajando, cate
 
     El objetivo general del programa es generar conocimiento sobre nuevas herramientas en el sector de las Tecnologías de la Información y la Comunicación aplicadas la mejora de la calidad de vida
 
--   [CEGELAH/FCyT/UADER - Centro para la Gestión Local Sostenible del Agua y el Hábitat Humano](https://cegelahfcyt.wordpress.com/)
+-   [CEGELAH/FCyT/UADER - Centro para la Gestión Local Sostenible del Agua y el Hábitat Humano](https://cegelah.fcyt.uader.edu.ar/)
 
     El CEGELAH es una organización académica destinada a ejecutar actividades de investigación científica, desarrollo tecnológico, docencia, formación de recursos humanos, extensión y prestación de servicios a terceros contribuyendo al desarrollo de sistemas de gestión sostenible del agua y del hábitat humano aplicables a municipios de regiones en vías de desarrollo.
