@@ -63,9 +63,13 @@ A continuación presentamos los proyectos en los cuales estamos trabajando, cate
 
     Documento para realizar la puesta en común de temas sobre Inteligencia Artificial
 
--   [Índice de bases de datos indexadas abiertas](https://cschenone.github.io/docs/genericos/Indice-de-Base-de-Datos-indexadas-Abiertas.html)
+-   [Ïndice de bases de datos indexadas abiertas](https://cschenone.github.io/docs/genericos/Indice-de-Base-de-Datos-indexadas-Abiertas.html)
 
-    Enlaces que podrían ser útiles para acceder a las bases de datos de Rusia y China
+    Enlaces que podrían ser útiles para acceder a las bases de datos de Rusia, China y Catálogos de trabajos científicos como OpenAlex.
+
+-   [Buenas prácticas en GitHub](https://cschenone.github.io/docs/genericos/Recomendaciones_para_trabajar_en_Git.html)
+
+    Armamos el documento pensando que sería de utilidad presentarle algunas recomendaciones para utilizar la herramienta.
 
 ## **Sitios amigos - Friendly sites**
 
